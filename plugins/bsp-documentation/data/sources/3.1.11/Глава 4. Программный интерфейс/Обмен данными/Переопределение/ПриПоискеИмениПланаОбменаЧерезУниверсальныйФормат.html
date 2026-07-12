@@ -1,0 +1,22 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПриПоискеИмениПланаОбменаЧерезУниверсальныйФормат</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбменДаннымиПереопределяемыйПриПоискеИмениПланаОбменаЧерезУниверсальныйФормат" name="_обменданнымипереопределяемыйприпоискеименипланаобменачерезуниверсальныйформат"></a><h1>ПриПоискеИмениПланаОбменаЧерезУниверсальныйФормат</h1>
+<pre> Вызывается в функции ОбменДаннымиСервер.НайтиИмяПланаОбменаЧерезУниверсальныйФормат
+ Позволяет переопределить имя плана обмена, которое будет использоваться при обмене с корреспондирующее базой. 
+ Только для обмена через EnterpriseData</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ПриПоискеИмениПланаОбменаЧерезУниверсальныйФормат(
+	ИмяПланаОбмена, ИдентификаторНастройки, НайденноеИмяПланаОбмена) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>   ИмяПланаОбмена - Строка - имя плана обмена корреспондирующей базы, 
+                    для которого подбираем соответствие из метаданных конфигурации.
+   ИдентификаторНастройки- Строка - идентификатор варианта настройки (ВариантНастройки), корреспондирующей базы.
+   НайденноеИмяПланаОбмена - Строка - если информационная база уже содержит план обмена с именем ИмяПланаОбмена,
+       то параметр будет равен ИмяПланаОбмена.
+       Иначе параметр будет содержать имя Глобального плана обмена.
+       Параметр может быть переопределен</pre>
+<p class="Paragraph0c"><span class="Bold">Расположение</span></p>
+<pre> Общий модуль ОбменДаннымиПереопределяемый</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

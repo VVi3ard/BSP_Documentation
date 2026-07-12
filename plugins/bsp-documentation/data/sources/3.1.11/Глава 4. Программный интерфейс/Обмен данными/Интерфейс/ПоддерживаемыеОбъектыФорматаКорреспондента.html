@@ -1,0 +1,24 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПоддерживаемыеОбъектыФорматаКорреспондента</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбменДаннымиXDTOСерверПоддерживаемыеОбъектыФорматаКорреспондента" name="_обменданнымиxdtoсерверподдерживаемыеобъектыформатакорреспондента"></a><h1>ПоддерживаемыеОбъектыФорматаКорреспондента</h1>
+<pre> Возвращает таблицу поддерживаемых в обмене объектов формата для указанного корреспондента.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПоддерживаемыеОбъектыФорматаКорреспондента(УзелОбмена, Режим = "ОтправкаПолучение") Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  УзелОбмена - ПланОбменаСсылка - узел плана обмена XDTO соответствующего корреспондента.
+  Режим          - Строка - вид запрашиваемой информации: "Отправка" | "Получение" | "ОтправкаПолучение".
+                            "Отправка" - будут возвращены все объекты, для которых поддерживается отправка;
+                            "Получение" - будут возвращены все объекты, для которых поддерживается получение;
+                            "ОтправкаПолучение" - будут возвращены все поддерживаемые объекты.
+                            По умолчанию "ОтправкаПолучение".</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  ТаблицаЗначений - состав поддерживаемых объектов формата в разрезе версий:
+    * Версия    - Строка - версия формата, например, "1.5".
+    * Объект    - Строка - имя объекта формата, например, "Справочник.Номенклатура".
+    * Отправка  - Булево - признак поддержки корреспондентом отправки данного объекта формата.
+    * Получение - Булево - признак поддержки корреспондентом получения данного объекта формата.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ОбменДаннымиXDTOСервер.ПоддерживаемыеОбъектыФорматаКорреспондента(УзелОбмена, Режим)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

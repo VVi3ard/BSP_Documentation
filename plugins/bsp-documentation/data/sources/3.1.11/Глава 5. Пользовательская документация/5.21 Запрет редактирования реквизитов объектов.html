@@ -1,0 +1,66 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.21 Запрет редактирования реквизитов объектов</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<a data-original-name="_Подключение_внешней_компоненты" name="_подключение_внешней_компоненты"></a><a data-original-name="_Обновление_внешних_компонент_1" name="_обновление_внешних_компонент_1"></a><a data-original-name="_Обновление_внешних_компонент" name="_обновление_внешних_компонент"></a><a data-original-name="_Сохранение_внешних_компонент" name="_сохранение_внешних_компонент"></a><a data-original-name="_Технические_ограничения_и" name="_технические_ограничения_и"></a><h1>5.21 Запрет редактирования реквизитов объектов</h1>
+<p class="Paragraph0c">У ряда объектов приложения имеются реквизиты, которые
+определяют характер данного объекта и которые условно можно назвать «ключевыми»
+реквизитами. Как правило, «ключевыми» реквизитами являются реквизиты объекта,
+влияющие на поведение других объектов. <span class="Note">Например, реквизит <b>Валюта</b>
+справочника <b>Кассы</b> определяет валюту остатков по данной кассе. Реквизит
+не может быть изменен после начала учета движения денежных средств в кассе</span>.</p>
+<p class="Paragraph0c">Для того чтобы предупредить необдуманные изменения
+«ключевых» реквизитов, после записи объекта приложение запрещает дальнейшее
+редактирование таких реквизитов. Таким образом, значения реквизитов могут быть
+установлены только при создании объекта.</p>
+<p class="Paragraph0c">Если в дальнейшем при работе все же возникает
+необходимость изменения значения «ключевого» реквизита, то можно
+воспользоваться командой <span class="Interface">Разрешить редактирование
+реквизитов</span> меню <span class="Interface">Еще</span>. Команда доступна с
+установленной ролью <span class="Interface">Полные права</span> или <span class="Interface">Редактирование реквизитов объектов</span>.</p>
+<p class="Picture"><img alt="" height="675" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1234.png?_=0000FCF06B29DF4E-v10" style="aspect-ratio:827/675" width="827"/></p>
+<p class="Paragraph0c">При использовании команды в документе <span class="Note"><b>Демо: Заказ покупателя</b></span> приложение
+предлагает выбрать реквизиты для разблокирования. После выбора реквизитов для
+подтверждения нажмите кнопку <span class="Interface">Разрешить редактирование</span>.</p>
+<p class="Paragraph0c">При выполнении этой команды приложение дополнительно
+проверяет использование объекта (имеются ли на данный объект ссылки из других
+объектов приложения). Если объект используется, приложение предупреждает о
+возможном рассогласовании данных после изменения значений «ключевых»
+реквизитов. </p>
+<p class="Paragraph0c">В случае если риск рассогласования данных оценивается как
+большой, рекомендуется отказаться от изменений и провести дополнительный анализ
+с помощью команды <span class="Interface">Поиск ссылок на объекты</span> (<img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1236.png?_=0000006C1694F628-v10" style="aspect-ratio:21/19" width="21"/>
+<span class="Interface">Главное меню –</span> <span class="Interface">Функции для
+технического специалиста – Стандартные</span>).</p>
+<a data-original-name="IssOgl1_Роли_для_разрешения_редактирования_объектов" name="issogl1_роли_для_разрешения_редактирования_объектов"><h2>Роли для разрешения редактирования объектов</h2></a>
+<p class="Paragraph0c">Для разрешения редактирования объектов в приложении предусмотрены
+следующие роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Роль</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Краткое описание</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Полные права</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дает право на
+  неограниченный доступ ко всем данным приложения.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Редактирование реквизитов
+  объектов</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дает право редактирования
+  «ключевых» реквизитов объектов. </p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+</main></body></html>

@@ -1,0 +1,19 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПриВосстановленииРезервнойКопии</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбменДаннымиСерверПриВосстановленииРезервнойКопии" name="_обменданнымисерверпривосстановлениирезервнойкопии"></a><h1>ПриВосстановленииРезервнойКопии</h1>
+<pre> Выполняет синхронизацию номеров отправленных и полученных сообщений
+ для двух баз (номеру отправленного сообщения в этой базе присваивается значение номера принятого сообщения из
+ базы-корреспондента).</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ПриВосстановленииРезервнойКопии(Знач ПараметрыРезервнойКопии) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>   ПараметрыРезервнойКопии - ФиксированнаяСтруктура:
+     * Отправитель                 - ПланОбменаСсылка - узел, от имени которого было сформировано и отправлено
+                                                        сообщение обмена.
+     * НомерПринятого              - Число            - номер принятого сообщения в базе-корреспонденте.
+     * ВосстановленаРезервнаяКопия - Булево           - признак восстановления этой базы из резервной копии.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОбменДаннымиСервер.ПриВосстановленииРезервнойКопии(ПараметрыРезервнойКопии)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

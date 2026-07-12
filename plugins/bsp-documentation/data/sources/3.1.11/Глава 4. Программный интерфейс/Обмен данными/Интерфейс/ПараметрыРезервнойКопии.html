@@ -1,0 +1,24 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПараметрыРезервнойКопии</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбменДаннымиСерверПараметрыРезервнойКопии" name="_обменданнымисерверпараметрырезервнойкопии"></a><h1>ПараметрыРезервнойКопии</h1>
+<pre> Проверяет факт восстановления этой базы из резервной копии.
+ Если база была восстановлена из резервной копии, то необходимо выполнить синхронизацию номеров отправленных и
+ полученных сообщений для двух баз (номеру отправленного сообщения в этой базе присваивается значение номера
+ принятого сообщения из базы-корреспондента).
+ Если база была восстановлена из резервной копии, то рекомендуется не снимать с регистрации изменения данных на
+ текущем узле, т.к. эти данные могли быть еще не отправлены.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПараметрыРезервнойКопии(Знач Отправитель, Знач НомерПринятого) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>   Отправитель    - ПланОбменаСсылка - узел, от имени которого было сформировано и отправлено сообщение обмена.
+   НомерПринятого - Число            - номер принятого сообщения в базе-корреспонденте.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>   ФиксированнаяСтруктура:
+     * Отправитель                 - ПланОбменаСсылка - см. выше параметр Отправитель.
+     * НомерПринятого              - Число            - см. выше параметр НомерПринятого.
+     * ВосстановленаРезервнаяКопия - Булево - Истина, если обнаружен факт восстановления этой базы из резервной копии.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ОбменДаннымиСервер.ПараметрыРезервнойКопии(Отправитель, НомерПринятого)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

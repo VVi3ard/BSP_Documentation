@@ -1,0 +1,196 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.51 Профили безопасности</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.51 Профили безопасности</h1>
+<p class="Paragraph0c">В платформе 1С:Предприятие предусмотрена возможность
+ограничивать доступ приложения к внешним ресурсам на сервере. См. <a href="https://its.1c.ru/db/v8327doc/bookmark/cs/TI000000053" target="_top">Главная &gt;
+Инструкции по разработке на 1С &gt; Платформа 1С:Предприятие. Документация &gt;
+Платформа 1С:Предприятие 8 &gt; Клиент-серверный вариант. Руководство
+администратора &gt; Глава 2. Клиент-серверный вариант работы &gt; Устройство
+кластера серверов &gt; Профили безопасности</a>.</p>
+<a data-original-name="IssOgl1_Настройка_приложения" name="issogl1_настройка_приложения"><h2>Настройка приложения</h2></a>
+<p class="Paragraph0c">Для использования профилей безопасности необходимо выбрать
+<span class="Interface">Режим использования профилей безопасности </span>в
+разделе <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Общие настройки – Использование профилей безопасности</span>.</p>
+<p class="Paragraph0c">По умолчанию профили безопасности не используются.</p>
+<p class="Picture"><img alt="" height="1000" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2811.png?_=000872112410ED57-v10" style="aspect-ratio:1061/1000" width="1061"/></p>
+<p class="Paragraph0c">Рекомендуется выбрать третий вариант <b>Предлагать автоматически использовать разрешения в профилях
+безопасности</b>. В этом случае профиль безопасности для работы информационной
+базы будет автоматически создан в кластере серверов 1С:Предприятия в
+соответствии с требуемыми разрешениями и назначен информационной базе, а его
+имя будет сохранено в поле <b>Профиль
+безопасности информационной базы</b>.</p>
+<p class="Paragraph0c">Если выбрать второй вариант <b>Профили безопасности для данной информационной базы настраиваются
+администратором в консоли кластера</b>, тогда для возможности работы приложения
+нужно в профиле безопасности информационной базы:</p>
+<p class="Bullet1">■ 
+Либо включить флажки <b>Может использоваться, как профиль безопасности безопасного режима</b> и
+<b>Разрешен полный доступ к
+привилегированному режиму</b>, а имя профиля указать в поле <b>Профиль безопасности информационной базы</b>.</p>
+<p class="Bullet1">■ 
+Либо включить флажок <b>Разрешен полный доступ к внешним модулям</b> (в этом случае включение
+не требуется, как и имя профиля безопасности информационной базы, а подсистема
+нужна только для получения отчета о требуемых ресурсах – см. ниже).</p>
+<p class="Paragraph0c">См. документацию платформы 1С:Предприятия:</p>
+<p class="Bullet1">■ 
+Описание флажков: <a href="https://its.1c.ru/db/v8327doc/bookmark/cs/TI000000204" target="_top">Главная &gt;
+Инструкции по разработке на 1С &gt; Платформа 1С:Предприятие. Документация &gt;
+Платформа 1С:Предприятие 8 &gt; Клиент-серверный вариант. Руководство
+администратора &gt; Глава 2. Клиент-серверный вариант работы &gt; Устройство
+кластера серверов &gt; Профили безопасности &gt; Общая информация</a>.</p>
+<p class="Bullet1">■ 
+Настройка свойства <b>Профиль безопасности</b> в кластере серверов: <a href="https://its.1c.ru/db/v8327doc/bookmark/cs/TI000000164" target="_top">Главная &gt;
+Инструкции по разработке на 1С &gt; Платформа 1С:Предприятие. Документация &gt;
+Платформа 1С:Предприятие 8 &gt; Клиент-серверный вариант. Руководство
+администратора &gt; Администрирование кластера серверов &gt; Работа со списком информационных
+баз &gt; Просмотр свойств информационной базы</a>.</p>
+<p class="Paragraph0c">Кроме того, следует учесть, что отдельным функциям
+приложения нужны разные ресурсы, которые можно посмотреть по ссылке <b>Требуемые разрешения</b> с помощью отчета <span class="Interface">Внешние ресурсы, используемые приложением и дополнительными
+модулями</span>. Из отчета можно узнать, какие Интернет-ресурсы, протоколы и
+порты подключения необходимы для работоспособности тех или иных функций
+приложения, например:</p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Протокол</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Адрес
+  Интернет-ресурса</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Порт</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Описание</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">HTTPS</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">1cv8update.com</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">443</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Сайт "Центр защиты обновлений" (ЦЗО) для
+  проверки правомерности использования и обновления программного продукта.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">HTTPS</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">portal-support.1c.ru</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">443</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Сервисы службы технической поддержки (зона ru)</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">HTTPS</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">sales-manager.1c.ru</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">443</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Сервис подключения тестовых периодов (ru)</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">WSS</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">1cdialog.com</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">443</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Сервис 1С:Диалог для системы взаимодействия
+  (тематические обсуждения, переписка и видеозвонки между пользователями приложения).</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">HTTPS</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">*.s3storage.ru</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">443</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Сервис 1С:Диалог для системы
+  взаимодействия (Хранилище файлов сервиса).</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">HTTP</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">clr.globalsign.com</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">80</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Сервис 1С:Диалог для системы взаимодействия (Сервер
+  проверки отзыва сертификатов).</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c">(информация в таблице приведена с целью ознакомления,
+реальные значения приведены в отчете в приложении). </p>
+<p class="Paragraph0c">В отчете также отражаются и другие используемые ресурсы:</p>
+<p class="Bullet1">■    Каталоги файловой системы;</p>
+<p class="Bullet1">■    Внешние компоненты и COM-классы;</p>
+<p class="Bullet1">■    Приложения операционной системы;</p>
+<p class="Bullet1">■    Подключенные расширения (см. раздел документации
+5.4 Базовая функциональность (Прочие сервисные возможности) – Расширения).</p>
+<p class="Paragraph0c">Эта информация позволяет администратору корректно
+выполнить настройку компьютера и провести аудит безопасности. Список внешних
+ресурсов, используемых приложением и дополнительными модулями, зависит от
+текущих настроек приложения: включенных функциональных опций, режимов работы и
+т. п.</p>
+<p class="Paragraph0c">Отчет можно открыть не только по ссылке <b>Требуемые разрешения</b>, но и найти в
+панели отчетов для администрирования приложения (раздел <span class="Note"><b>Администрирование</b></span> <span class="Interface">– Обслуживание – Отчеты и обработки</span>, команда <span class="Interface">Отчеты администратора</span>).</p>
+<a data-original-name="IssOgl1_Роли_для_настройки_работы_с_приложением" name="issogl1_роли_для_настройки_работы_с_приложением"><h2>Роли для настройки работы с приложением</h2></a>
+<p class="Paragraph0c">Для настройки прав доступа пользователей в приложении
+предусмотрены следующие роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Роль</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Краткое описание</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Администратор системы</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Включение и отключение
+  использования профилей безопасности.</p>
+<p class="TextinTable81">Просмотр отчета <span class="Interface">Внешние ресурсы</span><b>,
+  используемые приложением и дополнительными модулями</b>.</p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+</main></body></html>

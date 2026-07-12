@@ -1,0 +1,411 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.29 Контроль работы пользователей</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<a data-original-name="_Настройка_видов_контактной" name="_настройка_видов_контактной"></a><a data-original-name="_Адрес" name="_адрес"></a><a data-original-name="_Настройка_поля_Адрес" name="_настройка_поля_адрес"></a><a data-original-name="_Настройка_поля_Адрес_2" name="_настройка_поля_адрес_2"></a><a data-original-name="_Настройка_полей_Телефон" name="_настройка_полей_телефон"></a><a data-original-name="_Настройка_поля_Адрес_1" name="_настройка_поля_адрес_1"></a><a data-original-name="_Веб-страница" name="_веб-страница"></a><a data-original-name="_Настройка_поля_Веб-страница" name="_настройка_поля_веб-страница"></a><a data-original-name="_Настройка_поля_Факс" name="_настройка_поля_факс"></a><a data-original-name="_Настройка_поля_Другое" name="_настройка_поля_другое"></a><a data-original-name="_Настройка_поля_Skype" name="_настройка_поля_skype"></a><a data-original-name="_Ведение_контактной_информации" name="_ведение_контактной_информации"></a><a data-original-name="_Ведение_контактной_информации_1" name="_ведение_контактной_информации_1"></a><a data-original-name="_Ввод_адреса" name="_ввод_адреса"></a><a data-original-name="_Автоподбор_российского_адреса" name="_автоподбор_российского_адреса"></a><a data-original-name="_Ввод_адреса_в" name="_ввод_адреса_в"></a><a data-original-name="_Ввод_российского_адреса" name="_ввод_российского_адреса"></a><a data-original-name="_Проверка_правильности_адресов_1" name="_проверка_правильности_адресов_1"></a><a data-original-name="_Ввод_адреса_в_1" name="_ввод_адреса_в_1"></a><a data-original-name="_Проверка_правильности_адресов" name="_проверка_правильности_адресов"></a><a data-original-name="_Ввод_адреса_по" name="_ввод_адреса_по"></a><a data-original-name="_История_изменений_адреса" name="_история_изменений_адреса"></a><a data-original-name="_Ввод_телефона_или" name="_ввод_телефона_или"></a><a data-original-name="_Ввод_поля_Другое" name="_ввод_поля_другое"></a><a data-original-name="_Ввод_сайта" name="_ввод_сайта"></a><a data-original-name="_Ввод_поля_Skype" name="_ввод_поля_skype"></a><a data-original-name="_Справочник_стран_мира" name="_справочник_стран_мира"></a><a data-original-name="_Список_стран_мира" name="_список_стран_мира"></a><a data-original-name="_Ввод_страны_в" name="_ввод_страны_в"></a><h1>5.29 Контроль работы пользователей</h1>
+<p class="Paragraph0c">Администратор
+приложения может контролировать работу пользователей и выполнять диагностику
+работы приложения с помощью группы отчетов <span class="Interface">Контроль
+работы пользователей</span>. Кроме того, можно проводить аудит доступа к
+определенным данным, для того чтобы узнать, кто и когда их просматривал. Отчеты
+формируются на основе данных журнала регистрации. Включает в себя следующие
+варианты отчетов:</p>
+<p class="Bullet1"><span class="Interface">■  </span><a href="5.29 Контроль работы пользователей.html#_анализ_активности_пользователей">Анализ
+активности пользователей;</a></p>
+<p class="Bullet1"><span class="Interface">■  </span><a href="5.29 Контроль работы пользователей.html#_активность_пользователя">Активность
+пользователя;</a></p>
+<p class="Bullet1">■  <a href="5.29 Контроль работы пользователей.html#_анализ_активности_подразделений">Анализ
+активности подразделений;</a></p>
+<p class="Bullet1">■  <a href="5.29 Контроль работы пользователей.html#_контроль_журнала_регистрации_1">Контроль
+журнала регистрации;</a></p>
+<p class="Bullet1">■  <a href="5.29 Контроль работы пользователей.html#_продолжительность_работы_регламентн">Продолжительность
+работы регламентных заданий;</a></p>
+<p class="Bullet1"><span class="Interface">■  </span><a href="5.29 Контроль работы пользователей.html#_изменения_учетных_записей">Изменение
+учетных записей пользователей;</a></p>
+<p class="Bullet1"><span class="MsoHyperlink">■ 
+</span><a href="5.29 Контроль работы пользователей.html#_изменения_участников_групп">Изменение
+участников групп пользователей (внешних пользователей);</a></p>
+<p class="Bullet1"><span class="MsoHyperlink">■ 
+</span><a href="5.29 Контроль работы пользователей.html#_изменение_участников_групп">Изменение
+участников групп доступа;</a></p>
+<p class="Bullet1"><span class="MsoHyperlink">■ 
+</span><a href="5.29 Контроль работы пользователей.html#_изменение_разрешенных_значений">Изменение
+разрешенных значений групп доступа;</a></p>
+<p class="Bullet1"><span class="MsoHyperlink">■ 
+</span><a href="5.29 Контроль работы пользователей.html#_изменение_ролей_профилей">Изменение
+ролей профилей.</a></p>
+<p class="Note"><b>Важно!</b> Необходимо учитывать, что представленные отчеты носят
+информационный характер и не могут служить основанием для оценки эффективности
+работы сотрудников, расчета заработной платы, а также для принятия кадровых
+решений.</p>
+<p class="Note">Время работы в отчетах
+определяется по косвенным признакам активности на рабочем месте (использование
+компьютера, посещение ресурсов и т. д.) и не гарантирует, что сотрудник в
+указанный период непосредственно работал.</p>
+<p class="Note">Для корректного расчета
+оплаты труда, оценки эффективности и других процессов в системе должны быть
+предусмотрены специализированные инструменты учета рабочего времени,
+соответствующие требованиям трудового законодательства и внутренним регламентам
+организации.</p>
+<p class="Paragraph0c">Для формирования
+и настройки отчетов должна быть установлена роль<span class="Interface"> Полные права</span>.</p>
+<p class="Paragraph0c">К формированию
+каждого из отчетов можно перейти по ссылке с наименованием отчета в списке <span class="Interface">Отчеты администратора</span> раздела <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Отчеты</span>.
+<span class="Note"></span></p>
+<p class="Picture"><img alt="" height="888" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1507.png?_=00092897B027E50A-v10" style="aspect-ratio:1600/888" width="1600"/></p>
+<p class="Paragraph0c">Также предусмотрена возможность переключения
+между вариантами отчетов с помощью кнопки <img alt="" height="20" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1509.gif?_=000002BD31008702-v10" style="aspect-ratio:31/20" width="31"/> <span class="Interface">Варианты
+отчета</span>. Подробнее см. раздел документации
+Варианты отчетов.</p>
+<a data-original-name="_Анализ_активности_пользователей" name="_анализ_активности_пользователей"></a><a data-original-name="IssOgl1_Анализ_активности_пользователей" name="issogl1_анализ_активности_пользователей"><h2>Анализ активности пользователей</h2></a>
+<p class="Paragraph0c">Отчет <span class="Interface">Анализ активности пользователей</span> предназначен для
+получения статистической информации по активности пользователей. Данный отчет
+содержит набор показателей, которые уже сгруппированы и представлены в удобном
+для анализа виде:</p>
+<p class="Bullet1">■  Количество
+подключений (за период);</p>
+<p class="Bullet1">■  Количество
+часов работы;</p>
+<p class="Bullet1">■  Количество
+документов (введено, изменено);</p>
+<p class="Bullet1">■  Количество
+справочников (введено, изменено);</p>
+<p class="Bullet1">■  Количество
+проблем;</p>
+<p class="Bullet1">■  Количество
+предупреждений;</p>
+<p class="Bullet1">■  Максимальное
+количество одновременно работающих пользователей.</p>
+<p class="Paragraph0c">Для формирования
+отчета перейдите по ссылке <span class="Interface">Анализ активности пользователей</span>
+в списке <span class="Interface">Отчеты администратора</span>. </p>
+<p class="Paragraph0c">Необходимые настройки отчета выведены в его
+шапку.</p>
+<p class="Paragraph0c">По умолчанию в отчете уже установлен <span class="Interface">Период</span> (например, <span class="Note"><b>С начала этой недели</b></span>). Для
+изменения периода нажмите кнопку <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1510.png?_=00000100145F1A02-v10" style="aspect-ratio:23/19" width="23"/>.
+Выберите стандартный период. Если он не устраивает, можно выбрать произвольный
+период и указать нужные даты.</p>
+<p class="Paragraph0c">Для того чтобы получить отчет, необходимо
+заполнить поле <span class="Interface">Пользователи</span> в
+шапке отчета. Поле является обязательным. Нажмите кнопку <img alt="" height="21" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image208.png?_=000000895E493751-v10" style="aspect-ratio:19/21" width="19"/>.</p>
+<p class="Picture"><img alt="" height="834" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1512.png?_=00012E953866BC29-v10" style="aspect-ratio:1232/834" width="1232"/></p>
+<p class="Paragraph0c">Можно <span class="Interface">Выбрать</span>
+группу пользователей, одного или несколько пользователей из предложенного
+списка. После выбора нужных пользователей или групп нажмите кнопку <span class="Interface">Подобрать и закрыть</span>. Подробнее см. раздел
+документации Варианты отчетов.</p>
+<p class="Paragraph0c">Нажмите кнопку <span class="Interface">Сформировать</span>. В
+таблице представлена статистика по выбранным пользователям, за указанный
+период. Для большей наглядности часть данных представлена в виде диаграмм.
+Первая диаграмма представляет количество введенных каждым пользователем
+документов, вторая диаграмма представляет количество введенных каждым
+пользователем справочников.</p>
+<p class="Picture"><img alt="" height="677" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1514.png?_=00008A9A9533D694-v10" style="aspect-ratio:1353/677" width="1353"/></p>
+<a data-original-name="_Активность_пользователя" name="_активность_пользователя"></a><a data-original-name="IssOgl1_Активность_пользователя" name="issogl1_активность_пользователя"><h2>Активность пользователя</h2></a>
+<p class="Paragraph0c">Отчет <span class="Interface">Активность пользователя</span> предназначен для получения
+подробной статистики по активности выбранного пользователя (список созданных и
+измененных документов/справочников/бизнес-процессов/задач). Для формирования
+отчета перейдите по ссылке <span class="Interface">Активность пользователя</span>
+в списке <span class="Interface">Отчеты администратора</span>.</p>
+<p class="Paragraph0c">Основные
+параметры настройки выведены в шапку отчета. <span class="Interface">Период</span>
+установлен по умолчанию (<span class="Note">например, <b>Этот месяц</b></span>).
+При необходимости измените <span class="Interface">Период</span> с помощью кнопки
+<img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1510.png?_=00000100145F1A02-v10" style="aspect-ratio:23/19" width="23"/>.
+</p>
+<p class="Paragraph0c">С помощью кнопки <img alt="" height="23" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image234.png?_=000000980DB79B3C-v10" style="aspect-ratio:21/23" width="21"/> выберите из списка <span class="Interface">Пользователя</span>,
+по которому будет формироваться отчет (<span class="Note">например,<b>
+Администратор</b></span>). </p>
+<p class="Paragraph0c">Для дальнейшей
+настройки параметров отчета воспользуйтесь кнопкой <span class="Interface">Настройки</span>.
+Например, можно определить, по каким видам объектов приложения формировать отчет
+(<span class="Interface">Выводить бизнес-процессы</span>, <span class="Interface">задачи</span>,
+с<span class="Interface">правочники</span>, <span class="Interface">документы </span>–
+необходимо выбрать<span class="Interface"> Да</span> или<span class="Interface">
+Нет</span>). По умолчанию данные выводятся по справочникам и документам. Подробнее
+см. раздел документации Варианты отчетов. По окончании настройки нажмите кнопку
+<span class="Interface">Закрыть и сформировать</span>.</p>
+<p class="Picture"><img alt="" height="544" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1516.png?_=0001098A5619397A-v10" style="aspect-ratio:1244/544" width="1244"/></p>
+<p class="Paragraph0c">Также можно посмотреть результаты отчета в виде
+диаграмм: количество введенных и измененных документов. Можно изменить период
+отчета и получить отчет за период с <span class="Note"><b>05.07.2021
+</b></span>по <span class="Note"><b>14.07.2021</b></span>. </p>
+<p class="Picture"><img alt="" height="700" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1518.png?_=00008DF51EDA5C0C-v10" style="aspect-ratio:1230/700" width="1230"/></p>
+<p class="Paragraph0c">Последние настройки будут сохранены.</p>
+<a data-original-name="_Контроль_журнала_регистрации" name="_контроль_журнала_регистрации"></a><a data-original-name="_Активность_подразделений" name="_активность_подразделений"></a><a data-original-name="_Анализ_активности_подразделений" name="_анализ_активности_подразделений"></a><a data-original-name="IssOgl1_Анализ_активности_подразделений" name="issogl1_анализ_активности_подразделений"><h2>Анализ активности подразделений</h2></a>
+<p class="Paragraph0c">Отчет <span class="Interface">Анализ активности подразделений </span>предназначен для
+получения статистической информации по активности подразделений. В отчете
+учитывается количество часов работы, количество подключений, количество
+введенных/измененных документов/справочников, количество проблем и
+предупреждений при работе подразделений. </p>
+<p class="Paragraph0c">Для формирования
+отчета перейдите по ссылке <span class="Interface">Анализ активности
+подразделений </span>в списке <span class="Interface">Отчеты администратора –
+Контроль работы пользователей</span>.</p>
+<p class="Paragraph0c"><span class="Interface">Период</span> установлен по умолчанию (<span class="Note">например, <b>Этот месяц</b></span>). При
+необходимости измените <span class="Interface">Период</span> с помощью кнопки <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1510.png?_=00000100145F1A02-v10" style="aspect-ratio:23/19" width="23"/>.
+</p>
+<p class="Paragraph0c">С помощью кнопки <img alt="" height="23" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image234.png?_=000000980DB79B3C-v10" style="aspect-ratio:21/23" width="21"/> выберите из списка <span class="Interface">Подразделение</span>,
+по которому будет формироваться отчет (<span class="Note">например,<b> ИТ-служба</b></span>).
+Также можно <span class="Interface">Выбрать</span>
+несколько подразделений из предложенного списка. После выбора нужного
+подразделения нажмите кнопку <span class="Interface">Подобрать и закрыть</span>. </p>
+<p class="Paragraph0c">Для дальнейшей
+настройки параметров отчета воспользуйтесь кнопкой <span class="Interface">Настройки</span>.
+Подробнее см. раздел документации Варианты отчетов.</p>
+<p class="Paragraph0c">Нажмите кнопку <span class="Interface">Сформировать</span>. В
+таблице представлена статистика по выбранным подразделениям, за указанный
+период. </p>
+<p class="Picture"><img alt="" height="821" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1520.jpg?_=00045A3E784C7FE1-v10" style="aspect-ratio:1600/821" width="1600"/></p>
+<p class="Paragraph0c">Также можно посмотреть результаты отчета в виде
+диаграмм: количество введенных и измененных документов, а также справочников. </p>
+<p class="Picture"><img alt="" height="990" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1522.jpg?_=00025BE15941EEED-v10" style="aspect-ratio:1467/990" width="1467"/></p>
+<p class="Paragraph0c"> </p>
+<a data-original-name="_Контроль_журнала_регистрации_1" name="_контроль_журнала_регистрации_1"></a><a data-original-name="IssOgl1_Контроль_журнала_регистрации" name="issogl1_контроль_журнала_регистрации"><h2>Контроль журнала регистрации</h2></a>
+<p class="Paragraph0c">Отчет <span class="Interface">Контроль журнала регистрации</span> содержит список критичных
+записей журнала регистрации, (записи о проблемах и предупреждениях)
+сгруппированных по содержанию и отсортированных по частоте возникновения
+события. Отчет позволяет быстро проанализировать часто возникающие проблемы и
+принять решения по их устранению, не прибегая к помощи журнала регистрации.
+Подробнее о журнале регистрации см. раздел документации Настройки приложения.</p>
+<p class="Paragraph0c">Для формирования отчета перейдите по ссылке <span class="Interface">Контроль журнала регистрации</span> в
+списке <span class="Interface">Отчеты администратора</span>.</p>
+<p class="Paragraph0c">Поле <span class="Interface">Период</span>
+выведено в шапку отчета, заполнено по умолчанию (например, <span class="Interface">Сегодня</span>).</p>
+<p class="Paragraph0c">Для настройки параметра <span class="Interface">Период</span> нажмите кнопку <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1510.png?_=00000100145F1A02-v10" style="aspect-ratio:24/19" width="24"/> <span class="Interface">Выбрать</span>, введите
+нужный период (<span class="Note">например,</span>
+<span class="Note"><b>Эта неделя</b></span>), затем
+нажмите кнопку <span class="Interface">Выбрать</span>. Нажмите кнопку <span class="Interface">Сформировать</span>.</p>
+<p class="Picture"><img alt="" height="539" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1525.png?_=0000C59CBBD810AC-v10" style="aspect-ratio:887/539" width="887"/></p>
+<a data-original-name="_Продолжительность_работы_регламентн" name="_продолжительность_работы_регламентн"></a><a data-original-name="IssOgl1_Продолжительность_работы_регламентных_заданий" name="issogl1_продолжительность_работы_регламентных_заданий"><h2>Продолжительность работы регламентных заданий</h2></a>
+<p class="Paragraph0c">Отчет <span class="Interface">Продолжительность работы регламентных заданий</span> отображает
+продолжительность работы сеансов регламентных заданий. Позволяет провести
+анализ загруженности сервера регламентными заданиями, выявить интервалы с
+пиковыми нагрузками и затем разгрузить эти интервалы. </p>
+<p class="Paragraph0c">Для формирования
+отчета перейдите по ссылке <span class="Interface">Продолжительность работы
+регламентных заданий</span> в списке <span class="Interface">Отчеты
+администратора</span>.</p>
+<p class="Paragraph0c">Параметры (<span class="Interface">День и
+Начало периода</span>) выведены в шапку отчета, установлены значения
+по умолчанию (<span class="Note">например, </span><span class="Interface">Начало этого дня</span>). При необходимости можно указать свои
+параметры.</p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Настройки</span> можно
+изменить параметры отчета. Подробнее см. раздел документации Варианты отчетов.
+Нажмите кнопку <span class="Interface">Сформировать</span>.
+Настройки будут сохранены.</p>
+<p class="Picture"><img alt="" height="502" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1527.png?_=000098BFCCDB5C89-v10" style="aspect-ratio:1286/502" width="1286"/></p>
+<a data-original-name="IssOgl2_Сведения_о_регламентном_задании" name="issogl2_сведения_о_регламентном_задании"><h3>Сведения о регламентном задании</h3></a>
+<p class="Paragraph0c">С помощью
+двойного щелчка мышью по наименованию фонового задания в отчете <span class="Interface">Продолжительность регламентных заданий</span> можно перейти к
+просмотру отчета <span class="Interface">Сведения о регламентном задании</span>. </p>
+<p class="Picture"><img alt="" height="505" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1529.png?_=00007365CFA6A128-v10" style="aspect-ratio:591/505" width="591"/></p>
+<p class="Paragraph0c">Можно
+ознакомиться со статистическими данными по выбранному регламентному заданию: </p>
+<p class="Bullet1">■  Общая
+продолжительность;</p>
+<p class="Bullet1">■  Количество
+запусков;</p>
+<p class="Bullet1">■  Количество
+отмененных заданий;</p>
+<p class="Bullet1">■  Количество
+проблем.</p>
+<p class="Paragraph0c">Приводятся также сведения о сеансах
+регламентного задания, их длительности и времени проведения.</p>
+<p class="Paragraph0c">С помощью кнопки панели навигации можно <span class="Interface">Изменить расписание</span> регламентного задания.
+Подробнее см. раздел документации Регламентные задания.</p>
+<p class="Paragraph0c">Дважды щелкните по нужной ячейке в таблице <span class="Interface">Сеансы регламентного задания</span>, для
+того чтобы <span class="Interface">Перейти к журналу регистрации</span> и
+просмотреть данные о сеансе регламентного задания в журнале регистрации.
+Подробнее см. раздел документации Настройки приложения.</p>
+<a data-original-name="_Изменения_учетных_записей" name="_изменения_учетных_записей"></a><a data-original-name="IssOgl1_Изменение_учетных_записей_пользователей" name="issogl1_изменение_учетных_записей_пользователей"><h2>Изменение учетных записей пользователей</h2></a>
+<p class="Paragraph0c">Отчет<strong> </strong><span class="Interface">Изменение учетных записей пользователей</span><strong> </strong>позволяет
+проанализировать динамику изменений различных свойств пользователей приложения
+за определенный период, основываясь на записях журнала регистрации. </p>
+<p class="Paragraph0c">Отчет открывается из списка <span class="Interface">Отчеты администратора – Контроль работы пользователей</span>. </p>
+<p class="Paragraph0c">Необходимость в отчете возникает, если
+требуется выполнить групповой анализ изменений в настройках входа (имени для
+входа, видов аутентификации и других).</p>
+<p class="Paragraph0c">В отчете по умолчанию выдаются сведения:</p>
+<p class="Bullet1"><span class="Interface">■  </span><span class="Interface">Имя (для входа)</span></p>
+<p class="Bullet1">■  <span class="Interface">Полное имя пользователя</span>; </p>
+<p class="Bullet1">■  <span class="Interface">Недействителен</span>;</p>
+<p class="Bullet1">■  <b>Пометка удаления;</b></p>
+<p class="Bullet1">■  <b>Адрес электронной почты;</b></p>
+<p class="Bullet1">■  <span class="Interface">Вход в приложение разрешен</span> – поле может принимать
+значение <span class="Interface">Да</span><span class="Paragraph0c0">, если пользователю разрешен вход в приложение,
+или значение <b>Нет</b> в обратном случае; </span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Аутентификация
+стандартная</span> – поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Аутентификация
+OpenID</span> – поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Аутентификация
+OpenID-</span><span class="Interface">Connect</span>
+– поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Аутентификация токеном
+доступа</span> – поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Аутентификация ОС</span>
+– поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1">■  <span class="Interface">Пользователь ОС</span> – имя, с которым пользователь входит в
+ОС, если пользователь имеет аутентификацию ОС; </p>
+<p class="Bullet1"><span class="Interface">■  </span><span class="Interface">Имя политики паролей</span><span class="Interface">;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Запрещено изменять
+пароль</span><span class="Interface"> </span> – <span class="Interface"> </span>поле
+может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Запрещено
+восстанавливать</span> – поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1"><span class="Interface">■  </span><span class="Interface">Пароль изменен</span><span class="Interface"> </span>– поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>,
+в обратном случае;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Пароль установлен</span><span class="Interface"> </span>поле может
+принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Дата установки
+пароля</span><span class="Paragraph0c0">;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Потребовать смену
+пароля при входе - </span>поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Защита от опасных
+действий - </span>поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Срок действия не
+ограничен - </span>поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>, в обратном случае, <b>н/д </b>– если данных недостаточно;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Срок действия –</span><span class="Interface"> если поле Срок
+действия не ограничен </span>принимает значение <span class="Interface">Да</span><span class="Paragraph0c0">, то указывается
+</span><span class="Interface">срок
+действия данного пароля; </span><span class="Paragraph0c0"> </span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Запретить вход, если
+не работает более, дн. - </span>поле может принимать значение <span class="Interface">Да</span><span class="Paragraph0c0"> или значение <b>Нет</b>,
+в обратном случае;</span></p>
+<p class="Bullet1">■  <span class="Interface">Режим запуска</span>;</p>
+<p class="Bullet1">■  <span class="Interface">Язык</span>. </p>
+<p class="Picture"><img alt="" height="722" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1531.png?_=00062CF56E508BA3-v10" style="aspect-ratio:1600/722" width="1600"/></p>
+<p class="Paragraph0c">Также с помощью
+кнопки <span class="Interface">Настройки</span> можно открыть список полей и при
+необходимости добавить нужные поля в отчет. 
+Например, можно добавить в отчет поля <span class="Interface">Роли (только
+изменения)</span> и <span class="Interface">Роли</span>. Для этого перейдите в
+расширенный вид настроек и на вкладке <span class="Interface">Поля и сортировки</span>
+выделите поля с помощью флажков. Настройки запоминаются. </p>
+<p class="Picture"><img alt="" height="790" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1533.png?_=00047ECA44B603C2-v10" style="aspect-ratio:1600/790" width="1600"/></p>
+<a data-original-name="_Изменения_участников_групп" name="_изменения_участников_групп"></a><a data-original-name="IssOgl1_Изменение_участников_групп_пользователей_внешних_пользователей" name="issogl1_изменение_участников_групп_пользователей_внешних_пользователей"><h2>Изменение участников групп пользователей (внешних пользователей)</h2></a>
+<p class="Paragraph0c">Отчет<strong> </strong><span class="Interface">Изменение участников групп пользователей (внешних
+пользователей)</span><strong> </strong>выводит изменения состава групп
+пользователей с учетом иерархии за указанный период по событиям журнала
+регистрации. </p>
+<p class="Paragraph0c">Для того чтобы
+отчет выводил изменения состава групп пользователей включите флажок <span class="Interface">Регистрировать изменения участников групп пользователей</span>
+в разделе<span class="Note"> <b>Администрирование</b></span><span class="Interface"> – Настройки пользователей и прав – Пользователи</span>.</p>
+<p class="Picture"><img alt="" height="800" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1535.png?_=0005ED9B9FA2C183-v10" style="aspect-ratio:1600/800" width="1600"/></p>
+<p class="Paragraph0c">Также с помощью
+кнопки <span class="Interface">Настройки</span> можно открыть список полей и при
+необходимости добавить нужные поля в отчет. Подробнее см. раздел документации
+Варианты отчетов.</p>
+<p class="Paragraph0c">Для формирования
+и настройки отчетов должна быть установлена роль<span class="Interface"> Полные права</span>.</p>
+<a data-original-name="_Изменение_участников_групп" name="_изменение_участников_групп"></a><a data-original-name="IssOgl1_Изменение_участников_групп_доступа" name="issogl1_изменение_участников_групп_доступа"><h2>Изменение участников групп доступа</h2></a>
+<p class="Paragraph0c">Отчет<b> </b><b>Изм<span class="Interface">енение участников
+групп доступа</span><strong> </strong></b>предназначен для отслеживания
+изменений по событиям журнала регистрации, происходящих с участниками группы
+доступа. С помощью данного отчета можно узнать, кто был добавлен в группу
+доступа, кто был удален, а также изменилась ли активность конкретного
+пользователя внутри группы за указанный период. </p>
+<p class="Paragraph0c">Основные
+параметры настройки выведены в шапку отчета. С помощью кнопки <img alt="" height="23" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image234.png?_=000000980DB79B3C-v10" style="aspect-ratio:21/23" width="21"/> выберите из списка <span class="Interface">Участника</span>,
+по которому будет формироваться отчет, а также нужную группу доступа, например,
+<span class="Note"><b>Пользователи</b></span>.
+</p>
+<p class="Paragraph0c">Для дальнейшей
+настройки параметров и полей отчета воспользуйтесь кнопкой <span class="Interface">Настройки.</span> Подробнее
+см. раздел документации Варианты отчетов.</p>
+<p class="Picture"><img alt="" height="937" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1537.png?_=00071D04800626AE-v10" style="aspect-ratio:1479/937" width="1479"/></p>
+<a data-original-name="_Изменение_разрешенных_значений" name="_изменение_разрешенных_значений"></a><a data-original-name="IssOgl1_Изменение_разрешенных_значений_групп_доступа" name="issogl1_изменение_разрешенных_значений_групп_доступа"><h2>Изменение разрешенных значений групп доступа</h2></a>
+<p class="Paragraph0c">Отчет<b> </b><b>Изменение разрешенных значений групп
+доступа</b> выводит изменения разрешенных значений групп доступа с учетом
+изменения групп значений за указанный период по событиям журнала регистрации. Отчет
+позволяет контролировать и анализировать, какие значения были добавлены, изменены
+или удалены из соответствующих групп доступа в приложении. </p>
+<p class="Picture"><img alt="" height="932" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1539.png?_=000557FED5760E2C-v10" style="aspect-ratio:1391/932" width="1391"/></p>
+<p class="Paragraph0c">Основные
+параметры настройки выведены в шапку отчета. Для дальнейшей настройки
+параметров и полей отчета воспользуйтесь кнопкой <span class="Interface">Настройки.</span> Подробнее см. раздел документации Варианты
+отчетов.</p>
+<a data-original-name="_Изменение_ролей_профилей" name="_изменение_ролей_профилей"></a><a data-original-name="IssOgl1_Изменение_ролей_профилей" name="issogl1_изменение_ролей_профилей"><h2>Изменение ролей профилей</h2></a>
+<p class="Paragraph0c">Отчет<b> </b><b>Изменение ролей профилей</b> выводит
+изменения ролей профилей с учетом изменения состава ролей в метаданных на
+указанный период по событиям журнала регистрации.</p>
+<p class="Picture">            <img alt="" height="931" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1541.png?_=00060A96ED1AC68F-v10" style="aspect-ratio:1376/931" width="1376"/></p>
+<p class="Paragraph0c">В отчете по умолчанию предоставляются сведения
+о предыдущих ролях профилей, а также отображаются измененные роли. Также в
+отчет выдаются сведения:</p>
+<p class="Bullet1"><span class="Interface">■  </span><span class="Interface">Дата и время изменения – </span><span class="Interface">когда произошли изменения с ролями профилей
+пользователя; </span></p>
+<p class="Bullet1">■  <span class="Interface">Пользователь –</span><span class="Interface"> имя пользователя, чьи роли профилей были изменены</span>;
+</p>
+<p class="Bullet1"><span class="Interface">■ 
+</span><span class="Interface">Действие </span><span class="Interface">– отражает были ли роли
+профилей добавлены, изменены или удалены.</span></p>
+<p class="Paragraph0c">Основные
+параметры настройки выведены в шапку отчета. Для дальнейшей настройки
+параметров и полей отчета воспользуйтесь кнопкой <span class="Interface">Настройки.</span> Подробнее см. раздел документации Варианты
+отчетов.</p>
+<a data-original-name="_Аудит_доступа_к" name="_аудит_доступа_к"></a><a data-original-name="IssOgl1_Аудит_доступа_к_данным" name="issogl1_аудит_доступа_к_данным"><h2>Аудит доступа к данным</h2></a>
+<p class="Paragraph0c"><b>Журнал доступа к</b> <b>данным </b>позволяет администратору приложения проводить <b>Аудит доступа</b> к определенным данным, для
+того чтобы узнать, кто и когда их просматривал.</p>
+<p class="Paragraph0c">Предварительно
+требуется настроить доступ к данным, включив флажок <b>Регистрировать доступ к данным</b> (раздел <strong>Администрирование</strong>
+- <strong>Настройки пользователей и прав</strong> - группа <strong>Аудит
+доступа к данным</strong>). Затем перейти по ссылке <span class="Interface">Настройки.
+</span></p>
+<p class="Picture"><img alt="" height="804" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1543.png?_=00043BEF9D317815-v10" style="aspect-ratio:1600/804" width="1600"/></p>
+<p class="Paragraph0c">Далее выберите
+события, которые необходимо отслеживать. Например, для того чтобы администратору
+узнать кто и когда поменял важные реквизиты ИНН, Договор по умолчанию и КПП у
+контрагента, нужно предварительно в настройках регистрации событий выбрать
+объекты метаданных <span class="Note">Справочники.Демо:Контрагенты</span>,
+а в <span class="Interface">Поле таблицы</span> отметить флажками <span class="Note">ИНН, КПП, Договор по умолчанию</span>. </p>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"> </p>
+<p class="Picture"><img alt="" height="862" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1545.png?_=000513AE345ABFE1-v10" style="aspect-ratio:1600/862" width="1600"/></p>
+<p class="Paragraph0c">После выполнения
+данных действий приложение будет автоматически фиксировать информацию кто и
+когда осуществлял доступ к этим данным и отображать ее красным цветом в <span class="Interface">Журнале доступа к данным</span>. </p>
+<p class="Picture"><img alt="" height="863" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1547.png?_=0006568AB10E5F3F-v10" style="aspect-ratio:1600/863" width="1600"/></p>
+<p class="Paragraph0c">Также если
+таблицы или их поля с настройкой контроля доступа были удалены или
+переименованы в <span class="Interface">Конфигураторе </span>приложения, (подробнее
+см. книгу «1С:Предприятие 8.3. Руководство разработчика».) тогда у
+администратора появляется текущее дело по актуализации настроек.</p>
+<p class="Picture"><img alt="" height="518" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1549.png?_=0002AAB85CF4BEE5-v10" style="aspect-ratio:1002/518" width="1002"/></p>
+<a data-original-name="IssOgl1_Роли_для_контроля_работы_пользователей" name="issogl1_роли_для_контроля_работы_пользователей"><h2>Роли для контроля работы пользователей</h2></a>
+<p class="Paragraph0c">Для контроля
+работы пользователей в приложении предусмотрена следующая роль:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Роль</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Краткое
+  описание</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Полные права</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Настраивать и формировать отчеты из группы <span class="Interface">Контроль работы пользователей</span>, настраивать и выполнять
+  аудит доступа к данным</p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+</main></body></html>

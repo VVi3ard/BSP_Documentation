@@ -1,0 +1,27 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ЕстьПраво</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_УправлениеДоступомЕстьПраво" name="_управлениедоступоместьправо"></a><h1>ЕстьПраво</h1>
+<pre> Проверяет, что для пользователя настроено разрешение права для объекта.
+  Например, для папки файлов могут быть настроены права "УправлениеПравами", "Чтение", "ИзменениеПапок",
+ причем право "Чтение" является как правом для папки файлов, так и правом для файлов.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ЕстьПраво(Право, СсылкаНаОбъект, Знач Пользователь = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Право          - Строка - имя права, как оно указано в процедуре ПриЗаполненииВозможныхПравДляНастройкиПравОбъектов
+                   общего модуля УправлениеДоступомПереопределяемый.
+  СсылкаНаОбъект - СправочникСсылка
+                 - ПланВидовХарактеристикСсылка - ссылка на одного из владельцев прав,
+                   указанных в процедуре ПриЗаполненииВозможныхПравДляНастройкиПравОбъектов
+                   общего модуля УправлениеДоступомПереопределяемый, например ссылка на папку файлов.
+  Пользователь   - СправочникСсылка.Пользователи
+                 - СправочникСсылка.ВнешниеПользователи
+                 - Неопределено - если параметр не указан,
+                     тогда право проверяется для текущего пользователя.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Булево - если Истина, то настроено разрешение права с учетом всех разрешающих и
+           запрещающих настроек в иерархии.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = УправлениеДоступом.ЕстьПраво(Право, СсылкаНаОбъект, Пользователь)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

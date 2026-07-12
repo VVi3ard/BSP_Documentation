@@ -1,0 +1,23 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>СписокЗадачПередНачаломДобавления</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_БизнесПроцессыИЗадачиКлиентСписокЗадачПередНачаломДобавления" name="_бизнеспроцессыизадачиклиентсписокзадачпередначаломдобавления"></a><h1>СписокЗадачПередНачаломДобавления</h1>
+<pre> Стандартный обработчик ПередНачаломДобавления для списков задач.
+  Для вызова из обработчика события таблицы формы ПередНачаломДобавления.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура СписокЗадачПередНачаломДобавления(Форма, Элемент, Отказ, Копирование, Родитель, Группа) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Форма        - ФормаКлиентскогоПриложения - форма задачи.
+  Элемент      - ТаблицаФормы - элементы таблицы формы.
+  Отказ        - Булево - признак отказа от добавления объекта. Если в теле процедуры-обработчика установить данному
+                          параметру значение Истина, то добавление объекта выполнено не будет.
+  Копирование  - Булево - определяет режим копирования. Если установлено Истина, то происходит копирование строки. 
+  Родитель     - Неопределено
+               - СправочникСсылка
+               - ПланСчетовСсылка - ссылка на элемент, который будет использован при
+                                    добавлении в качестве родителя.
+  Группа       - Булево - признак добавления группы. Истина - будет добавлена группа. </pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>БизнесПроцессыИЗадачиКлиент.СписокЗадачПередНачаломДобавления(Форма, Элемент, Отказ, Копирование, Родитель, Группа)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

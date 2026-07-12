@@ -1,0 +1,22 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ОпределитьРазделыСВариантамиОтчетов</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ВариантыОтчетовПереопределяемыйОпределитьРазделыСВариантамиОтчетов" name="_вариантыотчетовпереопределяемыйопределитьразделысвариантамиотчетов"></a><h1>ОпределитьРазделыСВариантамиОтчетов</h1>
+<pre> Определяет разделы командного интерфейса, в которых предусмотрены панели отчетов.
+ В Разделы необходимо добавить метаданные тех подсистем первого уровня,
+ в которых размещены команды вызова панелей отчетов.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ОпределитьРазделыСВариантамиОтчетов(Разделы) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Разделы - СписокЗначений - разделы, в которые выведены команды открытия панели отчетов:
+      * Значение - ОбъектМетаданныхПодсистема
+                 - Строка - подсистема раздела глобального командного интерфейса,
+                   либо ВариантыОтчетовКлиентСервер.ИдентификаторНачальнойСтраницы для начальной страницы.
+      * Представление - Строка - заголовок панели отчетов в этом разделе.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример реализации</span></p>
+<pre> Разделы.Добавить(Метаданные.Подсистемы.Анкетирование, НСтр("ru = 'Отчеты по анкетированию'"));
+ Разделы.Добавить(ВариантыОтчетовКлиентСервер.ИдентификаторНачальнойСтраницы(), НСтр("ru = 'Основные отчеты'"));</pre>
+<p class="Paragraph0c"><span class="Bold">Расположение</span></p>
+<pre> Общий модуль ВариантыОтчетовПереопределяемый</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

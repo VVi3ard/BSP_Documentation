@@ -1,0 +1,174 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.49 Префиксация объектов</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.49 Префиксация объектов</h1>
+<p class="Paragraph0c">Приложение позволяет автоматически назначать префиксы
+документам и элементам списков в разрезе организаций и приложений.</p>
+<p class="Paragraph0c">Предусмотрена возможность сохранения правильной нумерации
+объектов приложений:</p>
+<p class="Bullet1">■ 
+если изменился префикс приложения; </p>
+<p class="Bullet1">■ 
+если изменился формат номера или кода объектов.</p>
+<a data-original-name="IssOgl1_Префиксация_в_разрезе_организаций" name="issogl1_префиксация_в_разрезе_организаций"><h2>Префиксация в разрезе организаций</h2></a>
+<p class="Paragraph0c">Для ряда первичных документов организации требуется
+последовательная, непрерывная нумерация в течение года. <span class="Note">Например, к таким документам относятся
+счета, счета-фактуры, приходные и расходные ордера</span>.</p>
+<p class="Paragraph0c">Для разделения диапазонов нумерации документов,
+принадлежащих разным организациям, используется префикс, указанный в элементе
+списка<span class="Interface"> </span><span class="Note"><b>Демо: Организации</b></span>. Для
+наглядной идентификации документов в списках рекомендуется устанавливать
+префикс организаций таким образом, чтобы он соответствовал ее названию.
+Например, для организаций с названиями «Альфа» и «Омега», учет по которым
+ведется в одном приложении, можно задать префиксы <span class="Interface">АЛ</span>
+и <span class="Interface">ОМ</span> соответственно. Необходимо задать префикс до
+начала ввода документов.</p>
+<p class="Picture"><img alt="" height="939" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2803.png?_=0001416523782E0B-v10" style="aspect-ratio:1018/939" width="1018"/></p>
+<p class="Paragraph0c">После этого в нумерации документов организаций
+используется указанный префикс.</p>
+<p class="Paragraph0c">Номер документа будет автоматически переформирован в
+случае, если у существующего документа изменить организацию или изменить дату
+таким образом, что она будет входить в другой диапазон периодичности номера
+документа, например, в другой год.</p>
+<p class="Picture"><img alt="" height="989" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2805.png?_=0001525BF6AA0AC6-v10" style="aspect-ratio:1018/989" width="1018"/></p>
+<p class="Paragraph0c">При выводе документов на печать префикс организации
+автоматически удаляется из номера, поскольку организация, как правило,
+выводится в отдельном поле печатной формы.</p>
+<p class="Picture"><img alt="" height="662" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2807.png?_=0000C52DA61FA548-v10" style="aspect-ratio:906/662" width="906"/></p>
+<a data-original-name="IssOgl1_Префиксация_в_разрезе_приложения" name="issogl1_префиксация_в_разрезе_приложения"><h2>Префиксация в разрезе приложения</h2></a>
+<p class="Paragraph0c">Префикс приложения надо задавать, когда планируется
+настроить синхронизацию данных с другим приложением. Префикс добавляется к
+кодам элементов справочников и номерам документов для того, чтобы различать, в
+каком из приложений они были введены, и избежать дублирования данных.</p>
+<p class="Paragraph0c">Для того чтобы задать или изменить префикс приложения, включите
+флажок <span class="Interface">Синхронизация данных</span> в разделе <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Синхронизация данных</span>. Подробнее см. раздел
+документации Синхронизация данных.</p>
+<a data-original-name="IssOgl1_Правила_формирования_префикса" name="issogl1_правила_формирования_префикса"><h2>Правила формирования префикса</h2></a>
+<p class="Paragraph0c">Префиксы назначаются всем справочникам и документам,
+которые имеют автоматически назначаемый код и номер. Например, справочник <span class="Note"><b>Демо: Номенклатура</b></span>,
+документ <span class="Note"><b>Демо:
+Заказ покупателя</b></span>. Дополнительно всем объектам ИБ, связанным с
+конкретной организацией, назначается префикс организации.</p>
+<p class="Paragraph0c">Формат номера имеет фиксированную длину префикса приложения
+и префикса организации, а также фиксированное месторасположение префиксов в
+номере.</p>
+<p class="Paragraph0c">Формат номера:</p>
+<p class="Paragraph0c">ААББ-ПП0000123, где</p>
+<p class="Bullet1">■ 
+АА – префикс организации;</p>
+<p class="Bullet1">■ 
+ББ – префикс приложения;</p>
+<p class="Bullet1">■ 
+ПП – дополнительный пользовательский префикс;</p>
+<p class="Bullet1">■ 
+123 – номер объекта.</p>
+<p class="Paragraph0c">Если префикс приложения или префикс организации не указан,
+то считается, что задан префикс по умолчанию: «00» (два нуля). При выводе на
+печать, помимо префикса организации также удаляются ведущие нули (незначимые
+разряды).</p>
+<p class="Paragraph0c">Пример префиксов для документа с номером «00777» приведены
+ниже:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Префикс организации</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Префикс РИБ</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Номер с префиксом</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Номер в печатной форме</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">ОР</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">ИБ</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">ОРИБ-00777</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">ИБ-777</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">-</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">ИБ</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">00ИБ-00777</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">ИБ-777</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">ОР</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">-</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">ОР00-00777</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">777</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">-</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">-</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">0000-00777</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">777</p>
+</td>
+</tr>
+</tbody></table>
+<a data-original-name="_Правила_перепрефиксации_объектов" name="_правила_перепрефиксации_объектов"></a><a data-original-name="IssOgl1_Роли_для_префиксации_объектов" name="issogl1_роли_для_префиксации_объектов"><h2>Роли для префиксации объектов</h2></a>
+<p class="Paragraph0c">Для префиксации объектов в приложении предусмотрены
+следующие роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Роль</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Краткое описание</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Полные права</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дает право на проведение
+  префиксации объектов в разрезе приложения.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Добавление и изменение общей базовой нормативно-справочной информации</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дает право на назначение
+  префиксов в разрезе организаций.</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+</main></body></html>

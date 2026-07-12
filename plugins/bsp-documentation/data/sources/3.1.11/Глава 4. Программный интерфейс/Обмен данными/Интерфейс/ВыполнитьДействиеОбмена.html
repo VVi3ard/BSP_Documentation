@@ -1,0 +1,26 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ВыполнитьДействиеОбмена</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбменДаннымиСерверВыполнитьДействиеОбмена" name="_обменданнымисервервыполнитьдействиеобмена"></a><h1>ВыполнитьДействиеОбмена</h1>
+<pre> Выполняет отправку или получение данных для узла информационной базы используя любой из 
+ доступных для плана обмена канал связи, кроме COM-соединения и web-сервиса.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ВыполнитьДействиеОбмена(
+		Отказ,
+		УзелИнформационнойБазы,
+		ДействиеПриОбмене,
+		ИдентификаторТранспорта = Неопределено,
+		ДополнительныеПараметры = Неопределено) Экспорт </pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Отказ                        - Булево - флаг отказа, устанавливается в Истина в случае
+                                 не успешного выполнения процедуры.
+  УзелИнформационнойБазы       - УзелОбменаСсылка - ПланОбменаСсылка - узел плана обмена,
+                                 для которого выполняется действие обмена данными.
+  ДействиеПриОбмене            - ПеречислениеСсылка.ДействияПриОбмене - выполняемое действие обмена данными.
+  ИдентификаторТранспорта      - Строка, Неопределено - тип транспорта, который будет использоваться в процессе обмена
+                                                        данными.
+  ДополнительныеПараметры      - Структура - зарезервировано для служебного использования.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОбменДаннымиСервер.ВыполнитьДействиеОбмена(Отказ, УзелИнформационнойБазы, ДействиеПриОбмене, ИдентификаторТранспорта, ДополнительныеПараметры)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

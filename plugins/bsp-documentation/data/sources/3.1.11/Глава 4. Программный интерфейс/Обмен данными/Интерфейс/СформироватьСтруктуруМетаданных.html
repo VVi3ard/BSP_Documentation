@@ -1,0 +1,26 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>СформироватьСтруктуруМетаданных</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_РегистрацияИзмененийДляОбменаДаннымиСформироватьСтруктуруМетаданных" name="_регистрацияизмененийдляобменаданнымисформироватьструктуруметаданных"></a><h1>СформироватьСтруктуруМетаданных</h1>
+<pre> Возвращает структуру, описывающую метаданные для плана обмена.
+ Объекты, не входящие в состав плана обмена, исключаются.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция СформироватьСтруктуруМетаданных(ИмяПланаОбмена = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>    ИмяПланаОбмена - Строка           - имя метаданных плана обмена, для которого строится дерево конфигурации.
+                   - ПланОбменаСсылка - дерево конфигурации строится для его плана обмена.
+                   - Неопределено     - строится дерево всей конфигурации.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>    Структура - описание метаданных. Поля:
+         * СтруктураИмен              - Структура - Ключ - группа метаданных (константы, справочники и т.п.),
+                                                    значение - массив полных имен.
+         * СтруктураПредставлений     - Структура - Ключ - группа метаданных (константы, справочники и т.п.),
+                                                    значение - массив полных имен.
+         * СтруктураАвторегистрации   - Структура - Ключ - группа метаданных (константы, справочники и т.п.),
+                                                    значение - массив флагов авторегистрации на узле.
+         * Дерево                     - см. ДеревоОбъектовМетаданных</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОбработкаОбъект = Обработки.РегистрацияИзмененийДляОбменаДанными.Создать();
+Результат = ОбработкаОбъект.СформироватьСтруктуруМетаданных();</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

@@ -1,0 +1,22 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ВыполнитьОбновлениеИнформационнойБазы</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбновлениеИнформационнойБазыВыполнитьОбновлениеИнформационнойБазы" name="_обновлениеинформационнойбазывыполнитьобновлениеинформационнойбазы"></a><h1>ВыполнитьОбновлениеИнформационнойБазы</h1>
+<pre> Выполнить неинтерактивное обновление данных ИБ.
+ Для вызова через внешнее соединение.
+ При вызове метода с подключенными расширениями, модифицирующими роли конфигурации, будет вызвано исключение.
+ Важно: Перед вызовом метода необходимо запустить удаление устаревших патчей,
+ см. функцию <a href="../../../Обновление конфигурации/Интерфейс/ИсправленияИзменены.html" target="_top">ОбновлениеКонфигурации.ИсправленияИзменены</a>().
+ Для использования в других библиотеках и конфигурациях.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ВыполнитьОбновлениеИнформационнойБазы(ВыполнятьОтложенныеОбработчики = Ложь) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ВыполнятьОтложенныеОбработчики - Булево - если Истина, отложенное обновление будет выполнено
+    в основном цикле обновления. Только для клиент-серверного режима работы.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Строка -  признак выполнения обработчиков обновления:
+           "Успешно", "НеТребуется", "ОшибкаУстановкиМонопольногоРежима".</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ОбновлениеИнформационнойБазы.ВыполнитьОбновлениеИнформационнойБазы(ВыполнятьОтложенныеОбработчики)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

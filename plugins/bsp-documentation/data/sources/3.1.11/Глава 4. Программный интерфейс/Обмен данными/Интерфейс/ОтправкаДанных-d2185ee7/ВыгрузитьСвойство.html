@@ -1,0 +1,22 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ВыгрузитьСвойство</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбменДаннымиXDTOСерверВыгрузитьСвойство" name="_обменданнымиxdtoсервервыгрузитьсвойство"></a><h1>ВыгрузитьСвойство</h1>
+<pre> Выгружает свойство объекта информационной базы в соответствии с правилами.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ВыгрузитьСвойство(КомпонентыОбмена, ДанныеИБ, ПолучательСвойства, ПКС, СтекВыгрузки, ЭтапВыгрузки = 1) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  КомпонентыОбмена   - Структура - содержит все правила и параметры обмена.
+  ДанныеИБ           - ЛюбаяСсылка - ссылка на выгружаемый объект информационной базы.
+  ПолучательСвойства - Структура - получатель данных типа Структура, в которой должно храниться значение выгруженного свойства.
+                     - СтрокаТаблицыЗначений.
+  ПКС                - СтрокаТаблицыЗначений - строка таблицы правил конвертации свойств, в соответствии с которой
+                                               выполняется преобразование.
+  СтекВыгрузки       - Массив из ЛюбаяСсылка - ссылки на выгружаемые объекты с учетом вложенности.
+  ЭтапВыгрузки       - Число - содержит информацию об этапе выгрузки:
+     1 - выгрузка до выполнения алгоритма ПриОтправкеДанных, 
+     2 - выгрузка после выполнения алгоритма ПриОтправкеДанных.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОбменДаннымиXDTOСервер.ВыгрузитьСвойство(КомпонентыОбмена, ДанныеИБ, ПолучательСвойства, ПКС, СтекВыгрузки, ЭтапВыгрузки)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

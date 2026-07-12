@@ -1,0 +1,25 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПроверитьНазначениеРолей</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ПользователиПроверитьНазначениеРолей" name="_пользователипроверитьназначениеролей"></a><h1>ПроверитьНазначениеРолей</h1>
+<pre> Проверяет соответствие прав ролей назначению ролей, указанному 
+ в процедуре ПриОпределенииНазначенияРолей общего модуля ПользователиПереопределяемый.
+ Применяется в случаях:
+  - проверка безопасности конфигураций перед автоматическим обновлением на новую версию;
+  - проверка конфигурации перед сборкой;
+  - проверка конфигурации при разработке.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ПроверитьНазначениеРолей(ПроверитьВсе = Ложь, СписокОшибок = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ПроверитьВсе - Булево - если Ложь, тогда пропускается проверка назначения ролей
+                          по требованиям технологий сервиса (что быстрее), в противном случае
+                          проверка выполняется, если разделение включено.
+  СписокОшибок - Неопределено   - если ошибки найдены, формируется текст ошибок и вызывается исключение.
+               - СписокЗначений - возвращаемое значение. Найденные ошибки добавляются в список без вызова исключения:
+                   * Значение      - Строка - имя роли.
+                                   - Неопределено - роль, указанная в процедуре, не существует в метаданных.
+                   * Представление - Строка - текст ошибки.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Пользователи.ПроверитьНазначениеРолей(ПроверитьВсе, СписокОшибок)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

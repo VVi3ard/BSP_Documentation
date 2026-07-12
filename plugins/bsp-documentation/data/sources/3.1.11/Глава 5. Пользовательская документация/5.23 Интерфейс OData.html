@@ -1,0 +1,101 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.23 Интерфейс OData</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.23 Интерфейс OData</h1>
+<p class="Paragraph0c">Стандартный интерфейс OData – это REST
+интерфейс прикладного решения, который можно опубликовать на веб-сервере. Через
+REST-сервис внешние
+приложения взаимодействуют с информационной базой с помощью HTTP-запросов. Он позволяет читать
+данные, изменять их, создавать новые объекты данных и удалять существующие.
+Подробнее см. документацию 1С:Предприятие 8.3. <a href="https://its.1c.ru/db/v83doc/bookmark/dev/TI000001358" target="_top">Руководство
+разработчика</a>.</p>
+<p class="Paragraph0c">Интерфейс OData
+позволяет настроить REST-сервис для обмена со сторонними приложениями,
+например, для решения таких задач:</p>
+<p class="Bullet1">■ 
+интеграция с интернет-сайтами и
+интернет-магазинами;</p>
+<p class="Bullet1">■ 
+реализация сторонними средствами дополнительных
+функций без изменения приложения;</p>
+<p class="Bullet1">■ 
+загрузка и выгрузка данных;</p>
+<p class="Bullet1">■ 
+интеграция с корпоративными приложениями без
+дополнительного программирования. </p>
+<p class="Paragraph0c">Можно выполнить также:</p>
+<p class="Bullet1">■ 
+Получение списка документов или других
+элементов, с использованием различных фильтров;</p>
+<p class="Bullet1">■ 
+Получение данных документа или элемента списка;</p>
+<p class="Bullet1">■ 
+Редактирование данных одного документа или
+элемента списка;</p>
+<p class="Bullet1">■ 
+Создание нового элемента списка или документа;</p>
+<p class="Bullet1">■ 
+Проведение одного документа, старт
+бизнес-процесса.</p>
+<a data-original-name="IssOgl1_Настройка_OData" name="issogl1_настройка_odata"><h2>Настройка OData</h2></a>
+<p class="Paragraph0c">В разделе <span class="Note"><b>Администрирование</b></span>
+– <span class="Interface">Синхронизация данных</span> перейдите по ссылке <span class="Interface">Настройки стандартного интерфейса OData</span>, для того чтобы
+произвести настройки автоматического REST-сервиса для запроса и обновления
+данных. </p>
+<p class="Picture"><img alt="" height="669" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1276.png?_=0001C601B55F2EAF-v10" style="aspect-ratio:1192/669" width="1192"/></p>
+<p class="Paragraph0c">REST-сервис позволяет читать данные 1С:Предприятия,
+изменять их, создавать новые объекты данных и удалять существующие. При этом синхронизация данных может быть
+отключена. </p>
+<p class="Paragraph0c">В целях безопасности для доступа к REST-сервису рекомендуется использовать
+отдельную учетную запись пользователя, т. к. REST-сервис предназначен только для сторонних приложений.</p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Авторизация</span>
+включите флажок <span class="Interface">Создать для использования автоматического
+REST-сервиса отдельные имя пользователя и пароль</span> (рекомендуется).</p>
+<p class="Paragraph0c">Напишите <span class="Interface">Имя пользователя</span>, <span class="Interface">Пароль</span> и <span class="Interface">Подтверждение пароля</span>.
+Нажмите кнопку <span class="Interface">Сохранить</span>.</p>
+<p class="Paragraph0c">В разделе <span class="Interface">Информация для
+разработчиков</span> можно подробнее ознакомиться с описанием технологии
+REST-сервиса и с документацией по его использованию с помощью гиперссылок.</p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Состав</span>
+можно определить, какие данные будут участвовать в работе автоматического
+REST-сервиса. Для этого нажмите кнопку <span class="Interface">Загрузить
+метаданные</span> и с помощью флажков предоставьте доступ к основным и
+подчиненным данным. Например, если выбрать список <span class="Interface">Валюты</span>,
+то приложение автоматически подбирает зависимое перечисление <span class="Interface">Способы установки курса валюты</span>, без которого стороннее приложение
+не сможет работать со списком.</p>
+<p class="Picture"><img alt="" height="666" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1278.png?_=00011E8F63FCFB21-v10" style="aspect-ratio:1188/666" width="1188"/></p>
+<p class="Paragraph0c">После предоставления доступа к данным нажмите <span class="Interface">Сохранить и закрыть</span> для продолжения работы в приложении.
+Теперь сторонние приложения получат доступ к выбранным данным.</p>
+<a data-original-name="IssOgl1_Роли_для_работы_с_интерфейсом_OData" name="issogl1_роли_для_работы_с_интерфейсом_odata"><h2>Роли для работы с интерфейсом OData</h2></a>
+<p class="Paragraph0c">Для работы с интерфейсом OData в приложении предусмотрены
+следующие роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Роль</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Краткое описание</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Полные права</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Управление доступом и
+  настройка списка объектов, доступ к которым предоставлен внешним приложениям
+  с помощью стандартного интерфейса OData.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Удаленный доступ </span><span class="Interface">OData</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Чтение, изменение и
+  удаление данных прикладного решения из внешних приложений.</p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+</main></body></html>

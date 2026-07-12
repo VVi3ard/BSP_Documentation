@@ -1,0 +1,22 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ВыключитьПрофильПользователю</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_УправлениеДоступомВыключитьПрофильПользователю" name="_управлениедоступомвыключитьпрофильпользователю"></a><h1>ВыключитьПрофильПользователю</h1>
+<pre> Отмена назначения пользователю профиля групп доступа путем исключения
+ из персональной группы доступа (только для упрощенной настройки прав).</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ВыключитьПрофильПользователю(Пользователь, Профиль = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Пользователь - СправочникСсылка.Пользователи
+               - СправочникСсылка.ВнешниеПользователи - требуемый пользователь.
+  Профиль      - СправочникСсылка.ПрофилиГруппДоступа - профиль, для которого нужно найти или создать персональную
+                    группу доступа и включить в нее пользователя.
+               - УникальныйИдентификатор - уникальный идентификатор поставляемого профиля,
+                    с помощью которого нужно найти профиль групп доступа.
+               - Строка - имя поставляемого профиля,
+                    с помощью которого нужно найти профиль групп доступа.
+               - Неопределено - выключить пользователю все профили.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>УправлениеДоступом.ВыключитьПрофильПользователю(Пользователь, Профиль)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

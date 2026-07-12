@@ -1,0 +1,26 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ОтносительнаяДатаСинхронизации</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбменДаннымиСерверОтносительнаяДатаСинхронизации" name="_обменданнымисерверотносительнаядатасинхронизации"></a><h1>ОтносительнаяДатаСинхронизации</h1>
+<pre> Возвращает представление относительной даты синхронизации.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ОтносительнаяДатаСинхронизации(Знач ДатаСинхронизации) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ДатаСинхронизации - Дата - абсолютная дата синхронизации данных.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Строка - представление относительной даты синхронизации:
+    *Никогда             (Т = пустая дата).
+    *Сейчас              (Т &lt; 5 мин)
+    *5 минут назад       (5 мин  &lt; Т &lt; 15 мин)
+    *15 минут назад      (15 мин  &lt; Т &lt; 30 мин)
+    *30 минут назад      (30 мин  &lt; Т &lt; 1 час)
+    *1 час назад         (1 час  &lt; Т &lt; 2 час)
+    *2 часа назад        (2 час  &lt; Т &lt; 3 час).
+    *Сегодня, 12:44:12   (3 час  &lt; Т &lt; вчера).
+    *Вчера, 22:30:45     (вчера  &lt; Т &lt; позавчера).
+    *Позавчера, 21:22:54 (позавчера  &lt; Т &lt; поза-позавчера).
+    *&lt;12 Марта 2012г.&gt;   (поза-позавчера &lt; Т).</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ОбменДаннымиСервер.ОтносительнаяДатаСинхронизации(ДатаСинхронизации)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

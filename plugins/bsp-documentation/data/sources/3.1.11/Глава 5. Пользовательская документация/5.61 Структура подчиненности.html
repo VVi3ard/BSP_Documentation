@@ -1,0 +1,82 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.61 Структура подчиненности</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.61 Структура подчиненности</h1>
+<p class="Paragraph0c">Отчет<span class="Interface"> Связанные документы</span> предоставляет
+оперативный и наглядный доступ ко всей цепочке взаимосвязанных с точки зрения
+бизнес‑логики документов и списков. </p>
+<p class="Paragraph0c">Документы или списки приложения считаются
+взаимосвязанными, если один из них ссылается на другой. <span class="Note">Например, клиент заказал товар, для
+отражения данного события в </span>приложении<span class="Note"> был создан документ <b>Демо: Заказ покупателя</b>, затем на основании документа <b>Демо: Заказ
+покупателя</b> был сформирован документ <b>Демо: Счет на оплату покупателю</b>,
+клиент оплатил этот счет, товар был ему отпущен и на основании документа <b>Демо:
+Счет на оплату покупателю</b> был сформирован документ <b>Демо: Реализация
+товаров</b>.</span> </p>
+<p class="Paragraph0c">В приложении взаимосвязь документов или списков выглядит
+так: в одном документе (назовем его дочерним) в качестве какого-либо реквизита
+указан другой документ или элемент списка (назовем его родительским). Отчет
+позволяет из какого-либо одного документа или элемента списка приложения
+увидеть всю цепочку взаимосвязанных с ним документов.</p>
+<p class="Paragraph0c">Отчет можно сформировать:</p>
+<p class="Paragraph0c">Для документов приложения:</p>
+<p class="Bullet1">■ 
+<span class="Note"><b>Демо: Заказ покупателя</b></span>;</p>
+<p class="Bullet1">■ 
+<span class="Note"><b>Демо: Счет на оплату покупателю</b></span>;</p>
+<p class="Bullet1">■ 
+<span class="Note"><b>Демо: Реализация товаров</b></span>.</p>
+<p class="Paragraph0c">Для списков:</p>
+<p class="Paragraph0c"><span class="Note"><b>Демо:
+Договоры контрагентов</b></span>.</p>
+<p class="Paragraph0c">Отчет формируется по ссылке <span class="Interface">Связанные
+документы</span> на панели навигации документов или элементов списков, также по
+команде <span class="Interface">Отчеты – Связанные документы</span>. </p>
+<p class="Picture"><img alt="" height="508" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3328.png?_=0000DA0A3160D793-v10" style="aspect-ratio:886/508" width="886"/></p>
+<p class="Paragraph0c">В отчет попадают все дочерние и все родительские объекты
+текущего документа или элемента списка. В наглядной форме представлена
+взаимосвязь этих объектов. </p>
+<p class="Paragraph0c">Документ или элемент списка, для которого сформирован отчет,
+отображается жирным шрифтом. </p>
+<p class="Paragraph0c">Дерево родительских объектов приложения строится вверх и
+вправо от документа или элемента списка, для которого формируется отчет. </p>
+<p class="Picture"><img alt="" height="357" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3330.png?_=000094DE7A05A47A-v10" style="aspect-ratio:894/357" width="894"/></p>
+<p class="Paragraph0c">Дерево дочерних объектов строится вниз и вправо от
+документа или элемента списка, для которого формируется отчет. </p>
+<p class="Paragraph0c">При помощи двойного щелчка мышью на любом выведенном в
+отчете документе или элементе списка можно открыть его для просмотра. С помощью
+кнопки <span class="Interface">Обновить</span> можно переформировать отчет. </p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Вывести для
+текущего</span> можно сформировать отчет <span class="Interface">Связанные
+документы</span> для выделенного документа или элемента списка.</p>
+<p class="Picture"><img alt="" height="407" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3332.png?_=0000ADB84204E0E6-v10" style="aspect-ratio:894/407" width="894"/></p>
+<p class="Paragraph0c">Также в списке <span class="Interface">Связанные документы</span> с помощью кнопок панели навигации можно:</p>
+<p class="Bullet1">■ 
+Произвести поиск;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Провести</span> документ
+или отменить проведение;</p>
+<p class="Bullet1">■ 
+Пометить на удаление.</p>
+<a data-original-name="IssOgl1_Роли_для_работы_со_структурой_подчиненности" name="issogl1_роли_для_работы_со_структурой_подчиненности"><h2>Роли для работы со структурой подчиненности</h2></a>
+<p class="Paragraph0c">Для формирования отчета <span class="Interface">Связанные
+документы</span> в приложении предусмотрены следующие роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Роль</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Краткое описание</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Просмотр связанных документов</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Предоставляет возможность
+  формирования отчета <span class="Interface">Связанные документы</span>.</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+</main></body></html>

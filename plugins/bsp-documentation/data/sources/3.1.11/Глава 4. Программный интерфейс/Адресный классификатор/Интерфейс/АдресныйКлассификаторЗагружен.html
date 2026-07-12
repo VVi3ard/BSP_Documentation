@@ -1,0 +1,20 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>АдресныйКлассификаторЗагружен</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_АдресныйКлассификаторАдресныйКлассификаторЗагружен" name="_адресныйклассификаторадресныйклассификаторзагружен"></a><h1>АдресныйКлассификаторЗагружен</h1>
+<pre> Определяет наличие адресных сведений в адресном классификаторе.
+ Из-за проверки доступности веб-сервиса выполнение функции может занимать 7 секунд.
+ Поэтому для исключения зависаний пользовательского интерфейса, например при открытии формы,
+ функцию следует вызвать в фоновом задании.
+ При использовании веб-сервиса фирмы "1С" предоставляющего через Интернет сведения об
+ адресах РФ в формате адресного классификатора, всегда возвращает Истина, если подключена интернет-поддержка пользователей.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция АдресныйКлассификаторЗагружен() Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>     Булево - Истина, если адресный классификатор содержит сведения хотя бы по одному региону
+              или подключен и доступен веб-сервис.
+              Ложь, если адресные сведения отсутствуют, а веб-сервис недоступен.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = АдресныйКлассификатор.АдресныйКлассификаторЗагружен()</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

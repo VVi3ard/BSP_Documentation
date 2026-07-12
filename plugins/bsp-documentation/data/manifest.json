@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "bsp_releases": [
+    {
+      "documentation_version": "3.1.11",
+      "index_family": "3.1",
+      "navigation_version": "3.1.11",
+      "demo_version": "3.1.11.115",
+      "demo_path": "demo/3.1.11.115",
+      "demo_format": "1c-edt"
+    }
+  ]
+}

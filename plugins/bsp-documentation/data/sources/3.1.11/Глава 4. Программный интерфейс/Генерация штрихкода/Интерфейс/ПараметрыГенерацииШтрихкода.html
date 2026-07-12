@@ -1,0 +1,61 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПараметрыГенерацииШтрихкода</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ГенерацияШтрихкодаПараметрыГенерацииШтрихкода" name="_генерацияштрихкодапараметрыгенерацииштрихкода"></a><h1>ПараметрыГенерацииШтрихкода</h1>
+<pre> Пустая структура для заполнения параметра "ПараметрыШтрихкода" используемого для получения изображения штрих кода.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПараметрыГенерацииШтрихкода() Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>   Структура:
+   * Ширина - Число - ширина изображения штрих кода.
+   * Высота - Число - высота изображения штрих кода.
+   * ТипКода - Число - штрихкода.
+       Возможные значение:
+      99 -  Авто выбор
+      0 - EAN8
+      1 - EAN13
+      2 - EAN128
+      3 - Code39
+      4 - Code128
+      5 - Code16k
+      6 - PDF417
+      7 - Standart (Industrial) 2 of 5
+      8 - Interleaved 2 of 5
+      9 - Code39 Расширение
+      10 - Code93
+      11 - ITF14
+      12 - RSS14
+      14 - EAN13AddOn2
+      15 - EAN13AddOn5
+      16 - QR
+      17 - GS1DataBarExpandedStacked
+      18 - Datamatrix ASCII
+      19 - Datamatrix BASE256
+      20 - Datamatrix TEXT
+      21 - Datamatrix C40
+      22 - Datamatrix X12
+      23 - Datamatrix EDIFACT
+      24 - Datamatrix GS1ASCII      
+      25 - Aztec      
+   * ОтображатьТекст - Булево - отображать HRI теста для штрихкода.
+   * РазмерШрифта - Число - размер шрифта HRI теста для штрихкода.
+   * УголПоворота - Число - угол поворота.
+      Возможные значения: 0, 90, 180, 270.
+   * Штрихкод - Строка - значение штрихкод в виде строки или Base64.
+   * ТипВходныхДанных - Число - тип входных данных 
+      Возможные значения: 0 - Строка, 1 - Base64
+   * ПрозрачныйФон - Булево - прозрачный фон изображения штрихкода.
+   * УровеньКоррекцииQR - Число - уровень коррекции штрихкода QR.
+      Возможные значения: 0 - L, 1 - M, 2 - Q, 3 - H.
+   * Масштабировать - Булево -  масштабировать изображение штрихкода.
+   * СохранятьПропорции - Булево - сохранять пропорции изображения штрихкода.                                                              
+   * ВертикальноеВыравнивание - Число - вертикальное выравнивание штрихкода.
+      Возможные значения: 1 - По верхнему краю, 2 - По центру, 3 - По нижнему краю
+   * GS1DatabarКоличествоСтрок - Число - количество строк в штрихкоде GS1Databar.
+   * УбратьЛишнийФон - Булево
+   * ЛоготипКартинка - Строка - строка с base64 представлением png картинки логотипа.
+   * ЛоготипРазмерПроцентОтШК - Число - процент от генерированного QR для вписывания логотипа.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ГенерацияШтрихкода.ПараметрыГенерацииШтрихкода()</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

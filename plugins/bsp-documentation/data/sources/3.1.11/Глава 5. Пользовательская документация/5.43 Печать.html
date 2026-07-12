@@ -1,0 +1,1369 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.43 Печать</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.43 Печать</h1>
+<p class="Paragraph0c">Многие документы в приложении можно распечатать в виде
+одной или нескольких печатных форм. Внешний вид и состав печатных форм можно настраивать,
+кроме того, можно подключать к приложению внешние печатные формы.</p>
+<p class="Paragraph0c">Печатные формы документов формируются в виде табличных
+документов или офисных документов в формате <span class="Interface">Office </span><span class="Interface">Open </span><span class="Interface">XML</span>. Печатные формы в виде
+табличного документа можно сохранить в каталог на компьютере или отправить по
+почте как вложения в любом из популярных форматов, включая документы <span class="Interface">Microsoft </span><span class="Interface">Word</span>, <span class="Interface">OpenOffice.org
+</span><span class="Interface">Writer</span>,
+<span class="Interface">PDF/</span><span class="Interface">A</span>,
+<span class="Interface">HTML</span>, <span class="Interface">Microsoft </span><span class="Interface">Excel</span>,
+в формате табличного документа <span class="Interface">1С:Предприятие</span> <span class="Interface">MXL</span>). При этом не требуется, чтобы эти приложения были
+установлены на компьютере. </p>
+<p class="Paragraph0c">Внешние пользователи (партнеры, респонденты и др.) могут
+воспользоваться как предусмотренными в приложении печатными формами для
+документов, так и внешними печатными формами. </p>
+<a data-original-name="IssOgl1_Настройка_приложения" name="issogl1_настройка_приложения"><h2>Настройка приложения</h2></a>
+<p class="Paragraph0c">В разделе <span class="Note"><b>Администрирование</b></span><span class="Interface"> –
+Печатные формы, отчеты и обработки</span> по ссылке <span class="Interface">Подменю
+«Печать»</span> предусмотрена возможность отключения отдельных печатных форм
+подменю <span class="Interface">Печать</span> в документах и списках приложения.
+Отключение печатных форм может потребоваться, если подменю <span class="Interface">Печать</span> какого-либо документа содержит большое количество
+неиспользуемых команд печати и это приводит к затруднениям при поиске нужных
+команд.</p>
+<p class="Picture"><img alt="" height="930" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2362.png?_=00052329AC5B75B7-v10" style="aspect-ratio:1598/930" width="1598"/></p>
+<p class="Paragraph0c">Отключение и
+включение команд печати выполняется при помощи флажков. С помощью кнопки панели
+навигации можно <span class="Interface">Перейти в список</span> соответствующего документа для проверки
+настроенного подменю <span class="Interface">Печать</span>. Подробнее см. раздел <a href="5.43 Печать.html#_формирование_печатных_форм">Формирование печатных форм</a>.</p>
+<a data-original-name="IssOgl1_Персональные_настройки" name="issogl1_персональные_настройки"><h2>Персональные настройки</h2></a>
+<p class="Paragraph0c">Персональные настройки приложения для работы с печатью
+можно произвести, воспользовавшись командой <span class="Note"><b>Демо: Мои настройки</b></span> в
+разделе <span class="Interface">Главное</span>. Администратор может также найти
+команду <span class="Note"><b>Демо:
+Мои Настройки</b></span> в разделе <span class="Note"><b>Администрирование</b></span>. </p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Главное</span> перейдите
+по ссылке, для того чтобы <span class="Interface">Задать действие при выборе
+макета печатной формы</span>:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Только для просмотра</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Для просмотра и
+редактирования</span>.</p>
+<p class="Paragraph0c">Если настройка не произведена, то выбор будет предлагаться
+при каждом открытии печатной формы двойным щелчком мыши. Подробнее см. раздел <a href="5.43 Печать.html#_редактирование_макетов_печатных">Редактирование макетов печатных форм</a>.</p>
+<p class="Paragraph0c">Включите флажок <span class="Interface">Больше не спрашивать</span>,
+для того чтобы приложение больше не выводило это сообщение.</p>
+<p class="Picture"><img alt="" height="897" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2364.png?_=00012297E50FC750-v10" style="aspect-ratio:1001/897" width="1001"/></p>
+<p class="Paragraph0c">Для печати в офисных приложениях при работе в веб-клиенте
+необходимо установить расширение работы с файлами. На вкладке <span class="Interface">Главное</span> персональных настроек в разделе <span class="Interface">Работа в веб-клиенте</span> нажмите кнопку <span class="Interface">Установить сейчас</span>. </p>
+<p class="Paragraph0c">Можно отложить
+установку. Включите флажок, для того чтобы приложение напоминало <span class="Interface">об установке расширения работы с файлами</span> (по умолчанию
+включен). Подробнее см. раздел <a href="5.43 Печать.html#_печатные_формы_в_виде документов mi">Печатные
+формы в виде документов Office Open
+XML</a>.</p>
+<p class="Picture"><img alt="" height="880" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2366.png?_=0001DEC9ABCA329C-v10" style="aspect-ratio:1012/880" width="1012"/></p>
+<a data-original-name="_Формирование_печатных_форм" name="_формирование_печатных_форм"></a><a data-original-name="IssOgl1_Формирование_печатных_форм" name="issogl1_формирование_печатных_форм"><h2>Формирование печатных форм</h2></a>
+<p class="Paragraph0c">Для формирования печатных форм не требуется наличия
+каких-либо специальных прав. Как правило, печать доступна, если есть права на
+просмотр документа. Рассмотрим возможности печати на примере печатных форм
+документов.</p>
+<p class="Paragraph0c">В документах с возможностью печати, как правило, в
+командной панели имеется подменю <span class="Interface">Печать</span>, содержащее
+доступные печатные формы. Состав команд подменю <span class="Interface">Печать</span>
+зависит от настроек. См. раздел <a href="5.1 Адресный классификатор.html" target="_top">Настройка приложения</a>.
+<span class="Note">Например, в
+документе <b>Демо:</b> <b>Счет на оплату покупателю</b> предусмотрено несколько
+печатных форм:</span></p>
+<p class="Picture"><img alt="" height="963" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2368.png?_=0007183DD9465130-v10" style="aspect-ratio:1600/963" width="1600"/></p>
+<p class="Paragraph0c">Аналогичные команды предусмотрены в списке документов. В
+списке можно выделить сразу несколько документов и распечатать. При
+множественном выборе в списке или в журнале документов в составе подменю <span class="Interface">Печать</span> остаются доступными только те печатные формы,
+которые подходят сразу ко всем выбранным документам.</p>
+<p class="Picture"><img alt="" height="1000" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2370.png?_=000722F98B0FBF06-v10" style="aspect-ratio:1428/1000" width="1428"/></p>
+<p class="Paragraph0c">Также некоторые печатные формы являются основными, они
+служат официальным подтверждением совершения хозяйственных операций. В качестве
+примера основных форм для документа <span class="Note"><b>Демо: Реализация товаров и
+услуг </b></span>можно привести:</p>
+<p class="Bullet1">■ 
+Товарную накладную (форма ТОРГ-12).</p>
+<p class="Bullet1">■ 
+Универсальный передаточный документ (УПД).</p>
+<p class="Bullet1">■ 
+Акт об оказании услуг.</p>
+<p class="Bullet1">■ 
+Счет-фактуру (Invoice).</p>
+<p class="Paragraph0c">В документе данные основные формы имеют особый приоритет:</p>
+<p class="Bullet1">■ 
+Они располагаются первыми в подменю <b>Печать</b>.</p>
+<p class="Bullet1">■ 
+Слева от подменю отображается специальная кнопка
+<b>Печать по умолчанию. </b>Данная кнопка позволяет
+повторно распечатать последнюю напечатанную основную печатную форму документа
+(если ее нет, то последняя по контрагенту для этого типа документа или
+последняя по организации для этого типа документа).</p>
+<p class="Picture"><img alt="" height="891" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2372.png?_=0001629565CDC285-v10" style="aspect-ratio:1555/891" width="1555"/></p>
+<p class="Paragraph0c">Состав подменю <span class="Interface">Печать</span> в ряде
+документов, списков и журналов автоматически подстраивается под выбранный
+документ: показываются только те печатные формы, которые могут быть для него
+сформированы при текущих значениях реквизитов. Общих печатных форм для
+некоторых выбранных документов в списке может не быть. </p>
+<p class="Paragraph0c">В приложении предусмотрено несколько видов команд печати:</p>
+<p class="Bullet1">■ 
+с предварительным просмотром в окне <span class="Paragraph0c0">печати
+документов (</span><span class="Note">например,
+команда <b>Печать – Счет на оплату</b></span><span class="Paragraph0c0">). </span>Для вывода
+сформированной печатной формы на принтер можно воспользоваться кнопкой<span class="Interface"> Печать</span>. Здесь же можно указать количество копий документа.
+Выбранное число копий запоминается. <span class="Note">Исключением является печать комплектов, где настройка числа
+копий отдельных печатных форм может не сохраняться (это зависит от прикладного
+решения)</span><span class="Paragraph0c0">;</span></p>
+<p class="Picture"><img alt="" height="801" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2374.png?_=000125D9A51817F0-v10" style="aspect-ratio:1571/801" width="1571"/></p>
+<p class="Bullet1">■ 
+<span class="Paragraph0c0">без предварительного просмотра. </span><span class="Note">Например, в документе <b>Демо:
+Счет на оплату покупателю</b> предусмотрена команда <b>Печать – Счет на оплату
+(на принтер)</b>. Аналогичная команда предусмотрена для комплектов документов:<b>
+Комплект документов (на принтер)</b></span><span class="Paragraph0c0">;</span></p>
+<p class="Bullet1">■ 
+<span class="Paragraph0c0">печатные формы в виде документов </span><span class="Interface">Office </span><span class="Interface">Open </span><span class="Interface">XML</span>
+(<span class="Note">например, <b>Печать
+– Счет на оплату в </b></span><span class="Note"><b>Office</b></span><span class="Note"><b> </b></span><span class="Note"><b>Open</b></span><span class="Note"><b> </b></span><span class="Note"><b>XML</b></span>). Подробнее см. раздел <a href="5.43 Печать.html#_печатные_формы_в_виде документов mi">Печатные формы в виде документов Office Open XML</a>; </p>
+<p class="Bullet1">■ 
+<span class="Paragraph0c0">печатные формы без платежных реквизитов – выводится только
+содержание документа, </span><span class="Note">например, по команде <b>Печать – Счет на оплату без
+платежных реквизитов</b> из счета выводится только список товаров</span>;
+</p>
+<p class="Bullet1">■ 
+<span class="Paragraph0c0">печать комплекта документов</span>. <span class="Note">Примером такой</span>
+<span class="Note">команды является <b>Печать
+– Комплект документов</b></span>. Позволяет распечатать комплект
+различных документов. <span class="Note">Например,
+из товарной накладной можно распечатать сразу товарную накладную, приходно‑кассовый
+ордер и счет‑фактуру. </span>В окне <span class="Interface">Печать комплекта</span>
+печатные формы комплекта выводятся на отдельных страницах, при этом можно
+просмотреть конкретную форму, выбирая из списка печатных форм слева нужную.
+Можно изменить количество копий комплекта;</p>
+<p class="Picture"><img alt="" height="912" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2376.png?_=00014DEED3B9B3C6-v10" style="aspect-ratio:1576/912" width="1576"/></p>
+<p class="Bullet1">■ 
+выборочная печать комплекта документов (<span class="Note">примером такой команды
+на рисунке является <b>Настраиваемый комплект документов</b></span>).
+Для каждой печатной формы можно указать свое количество копий. Подробнее см.
+раздел <a href="5.43 Печать.html#_настраиваемый_комплект_документов">Настраиваемый комплект
+документов;</a></p>
+<p class="Bullet1">■ 
+печать в виде документа PDF. (<span class="Note">Например, <b>Счет на оплату в документ </b></span><span class="Note"><b>Adobe</b></span><span class="Note"><b> </b></span><span class="Note"><b>PDF</b></span>);</p>
+<p class="Bullet1">■ 
+внешние печатные формы. В зависимости от
+настроек разработчика приложения могут быть предусмотрены внешние печатные
+формы по соответствующим командам в подменю <span class="Interface">Печать</span>,
+которые добавляются в список в алфавитном порядке. <span class="Note">Например, в документе <b>Демо: Счет на
+оплату покупателю</b> предусмотрены внешние печатные формы <b>Гарантийное
+письмо</b>, <b>Комплект документов</b> и <b>Счет на оплату</b>.</span>
+Подробнее о внешних печатных формах см. раздел документации Дополнительные
+отчеты и обработки;</p>
+<p class="Bullet1">■ 
+печатные формы из расширения. В зависимости от
+настроек разработчика приложения в расширении могут быть предусмотрены печатные
+формы по соответствующим командам в подменю <span class="Interface">Печать</span>,
+которые добавляются в список в алфавитном порядке. <span class="Note">Например, в документе <b>Демо: Счет на
+оплату покупателю</b> предусмотрены печатные формы из расширения <b>Гарантийное
+письмо</b>, <b>Комплект документов</b> и <b>Счет на оплату</b>.</span>
+Подробнее о расширениях см. раздел документации Базовая функциональность;</p>
+<p class="Bullet1">■ 
+<span class="Paragraph0c0">печатные формы с QR-кодом. </span><span class="Note">Например, в документе <b>Демо:</b> <b>Счет
+на оплату покупателю</b> имеется команда <b>Квитанция (с QR-кодом)</b></span><span class="Paragraph0c0">.</span>
+В приложении предусмотрены возможности для вывода изображений QR-кодов в
+печатных формах по заданной текстовой строке.</p>
+<p class="Picture"><img alt="" height="951" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2378.jpg?_=0003E9A70D003329-v10" style="aspect-ratio:1531/951" width="1531"/></p>
+<p class="Paragraph0c">С помощью кнопки <img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2380.png?_=0000037BC7E61790-v10" style="aspect-ratio:26/22" width="26"/> можно включить или отключить режим
+редактирования этой печатной формы.</p>
+<p class="Paragraph0c">С помощью кнопки <img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2382.png?_=000002BC9EB9A9C6-v10" style="aspect-ratio:27/22" width="27"/> можно просмотреть документ перед печатью. В
+окне <span class="Interface">Предварительный просмотр</span> с помощью
+соответствующих кнопок можно распечатать документ или перейти к настройке
+параметров страницы. Также эти команды можно найти в меню <span class="Interface">Еще</span>.</p>
+<p class="Paragraph0c">С помощью кнопки <img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2384.png?_=0000029347F1DDE8-v10" style="aspect-ratio:26/22" width="26"/> имеется возможность <span class="Interface">Сохранить</span>
+печатные формы в нужных форматах в папку на компьютере или присоединить к
+документу.</p>
+<p class="Picture"><img alt="" height="977" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2386.png?_=0001E1941829F5A1-v10" style="aspect-ratio:1574/977" width="1574"/></p>
+<p class="Paragraph0c">Для того чтобы сохранить печатную форму, с помощью
+переключателя выберите <span class="Interface">Сохранить в папку на компьютер</span>.
+Выберите путь к папке с помощью кнопки <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2388.png?_=00000069E13C6C3B-v10" style="aspect-ratio:17/19" width="17"/>.
+</p>
+<p class="Paragraph0c">Включите флажки для выбора одного или нескольких форматов,
+в которых нужно сохранить печатную форму. </p>
+<p class="Paragraph0c">Укажите, в каком формате (или нескольких форматах) нужно
+сохранить документ: </p>
+<p class="Bullet1">■ 
+Документ PDF/А (.pdf);
+</p>
+<p class="Bullet1">■ 
+Лист Microsoft Excel 2007 (.xlsx);</p>
+<p class="Bullet1">■ 
+Лист Microsoft Excel 97-2003 (.xls);</p>
+<p class="Bullet1">■ 
+Электронная таблица OpenDocument (.ods);</p>
+<p class="Bullet1">■ 
+Табличный документ (.mxl);</p>
+<p class="Bullet1">■ 
+Документ Word 2007 (.docx);</p>
+<p class="Bullet1">■ 
+Веб-страница (.html);</p>
+<p class="Bullet1">■ 
+Текстовый документ UTF-8 (.txt);</p>
+<p class="Bullet1">■ 
+Текстовый документ ANSI (.txt).</p>
+<p class="Paragraph0c">Для уменьшения объема сохраненных файлов включите флажок <span class="Interface">Дополнительно упаковать в архив</span>. </p>
+<p class="Paragraph0c">При необходимости включите флажок <span class="Interface">Транслитерировать
+имена файлов</span>. В этом случае сохраненные файлы будут иметь имена,
+содержащие только латинские буквы и цифры, для возможности переноса между
+различными операционными системами. <span class="Note">Например, файл <b>Отчет.mxl</b> будет сохранен с именем <b>Otchet.mxl</b></span>.</p>
+<p class="Paragraph0c">Нажмите кнопку <span class="Interface">Сохранить</span>.
+Настройки будут сохранены.</p>
+<p class="Paragraph0c">С помощью
+переключателя имеется возможность печатную форму <span class="Interface">Присоединить
+к документу</span>. Подробнее о
+присоединенных файлах см. раздел документации Работа с файлами.</p>
+<p class="Paragraph0c">Если необходимо
+подписать документ <b>Электронной подписью</b>,
+включите соответствующий флажок. Если включен флажок <span class="Interface">Электронная подпись</span> (раздел <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Общие настройки – Электронная подпись и шифрование</span>,
+подробнее см. раздел документации Электронная подпись) и имеется действующий
+сертификат (для использования электронной подписи необходим сертификат ключа
+электронной подписи – документ, который содержит открытый ключ подписи и
+информацию о ее владельце) то приложение предлагает выбрать его для подписания
+данных из выпадающего списка.</p>
+<p class="Paragraph0c">С помощью кнопки <img alt="" height="30" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2390.png?_=0000040AC0A1A4C3-v10" style="aspect-ratio:32/30" width="32"/><span class="Interface">Отправить</span> сформированные печатные формы документа можно
+отправить в качестве вложений в электронном письме. Работа в окне <span class="Interface">Выбор формата вложений</span> осуществляется так же, как при
+сохранении печатных форм.</p>
+<p class="Paragraph0c">После указания
+необходимых данных для перехода к заполнению письма нажмите кнопку <span class="Interface">Выбрать</span>. Подробнее
+см. раздел документации Работа с почтовыми сообщениями. </p>
+<p class="Picture"><img alt="" height="933" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2392.png?_=0004622C4D2AA132-v10" style="aspect-ratio:834/933" width="834"/></p>
+<p class="Paragraph0c">Если включен флажок <span class="Interface">Почтовый клиент</span>
+(раздел <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Органайзер – Почта</span>, подробнее см. раздел документации
+Взаимодействия) и у контрагентов и партнеров имеются адреса электронной почты,
+то приложение предлагает выбрать с помощью флажков адреса для отправки
+вложений.</p>
+<p class="Paragraph0c"><img alt="" height="988" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2394.png?_=0001CF53A51EDA99-v10" style="aspect-ratio:1573/988" width="1573"/></p>
+<p class="Paragraph0c">В качестве ссылки указывается <span class="Interface">Формат
+вложений</span>. Нажав на ссылку, можно изменить указанный формат. После указания всех необходимых данных для
+перехода к заполнению письма нажмите кнопку <span class="Interface">Подготовить</span>. Подробнее о заполнении исходящих писем см.
+раздел документации Взаимодействия.</p>
+<p class="Paragraph0c">При отправке комплекта документов для каждой печатной
+формы будет сформировано отдельное вложение. Если печатается комплект печатных
+форм сразу для нескольких документов из списка, то рекомендуется разбивать документы
+по контрагентам. В этом случае удобно отправлять весь комплект одному
+контрагенту,<span class="Note">
+например, если в комплект входит две печатные формы, то в первом файле будут
+все счета, во втором все накладные.</span></p>
+<p class="Paragraph0c">Для быстрого перехода к нужной печатной форме достаточно
+выбрать ее в списке. </p>
+<p class="Paragraph0c"> </p>
+<p class="Picture"><img alt="" height="791" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2396.png?_=0005FDB164E65809-v10" style="aspect-ratio:1600/791" width="1600"/></p>
+<p class="Paragraph0c">С помощью флажка <span class="Interface">Подпись и печать</span>
+можно включить в документ факсимиле подписей и печать организации. Для этого
+необходимы настройки. Подробнее см. раздел <a href="5.43 Печать.html#_печать_факсимиле">Печать
+факсимиле</a>.</p>
+<p class="Paragraph0c">Для удобства просмотра печатной формы комплекта можно
+отключить панель настройки количества копий с помощью кнопки <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2398.png?_=000001826E317C0B-v10" style="aspect-ratio:19/19" width="19"/> <span class="Interface">Показать / Скрыть
+настройку количества копий</span>. </p>
+<p class="Paragraph0c">С помощью кнопки
+выпадающего меню <img alt="" height="21" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2400.png?_=0000018EDFD77064-v10" style="aspect-ratio:32/21" width="32"/> можно подсчитать <span class="Interface">Показатели
+выделенных ячеек</span>: <img alt="" height="21" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2400.png?_=0000018EDFD77064-v10" style="aspect-ratio:32/21" width="32"/> сумму, <img alt="" height="21" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2402.png?_=000001F15AB8865B-v10" style="aspect-ratio:33/21" width="33"/> количество, <img alt="" height="23" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2404.png?_=00000295D1F0336C-v10" style="aspect-ratio:35/23" width="35"/> среднее, <img alt="" height="23" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2406.png?_=0000020674BDC365-v10" style="aspect-ratio:35/23" width="35"/> минимум и <img alt="" height="21" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2408.png?_=0000025AC59B847E-v10" style="aspect-ratio:33/21" width="33"/> максимум. Выбранный показатель
+выделяется флажком и устанавливается в значке выпадающего меню. Расчеты
+проводятся только для числовых ячеек. Для вычисления выбранного значения
+выделите нужные ячейки, результат автоматически выводится в ячейке рядом с
+кнопкой. Подробнее см. в разделе документации Варианты отчетов.</p>
+<p class="Picture"><img alt="" height="788" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2410.png?_=000645EA710FA1BB-v10" style="aspect-ratio:1600/788" width="1600"/></p>
+<p class="Paragraph0c">С помощью команды <span class="Interface">Еще – Изменить
+макет</span> можно перейти к редактированию макета печатной формы. Команда
+доступна, если установлена роль <span class="Interface">Изменение макетов
+печатных форм</span>. Печатная форма становится неактивной. Подробнее см.
+раздел <a href="5.43 Печать.html#_редактирование_макетов_печатных">Редактирование макетов
+печатных форм</a>.</p>
+<p class="Paragraph0c">После завершения редактирования печатная форма изменится
+автоматически.</p>
+<p class="Picture"><img alt="" height="633" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2412.png?_=000551CAD4862FB6-v10" style="aspect-ratio:1600/633" width="1600"/></p>
+<p class="Paragraph0c">По команде меню <span class="Interface">Еще</span> можно <span class="Interface">Перейти к макетам печатных форм</span>. Подробнее см. раздел <a href="5.43 Печать.html#_редактирование_макетов_печатных">Редактирование
+макетов печатных форм</a>.</p>
+<a data-original-name="IssOgl2_Печать_факсимиле" name="issogl2_печать_факсимиле"><h3>Печать факсимиле</h3></a>
+<p class="Paragraph0c">Для вывода факсимиле
+на печать необходимо произвести настройки.</p>
+<p class="Paragraph0c">Заполните нужные
+поля на вкладке <span class="Note"><b>Демо: Дополнительное</b></span> (подробное
+описание заполнения полей можно также открыть во время работы с помощью ссылки <span class="Interface">Инструкция «Как сделать факсимильную подпись и печать»</span> в
+нижней части вкладки):</p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Директор</span><span class="Paragraph0c0"> (с помощью
+кнопки </span><img alt="" height="25" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image551.png?_=000000B4684A9190-v10" style="aspect-ratio:25/25" width="25"/> <span class="Paragraph0c0">выберите из списка </span><span class="Note"><b>Демо: Физические лица</b></span><span class="Paragraph0c0">);</span></p>
+<p class="Bullet1">■ 
+<span class="Interface">Главный бухгалтер</span><span class="Paragraph0c0"> – заполняется
+аналогично;</span></p>
+<p class="Bullet1">■ 
+<span class="Interface">Печать организации </span>–
+нажмите мышкой на поле, выберите файл с изображением предварительно
+отсканированной печати организации, нажмите <span class="Interface">Открыть</span><span class="Paragraph0c0">, если все
+сделано правильно, в поле появляется картинка с печатью организации;</span></p>
+<p class="Bullet1">■ 
+<span class="Interface">Подпись директора</span><span class="Paragraph0c0"> – заполняется
+аналогично; </span></p>
+<p class="Bullet1">■ 
+<span class="Interface">Подпись главного
+бухгалтера</span><span class="Paragraph0c0">
+– заполняется аналогично.</span></p>
+<p class="Picture"><img alt="" height="837" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2415.png?_=000610076F0BFBAD-v10" style="aspect-ratio:1600/837" width="1600"/></p>
+<p class="Paragraph0c">После проведения
+настроек в печатной форме включите флажок <span class="Interface">Подпись
+и печать</span>, для того чтобы
+распечатать документ с факсимиле подписей и печати.</p>
+<p class="Picture"><img alt="" height="977" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2417.jpg?_=00037B5A1B323EF4-v10" style="aspect-ratio:1252/977" width="1252"/></p>
+<p class="Picture"> </p>
+<a data-original-name="IssOgl2_Настраиваемый_комплект_документов" name="issogl2_настраиваемый_комплект_документов"><h3>Настраиваемый комплект документов</h3></a>
+<p class="Paragraph0c">В приложении предусмотрена возможность настройки печати
+комплекта документов по команде <span class="Interface">Печать – Настраиваемый
+комплект документов</span>. В окне <span class="Interface">Настраиваемый комплект</span>
+слева находится панель настройки количества копий. </p>
+<p class="Picture"><img alt="" height="575" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2419.jpg?_=000308EDE944DFA3-v10" style="aspect-ratio:1407/575" width="1407"/></p>
+<p class="Paragraph0c">Для того чтобы настроить печать комплекта, воспользуйтесь
+контекстным меню по правой кнопке мыши. Эти команды можно найти также в меню <span class="Interface">Еще</span>.</p>
+<p class="Paragraph0c">С помощью команд контекстного меню или меню <span class="Interface">Еще </span>можно: </p>
+<p class="Bullet1">■ 
+<span class="Interface">Установить</span> или <span class="Interface">Снять</span> все<span class="Interface"> флажки</span>, </p>
+<p class="Bullet1">■ 
+<span class="Interface">Сбросить настройки
+комплекта</span><span class="Paragraph0c0">;</span></p>
+<p class="Bullet1">■ 
+поменять элементы между собой. </p>
+<p class="Paragraph0c">Выберите нужную печатную форму из комплекта для просмотра.
+Включите флажок для печати этой печатной формы. Проставьте необходимое
+количество копий печатных форм. Настройки будут сохранены.</p>
+<a data-original-name="_Настраиваемый_комплект_документов." name="_настраиваемый_комплект_документов."></a><a data-original-name="_Печать_факсимиле" name="_печать_факсимиле"></a><a data-original-name="_Настраиваемый_комплект_документов" name="_настраиваемый_комплект_документов"></a><a data-original-name="_Дополнительные_печатные_формы" name="_дополнительные_печатные_формы"></a><a data-original-name="_Особенности_печати_в_веб-клиенте" name="_особенности_печати_в_веб-клиенте"></a><a data-original-name="_Особенности_печати_в" name="_особенности_печати_в"></a><a data-original-name="IssOgl1_Особенности_печати_в_веб-клиенте" name="issogl1_особенности_печати_в_веб-клиенте"><h2>Особенности печати в веб-клиенте</h2></a>
+<a data-original-name="IssOgl2_Печатные_формы_в_виде_табличных_документов" name="issogl2_печатные_формы_в_виде_табличных_документов"><h3>Печатные формы в виде табличных документов</h3></a>
+<p class="Paragraph0c">При работе в Интернете для формирования печатных форм в
+веб-клиенте необходимы дополнительные настройки браузера. Необходимо отменить
+блокирование всплывающих окон для веб-сайта приложения, <span class="Note">например: <a href="http://trade.demo.1c.ru/trade/ru_RU/" target="_blank">http://trade.demo.1c.ru/trade/ru_RU/</a></span>.</p>
+<p class="Paragraph0c">При работе в браузере Internet Explorer выберите
+команду <span class="Interface">Сервис – Блокирование всплывающих окон –
+Параметры блокирования всплывающих окон</span>. </p>
+<p class="Picture"><img alt="" height="548" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2421.png?_=000071EFD6A657AD-v10" style="aspect-ratio:829/548" width="829"/></p>
+<p class="Paragraph0c">Введите адрес веб-сайта приложения в поле <span class="Interface">Адрес веб-узла, получающего разрешение</span>, нажмите кнопку <span class="Interface">Добавить</span>, название сайта появится в поле <span class="Interface">Веб-узлы, имеющие разрешение</span>. Далее нажмите <span class="Interface">Закрыть</span>. Для получения более подробной информации см.
+документацию к веб-браузеру.</p>
+<p class="Picture"><img alt="" height="490" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2423.png?_=0000983D937BFBCE-v10" style="aspect-ratio:480/490" width="480"/></p>
+<p class="Paragraph0c">При работе в <span class="Interface">Internet Explorer</span>, если включена
+фильтрация активного содержимого, то нужно нажать на значок <img alt="" height="17" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2425.png?_=000001A68C7F9B8F-v10" style="aspect-ratio:15/17" width="15"/> <span class="Interface">Состояние фильтрации
+активного содержимого </span>и отключить фильтрацию ActiveX только для этого сайта.</p>
+<p class="Picture"><img alt="" height="197" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2427.png?_=0000272247FA9E3B-v10" style="aspect-ratio:421/197" width="421"/></p>
+<p class="Paragraph0c">При печати в
+веб-клиенте печатные формы выводятся в формате PDF (по умолчанию), который можно сразу отправить
+на принтер или сохранить в файл на компьютер. Поэтому необходимо, чтобы на
+компьютере было установлено приложение просмотра документов PDF, например, <span class="Interface">Adobe </span><span class="Interface">Reader</span>. Если приложение на компьютере не установлена,
+и нет возможности ее установить, или этот способ печати не устраивает по
+каким-либо причинам, можно выбрать способ печати HTML. Для этого нажмите кнопку <img alt="" height="21" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2429.png?_=0000006D815953FB-v10" style="aspect-ratio:25/21" width="25"/> <span class="Interface">Главное меню</span>,
+выберите команду <span class="Interface">Настройки – Параметры</span>, включите <span class="Interface">Способ печати </span>в виде<span class="Interface"> </span><span class="Interface">HTML</span>,
+нажмите кнопку <span class="Interface">ОК</span>.</p>
+<p class="Picture"><img alt="" height="776" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2431.png?_=0003BDA96FDB318F-v10" style="aspect-ratio:1202/776" width="1202"/></p>
+<p class="Paragraph0c">После нажатия на кнопку <span class="Interface">Печать</span>
+необходимо уточнить настройки печати в приложении <span class="Interface">Adobe </span><span class="Interface">Reader</span>.
+Печатная форма выводится на предварительный просмотр. В противном случае, если не установлено приложение просмотра документов PDF
+или не проведены настройки, указанные выше, при попытке печати в веб-клиенте в
+формате PDF будет выведено
+информационное сообщение: </p>
+<p class="Picture"><img alt="" height="703" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2433.png?_=00018038F6BAB6A6-v10" style="aspect-ratio:796/703" width="796"/></p>
+<p class="Paragraph0c">Если на компьютере
+имеется приложение <span class="Interface">Adobe </span><span class="Interface">Reader</span>, но не выполнены настройки веб-браузера, в
+нижнем окне <span class="Interface">Открыть или сохранить</span> выберите <span class="Interface">Открыть</span>,
+затем нажмите кнопку <span class="Interface">Печать </span>или <span class="Interface">ОК</span>. После распечатки закройте окно печати, нажмите
+кнопку <span class="Interface">Закрыть </span>для возврата в<span class="Interface"> </span>приложение.</p>
+<p class="Paragraph0c">В случае если
+всплывающие окна заблокированы, выводится сообщение вида:</p>
+<p class="Picture"><img alt="" height="81" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2435.png?_=00001274F094DBEC-v10" style="aspect-ratio:514/81" width="514"/></p>
+<p class="Paragraph0c">Нажмите кнопку <span class="Interface">Параметры для этого сайта</span>, чтобы перейти к настройке
+разрешения всплывающих окон.</p>
+<a data-original-name="_Печатные_формы_в_виде документов Mi" name="_печатные_формы_в_виде документов mi"></a><a data-original-name="_Печатные_формы_в" name="_печатные_формы_в"></a><a data-original-name="IssOgl2_Печатные_формы_в_виде_документов_Office_Open_XML" name="issogl2_печатные_формы_в_виде_документов_office_open_xml"><h3>Печатные формы в виде документов Office Open XML</h3></a>
+<p class="Paragraph0c">В приложении предусмотрены печатные формы, которые сразу
+выводятся в формате <span class="Interface">Office </span><span class="Interface">Open </span><span class="Interface">XML</span>.
+Для этого необходимо, чтобы на компьютере были установлены офисные приложения <span class="Interface">Microsoft </span><span class="Interface">Word</span> (версия не ниже 2003) или <span class="Interface">OpenOffice.org </span><span class="Interface">Writer </span>(версия
+не ниже 3.2). Кроме того, при работе через Интернет необходим веб-браузер <span class="Interface">Internet Explorer</span> версии 6.0 и выше, для которого
+следует предварительно выполнить дополнительную настройку.</p>
+<p class="Paragraph0c">Для настройки <span class="Interface">Internet Explorer</span>
+выберите команду <span class="Interface">Сервис – Свойства обозревателя</span>.
+На вкладке <span class="Interface">Безопасность</span> нажмите кнопку <span class="Interface">Другой</span> и настройте уровень безопасности для работы веб-клиента:</p>
+<p class="Bullet1">■ 
+отключите блокирование всплывающих окон;</p>
+<p class="Bullet1">■ 
+разрешите сценарии; </p>
+<p class="Bullet1">■ 
+разрешите использовать элементы <span class="Interface">ActiveX</span>.</p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Конфиденциальность</span>
+выберите уровень безопасности не выше среднего.</p>
+<p class="Picture"><img alt="" height="485" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2437.png?_=0000A7B01CC51B26-v10" style="aspect-ratio:427/485" width="427"/></p>
+<p class="Paragraph0c">Подробнее о настройках браузера см. книги 1С:Предприятие
+8.3. Руководство пользователя, глава 13 «Работа с веб-клиентом» и Руководство
+администратора, глава 8 «Настройка веб-браузеров для работы в веб-клиенте».</p>
+<p class="Paragraph0c">После проведения
+необходимых настроек печать в формате <span class="Interface">Office </span><span class="Interface">Open </span><span class="Interface">XML.</span> и становится доступной из веб-клиента. <span class="Note">Например, в списке документов <b>Демо:
+Счет на оплату покупателю</b> выберите команду <b>Печать – Счет на оплату в </b></span><span class="Note"><b>Office</b></span><span class="Note"><b> </b></span><span class="Note"><b>Open</b></span><span class="Note"><b> </b></span><span class="Note"><b>XML</b></span><span class="Note">. Подробнее см. раздел <a href="5.43 Печать.html#_формирование_печатных_форм">Формирование печатных форм</a>.</span></p>
+<p class="Paragraph0c">При первой попытке печати без установки расширения работы
+с файлами выводится предложение установить его (в зависимости от настроек,
+подробнее см. раздел <a href="5.9 Взаимодействия.html" target="_top">Персональные настройки</a>).
+Нажмите кнопку <span class="Interface">Установить и продолжить</span> для начала
+установки.</p>
+<p class="Paragraph0c">В зависимости от настроек системы безопасности компьютера
+может потребоваться подтвердить установку приложения на компьютер. Проверьте
+издателя приложения (<span class="Interface">1С</span>) и нажмите <span class="Interface">Установить</span> для подтверждения.</p>
+<p class="Picture"><img alt="" height="947" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2439.png?_=0004EAAE00044AF3-v10" style="aspect-ratio:1218/947" width="1218"/></p>
+<p class="Paragraph0c">После успешного окончания установки нажмите <span class="Interface">ОК</span>. В следующий раз это сообщение выводиться уже не
+будет.</p>
+<p class="Picture"><img alt="" height="275" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2441.jpg?_=00004EB8C8A5510C-v10" style="aspect-ratio:714/275" width="714"/></p>
+<p class="Paragraph0c">Если расширение для
+работы с файлами установлено, приложение предлагает получить файл макета,
+необходимый для формирования печатной формы. Нажмите <span class="Interface">ОК </span>для продолжения.</p>
+<p class="Paragraph0c">Через некоторое
+время сформированная печатная форма будет открыта, например, в приложении <span class="Interface">Microsoft </span><span class="Interface">Word</span>.</p>
+<p class="Picture"><img alt="" height="920" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2443.png?_=0002AAA9DF1E8756-v10" style="aspect-ratio:1280/920" width="1280"/></p>
+<p class="Paragraph0c">Если какие-либо настройки
+были пропущены или сделаны неправильно, после выполнения команды <span class="Note"><b>Печать – Счет на
+оплату в </b></span><span class="Note"><b>Office</b></span><span class="Note"><b> </b></span><span class="Note"><b>Open</b></span><span class="Note"><b> </b></span><span class="Note"><b>XML</b></span> выводится сообщение о проблеме:</p>
+<p class="Picture"><img alt="" border="1" height="85" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2445.png?_=00001314465D822F-v10" style="aspect-ratio:564/85" width="564"/></p>
+<p class="Paragraph0c">В этом случае
+необходимо еще раз проверить настройки, которые приведены в начале этого
+раздела.<a data-original-name="_Редактирование_макетов_печатных" name="_редактирование_макетов_печатных"></a><a data-original-name="_Список_Макеты_печатных" name="_список_макеты_печатных"></a><a data-original-name="_Создание_макетов_печатных" name="_создание_макетов_печатных"></a></p>
+<a data-original-name="_Редактирование_макетов_печатных_1" name="_редактирование_макетов_печатных_1"></a><a data-original-name="_Особенности_редактирования_печатных" name="_особенности_редактирования_печатных"></a><a data-original-name="_Особенности_просмотра_и" name="_особенности_просмотра_и"></a><a data-original-name="IssOgl1_Создание_макетов_печатных_форм" name="issogl1_создание_макетов_печатных_форм"><h2>Создание макетов печатных форм</h2></a>
+<p class="Paragraph0c">В списке макетов печатных форм можно с помощью кнопки
+панели навигации <span class="Interface">Создать</span> новый макет печатной
+формы: </p>
+<p class="Bullet1">■ 
+Создать макет табличного документа – подробнее
+см. раздел <a href="5.43 Печать.html#_создание_макета_табличного">Создание макета табличного
+документа</a>;</p>
+<p class="Bullet1">■ 
+Создать макет Office Open XML – подробнее см. раздел <a href="5.43 Печать.html#_особенности_создания_макетов">Особенности создания макетов печатных
+форм в Open Office XML</a>.</p>
+<p class="Picture"><img alt="" height="508" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2447.png?_=0000C43E9A66D3F9-v10" style="aspect-ratio:1122/508" width="1122"/></p>
+<p class="Paragraph0c">Также можно создать новую печатную форму с помощью
+копирования (только для пользовательских печатных форм). По умолчанию
+наименование макета <span class="Interface">Новая печатная форма</span>, можно
+написать свое наименование. </p>
+<p class="Picture"><img alt="" height="118" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2449.png?_=00000C8E17DAF149-v10" style="aspect-ratio:433/118" width="433"/></p>
+<p class="Paragraph0c">Новая
+печатная форма автоматически сохраняется в списке макетов, но т. к. она еще не отображается
+в списке подменю Печать, то выделена серым цветом. Для того чтобы показывать
+форму в подменю <span class="Interface">Печать</span>, нажмите флажок в колонке <img alt="" height="16" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2451.png?_=000000DD4AEEA6BB-v10" style="aspect-ratio:22/16" width="22"/> <span class="Interface">Использование</span>.
+После этого в списке (элементе списка) появляется кнопка (или наименование
+печатной формы добавляется в подменю <span class="Interface">Печать</span>).</p>
+<p class="Picture"><img alt="" height="498" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2453.png?_=0000A4223D2876BD-v10" style="aspect-ratio:877/498" width="877"/></p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Показать в списке</span>
+можно перейти в список, для которого настраивается выбранная печатная форма.</p>
+<a data-original-name="_Создание_макета_табличного" name="_создание_макета_табличного"></a><a data-original-name="IssOgl2_Создание_макета_табличного_документа" name="issogl2_создание_макета_табличного_документа"><h4>Создание макета табличного документа</h4></a>
+<p class="Paragraph0c">После ввода
+наименования печатной формы нажмите <span class="Interface">ОК</span>, для того чтобы открыть печатную форму в
+конструкторе и начать над ней работать.</p>
+<p class="Paragraph0c">С
+помощью кнопок панели навигации верхнего ряда можно:</p>
+<p class="Bullet1">■ 
+<img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2455.png?_=000002A0D719EA0B-v10" style="aspect-ratio:26/22" width="26"/>–
+проверить вид макета на бумаге;</p>
+<p class="Bullet1">■ 
+<img alt="" height="30" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2457.png?_=000002434DC62781-v10" style="aspect-ratio:107/30" width="107"/> – задать колонтитулы макета печатной формы;</p>
+<p class="Bullet1">■ 
+<img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2459.png?_=000002D4C4891203-v10" style="aspect-ratio:26/22" width="26"/>–
+сформировать образец печатной формы по макету;</p>
+<p class="Bullet1">■ 
+<img alt="" height="23" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2461.png?_=000001DD5C751D1F-v10" style="aspect-ratio:50/23" width="50"/> – повторять выбранные строки в начале/конце
+страницы;</p>
+<p class="Bullet1">■  <img alt="" height="24" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2463.gif?_=000003E3841D49DA-v10" style="aspect-ratio:69/24" width="69"/> – переключиться
+на макет на другом языке. Подробнее см. раздел <a href="5.43 Печать.html#_вывод_печатных_форм">Вывод
+печатной формы на другом языке</a>.</p>
+<p class="Bullet1">■  <img alt="" height="29" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2464.png?_=0000028B835F498A-v10" style="aspect-ratio:129/29" width="129"/> –
+отключить/включить панель справа (для удобства редактирования).</p>
+<p class="Paragraph0c">В нижнем ряду панели навигации также предусмотрены
+стандартные кнопки редактирования и форматирования, а также другие кнопки:</p>
+<p class="Bullet1">■  <img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2466.png?_=000002B4F730AAD8-v10" style="aspect-ratio:25/22" width="25"/> – очистить формат выделенной ячейки;</p>
+<p class="Bullet1">■  <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2468.png?_=000002856C95765A-v10" style="aspect-ratio:31/19" width="31"/> – меню работы над ячейками (перейти к ячейке,
+объединить выделенные ячейки и т. д.);</p>
+<p class="Bullet1">■  <img alt="" height="20" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2470.png?_=00000211984AB01D-v10" style="aspect-ratio:32/20" width="32"/> – меню работы над картинками (вставить
+картинку, вставить текст, набор фигур).</p>
+<p class="Bullet1">■ 
+<img alt="" height="16" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2472.png?_=00000346B7BC1AFF-v10" style="aspect-ratio:16/16" width="16"/> - автоматическое размещение текста в ячейке,
+значение по умолчанию;</p>
+<p class="Bullet1">■ 
+<img alt="" height="16" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2474.png?_=000003993CF59240-v10" style="aspect-ratio:16/16" width="16"/> - команда переноса текста в ячейке.</p>
+<p class="Paragraph0c">Также
+можно воспользоваться различными командами контекстного меню по правой кнопке
+мыши и меню <span class="Interface">Еще</span>. С помощью команд меню <span class="Interface">Еще</span> можно:</p>
+<p class="Bullet1">■ 
+Переименовать макет;</p>
+<p class="Bullet1">■ 
+Сохранить макет в файл. Для этого укажите путь к
+файлу на компьютере;</p>
+<p class="Bullet1">■ 
+Загрузить макет из файла. Укажите путь к файлу
+на компьютере.</p>
+<p class="Paragraph0c">Окно редактирования
+печатной формы состоит из четырех частей:</p>
+<p class="Bullet1">1.  В
+левой верхней части строится макет печатной формы;</p>
+<p class="Bullet1">2.  В
+левой нижней части можно написать текст выбранной ячейки;</p>
+<p class="Bullet1">3.  В
+правой верхней части находится список доступных полей документа для
+использования в макете;</p>
+<p class="Bullet1">4.  В
+правой нижней части – список операторов и функций для создания выражений.</p>
+<p class="Picture"><img alt="" height="699" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2476.png?_=000148C8A295698F-v10" style="aspect-ratio:1226/699" width="1226"/></p>
+<p class="Paragraph0c">Список
+доступных полей конструктора содержит следующие колонки:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Поле</span> – доступное
+поле элемента-владельца макета. Поле можно перетаскивать в макет;</p>
+<p class="Bullet1">■  <span class="Interface">Образец</span> – показывает, как будет выглядеть поле при
+выводе на печать. В качестве образца для заполнения полей берется случайный
+элемент списка. При необходимости можно выбрать другой элемент списка, либо
+изменить образец отдельного поля;</p>
+<p class="Picture"><img alt="" height="655" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2478.png?_=00012E44F539891E-v10" style="aspect-ratio:1263/655" width="1263"/></p>
+<p class="Bullet1">■  <img alt="" height="21" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2480.gif?_=0000027CFBD1E976-v10" style="aspect-ratio:23/21" width="23"/> – настройка формата поля, если такая
+возможность имеется. Можно выбрать формат даты, отличный от стандартного.</p>
+<p class="Picture"><img alt="" height="667" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2481.png?_=00014CC4F647D809-v10" style="aspect-ratio:1263/667" width="1263"/></p>
+<p class="Paragraph0c">В печатную форму можно вставить и ссылочные
+поля, <span class="Note">например,
+имеется поле <b>Организация</b> и можно вставить полное наименование
+организации, юридический адрес и т. д</span>.</p>
+<p class="Picture"><img alt="" height="759" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2483.png?_=00016E5A45629887-v10" style="aspect-ratio:1263/759" width="1263"/></p>
+<p class="Paragraph0c">Можно вставить также поля табличных частей, <span class="Note">например поля табличной
+части – список товаров из счета</span>.</p>
+<p class="Picture"><img alt="" height="744" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2485.png?_=000169495F8E4C94-v10" style="aspect-ratio:1263/744" width="1263"/></p>
+<p class="Paragraph0c">Поле <span class="Interface">Фамилия, имя,
+отчество</span> можно выводить в
+определенном падеже и использовать для вывода определенный формат (зависит от
+настроек разработчика).</p>
+<p class="Picture"><img alt="" height="744" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2487.png?_=0001AA7765A9B3F4-v10" style="aspect-ratio:1432/744" width="1432"/></p>
+<p class="Paragraph0c">Предусмотрена
+возможность вставить итоги (зависит от настроек разработчика), число прописью.</p>
+<p class="Picture"><img alt="" height="738" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2489.png?_=000181EE00F27FA7-v10" style="aspect-ratio:1432/738" width="1432"/></p>
+<p class="Paragraph0c">Можно вставить в печатную форму подписи и
+печати (зависит от настроек разработчика). См. также раздел <a href="5.43 Печать.html#_печать_факсимиле">Печать факсимиле</a>.</p>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c">Для
+создания выражений в печатных формах можно воспользоваться <b>списком операторов и функций</b>. Выражения – это формулы,
+результатом вычисления которых являются произвольные значения одного из примитивный
+(базовых) типов (число, дата, строка, булево). Выражения заключаются в
+квадратные скобки<span class="Note">
+[Организация.Наименование полное].</span></p>
+<p class="Paragraph0c"><b>Разделители</b> – специальные символы, разделяющие
+параметры и функции между собой. Например, в <b>круглые скобки</b> <b>()</b> заключается
+список параметров функций<span class="Note">
+[Максимум(Товар1.Количество, Товар2.Количество)].</span> <b>Запятая , </b>разделяет параметры в списке
+параметров.</p>
+<p class="Paragraph0c"><b>Операторы – </b>математические
+выражения, которые содержат знаки простых арифметических операций и подчиняются
+при вычислении арифметическим правилам. Операторы выполняют действия над <b>операндами</b> (элементами). <b>Операндами</b> являются числа, даты, строки,
+функции. <b>Операторы</b> обозначаются
+символами <b>+ </b>(операция сложения), <b>- </b>(операция вычитания), <b>* </b>(операция умножения), <b>/</b> (операция деления), % (операция остаток
+от деления), к примеру<span class="Note">
+[Номенклатура.Цена%30], Номенклатура.Цена = 100, результат =10.</span></p>
+<p class="Paragraph0c"><b>Логическая операция</b>
+позволяет сравнить два значения. Результатом будет значение типа Булево: Истина
+или Ложь. Определено два вида логических операций – <b>операции сравнения</b> и <b>булевых
+операций.</b></p>
+<p class="Paragraph0c"><b>Операции сравнения</b> –
+операции сравнения двух значений простых типов: &lt; (меньше); &lt;=
+(меньше или равно); &lt;&gt; (не равно); = (равно); &gt; (больше); &gt;=
+(больше или равно), например,<span class="Note">
+[Выручка.Текущая.Сумма &gt;= Выручка.Прошлая.Сумма].</span> На равенство
+(=) и на не равенство (&lt;&gt;) – применимы в сравнении любые типы данных. На
+больше (&gt;), меньше (&lt;) – можно сравнивать дату с датой, строку со
+строкой, число с числом и число с булево. При сравнении числа с булево сначала
+булево приводится к числу, а потом выполняется сравнение.</p>
+<p class="Paragraph0c"><b>Булевы операции</b> выполняются над значениями типа Булево (Истина или
+Ложь). Можно объединять несколько операций сравнения <b>(И, ИЛИ, НЕ)</b>.<b> </b>Оператор <b>И </b>– логическое умножение, возвращает
+значение Истина, если оба операнда имеют значение Истина. Оператор <b>ИЛИ </b>– логическое сложение, возвращает
+значение Истина в случае, если один из операндов имеет значение Истина. Оператор
+<b>НЕ </b>– логическое отрицание,
+возвращает значение Истина в случае, если ее операнд имеет значение Ложь.  Например, если выражение<span class="Note"> [Сумма включает НДС]</span> равно
+Истина, то выражение <span class="Note">Не
+[Сумма включает НДС]</span> будет равно Ложь.<span class="Note"> </span></p>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><img alt="" height="900" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2491.png?_=0005F4825D82FD4B-v10" style="aspect-ratio:1600/900" width="1600"/></p>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>Числовые функции – </b>Один из примитивных
+типов данных. Параметры могут быть числами, датами, строками, булево. </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="Paragraph0c"><b>Функция</b><b>[]</b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c"><b>Описание
+  </b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c"><b>Пример
+  </b></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">Максимум(значение1, значение 2,…)</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Определяет максимальное значение из двух
+  или более параметров. </p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[Максимум(Товар1.Количество,
+  Товар2.Количество)]</p>
+<p class="Paragraph0c">Максимум(20,30)</p>
+<p class="Paragraph0c">Результат:30</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">Минимум(значение1, значение 2,…)</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Определяет минимальное значение из
+  двух или более параметров.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[Минимум(Товар1.Количество,
+  Товар2.Количество)]</p>
+<p class="Paragraph0c">Минимум(20,30)</p>
+<p class="Paragraph0c">Результат:20</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">Округлить()</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Округляет исходное число до нужной
+  разрядности в соответствии с заданным режимом округления.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[Округлить([Итоги.Сумма
+  оплаты] / 1.20 * 0.20 ,2)]</p>
+<p class="Paragraph0c">Результат:
+  3333.333333 = 3333,33</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">ЦелаяЧасть()</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Преобразует числа в целую часть.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[ЦелаяЧасть([Итоги.Сумма
+  оплаты] / 1.20 * 0.20)]</p>
+<p class="Paragraph0c">Результат:
+  3333.333333 = 3333</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"><b> </b></p>
+<p class="Paragraph0c"><b>Строковые функции – </b>работают с
+примитивным типом данных строка. Переменные с типом строка содержат текст.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="Paragraph0c"><b>Функция</b><b>[]</b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c"><b>Описание</b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c"><b>Пример</b></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">ВсеПрописные</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Преобразует
+  все символы строки в прописные.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[ВсеПрописные([Организация.Наименование
+  полное])]</p>
+<p class="Paragraph0c">Результат:
+  ООО «НОВЫЕ ТЕХНОЛОГИИ»</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">ВсеСтрочные</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Преобразует
+  все символы строки в строчные.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[ВсеСтрочные([ОсновноеСредство.ГосНомер])]</p>
+<p class="Paragraph0c">Результат:
+  о765нн</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">ДлинаСтроки</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Получает количество символов в строке</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[ДлинаСтроки([Товар.Наименование])]</p>
+<p class="Paragraph0c">Результат:22</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">ЗаменитьСимволыВСтроке</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Позволяет найти в исходной строке
+  значение и заменить на другое значение.</p>
+<p class="Paragraph0c"> </p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[ЗаменитьСимволыВСтроке
+  ([Номенклатура.Наименование], "_", " ")]</p>
+<p class="MsoNormal">Результат: «1С:Зарплата_и_Управление
+  Персоналом_8»= «1С:Зарплата и Управление Персоналом 8»</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">КаждоеСловоСПрописной</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Делает первую букву в каждом слове
+  заглавной.</p>
+<p class="Paragraph0c"> </p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[КаждоеСловоСПрописной
+  ([Номенклатура.Наименование])]</p>
+<p class="MsoNormal">Результат: «1С: Зарплата И
+  Управление Персоналом 8 »</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">ПреобразоватьВСтроку</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Преобразовывает переменную типа число,
+  дата в строку.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[ПреобразоватьВСтроку([Дата])]</p>
+<p class="Paragraph0c">Результат: 25.11.2022 16:01:07</p>
+</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="MsoNormal"> </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="Paragraph0c">СимволыСлева</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Выбирает первые слева символы строки.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[СимволыСлева([Товары.Номенклатура.Наименование
+  для печати],37)]</p>
+<p class="Paragraph0c">Результат:
+  1С:Зарплата и Управление Персоналом 8</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">СимволыСправа</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Выбирает первые справа символы строки.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[СимволыСправа([Товары.Номенклатура.Наименование
+  для печати],19)]</p>
+<p class="Paragraph0c">Результат: Программный продукт</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">СтрокаЛатиницей</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Преобразует исходную строку в
+  транслит.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[СтрокаЛатиницей([Контрагент.Адрес])]</p>
+<p class="Paragraph0c">Результат:127434,
+  Moskva g, Dmitrovskoe sh, dom № 9</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">УбратьПробелыСлева</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Убирает незначащие символы (пробел,
+  неразрывный пробел, табуляцию) в строке слева.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[УбратьПробелыСлева([Товары.Номенклатура.Наименование
+  для печати])]</p>
+<p class="Paragraph0c">Результат:</p>
+<p class="MsoNormal">«1С:Зарплата и Управление
+  Персоналом 8 »</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">УбратьПробелыСлеваИСправа</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Убирает незначащие символы (пробел, неразрывный
+  пробел, табуляцию) в строке слева и справа.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[УбратьПробелыСлеваИСправа
+  ([Товары.Номенклатура.Наименование для печати])]</p>
+<p class="Paragraph0c">Результат:</p>
+<p class="MsoNormal">«1С:Зарплата и Управление
+  Персоналом 8»</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">УбратьПробелыСправа</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Убирает незначащие символы (пробел, неразрывный
+  пробел, табуляцию) в строке справа.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[УбратьПробелыСправа([Товары.Номенклатура.Наименование
+  для печати])]</p>
+<p class="Paragraph0c">Результат:</p>
+<p class="MsoNormal">« 1С:Зарплата и Управление
+  Персоналом 8»</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"><b> </b></p>
+<p class="Paragraph0c"><b>Прочие функции </b></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="Paragraph0c"><b>Функция</b><b>[]</b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c"><b>Описание
+  </b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c"><b>Пример
+  </b></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c"><b>ЗначениеЗаполнено</b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Проверяет, содержит ли переменная
+  непустое значение, характерное для своего типа. </p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[ЗначениеЗаполнено([Счет
+  на оплату покупателям. Итоги.Комментарий])]</p>
+<p class="Paragraph0c">Результат: если в документе Счет на
+  оплату заполнен комментарий, то в переменной проверка будет содержаться
+  значение Истина, иначе Ложь.</p>
+</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="MsoNormal"> </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="Paragraph0c"><b>Условие</b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Возвращает значение, исходя из
+  истинности заданного условия.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Условие_1 = [Сумма включает НДС] – в
+  т.ч. НДС</p>
+<p class="Paragraph0c">Условие_2
+  = Не[Сумма включает НДС] – сумма НДС</p>
+<p class="Paragraph0c">Результат:
+  т.к. сумма включает НДС, то Истина - это Условие_1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c"><b>Формат</b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Формирует удобное для чтения
+  представление значений простых типов (Число, Дата и Булево).</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[Формат([Итоги.Сумма оплаты] / 1.20 *
+  0.20, "ЧЦ='15'; ЧДЦ='2'")]</p>
+<p class="Paragraph0c">Результат: 3333, 00</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"><b> </b></p>
+<p class="Paragraph0c"><b>Функции для табличных частей </b></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="Paragraph0c"><b>Функция</b><b>[]</b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c"><b>Описание
+  </b></p>
+</td>
+<td valign="top">
+<p class="Paragraph0c"><b>Пример
+  </b></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">КоличествоСтрок(значение1, значение 2,…)</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Подсчитывает количество строк в
+  многострочной строке.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[КоличествоСтрок([Товары.Количество])]</p>
+<p class="Paragraph0c"> </p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">МаксимумПоКолонке(значение1, значение 2,…)</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Выводит максимальное значение по
+  колонке таблицы. </p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[МаксимумПоКолонке([Товары.Цена])</p>
+<p class="Paragraph0c"> </p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">МинимумПоКолонке(значение1, значение 2,…)</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Выводит минимальное значение по
+  колонке таблицы.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[МинимумПоКолонке([Товары.Количество])]</p>
+<p class="Paragraph0c"> </p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">СреднееПоКолонке(значение1, значение 2,…)</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Выводит среднее значение по колонке.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[СреднееПоКолонке([Товары.Количество])]</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">СуммаПоКолонке(значение1, значение 2,…)</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">Выводит общую сумму по колонке.</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">[СуммаПоКолонке([Товары.Сумма])]</p>
+<p class="Paragraph0c"> </p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"><b> </b></p>
+<p class="Picture"><img alt="" height="892" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2493.png?_=000736FFF862421E-v10" style="aspect-ratio:1600/892" width="1600"/></p>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c">Новая
+печатная форма автоматически сохраняется в списке макетов, но т. к. она еще не
+видна, выделена серым цветом. Для того чтобы показывать форму в подменю <span class="Interface">Печать</span>, нажмите флажок в колонке <img alt="" height="17" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2495.png?_=000000E80DE7C151-v10" style="aspect-ratio:20/17" width="20"/><span class="Interface">Использование</span></p>
+<p class="Picture"><img alt="" height="688" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2497.png?_=0001A399C492FF67-v10" style="aspect-ratio:1249/688" width="1249"/></p>
+<p class="Paragraph0c">При
+необходимости возможна печать на нескольких языках одновременно, для этого
+нужные поля необходимо перевести на эти языки, например поле <span class="Interface">Наименование для печати</span>.</p>
+<a data-original-name="_Особенности_создания_макетов" name="_особенности_создания_макетов"></a><a data-original-name="_Вывод_печатных_форм" name="_вывод_печатных_форм"></a><a data-original-name="_Вывод_печатной_формы" name="_вывод_печатной_формы"></a><a data-original-name="IssOgl2_Особенности_создания_макетов_печатных_форм_в_Open_Office_XML" name="issogl2_особенности_создания_макетов_печатных_форм_в_open_office_xml"><h4>Особенности создания макетов печатных форм в Open Office XML</h4></a>
+<p class="Paragraph0c">После ввода
+наименования печатной формы открывается конструктор макетов, который состоит из
+списка полей и операторов.</p>
+<p class="Paragraph0c">Нажмите кнопку
+панели навигации, для того чтобы <img alt="" height="27" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2499.gif?_=0000084739A77F9A-v10" style="aspect-ratio:133/27" width="133"/>. Для редактирования макета можно использовать
+любое приложение для работы с форматом DOCX, например, Microsoft Word, которое необходимо заранее установить на
+компьютер.</p>
+<p class="Paragraph0c">Для того чтобы
+расположить окна конструктора и офисного редактора рядом, можно воспользоваться
+клавишами <span class="Interface">W</span><span class="Interface">in </span><img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2500.gif?_=000004D7C4F51B3C-v10" style="aspect-ratio:25/22" width="25"/> и стрелками <img alt="" height="18" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2501.gif?_=000004550D24DC46-v10" style="aspect-ratio:19/18" width="19"/><img alt="" height="18" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2502.gif?_=0000044DCEB4A5F5-v10" style="aspect-ratio:18/18" width="18"/>.</p>
+<p class="Paragraph0c">Работа в
+конструкторе проходит так же, как описано в разделе <a href="5.43 Печать.html#_создание_макета_табличного">Создание макета табличного документа</a>.
+Вставка полей в макет осуществляется с помощью переноса из одного окна в
+другое. Предусмотрена также кнопка <img alt="" height="24" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2503.png?_=000001BA7352D275-v10" style="aspect-ratio:26/24" width="26"/> <span class="Interface">Копировать</span>. </p>
+<p class="Paragraph0c">Возможности вывода в
+офисный документ:</p>
+<p class="Bullet1">■ 
+Все доступные поля;</p>
+<p class="Bullet1">■ 
+Картинки (поля объектов, содержащие ссылку на
+присоединенный файл картинки);</p>
+<p class="Bullet1">■ 
+Вывод таблиц и списков;</p>
+<p class="Bullet1">■ 
+Вывод полей в колонтитулы;</p>
+<p class="Bullet1">■ 
+Заполнение гиперссылок;</p>
+<p class="Bullet1">■ 
+Использование формул;</p>
+<p class="Bullet1">■ 
+Отсутствие фиксированных областей, как при
+редактировании табличного документа;</p>
+<p class="Bullet1">■ 
+Управление выводом факсимиле подписи и печати;</p>
+<p class="Bullet1">■ 
+Поддержка мультиязычности;</p>
+<p class="Bullet1">■  Объединение
+нескольких документов в один;</p>
+<p class="Bullet1">■ 
+Вывод штампа электронной подписи.</p>
+<p class="Paragraph0c">С помощью кнопки <img alt="" height="28" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2505.gif?_=0000061BBE302E44-v10" style="aspect-ratio:81/28" width="81"/>можно перевести макет на выбранный язык.
+Подробнее см. раздел <a href="5.43 Печать.html#_вывод_печатных_форм">Вывод печатной формы на
+другом языке</a>.</p>
+<p class="Paragraph0c">После внесения
+необходимых изменений можно нажать кнопку <img alt="" height="26" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2506.gif?_=000005E91DF7F129-v10" style="aspect-ratio:84/26" width="84"/>, для того чтобы изменения сохранились в макете
+печатной формы.</p>
+<p class="Paragraph0c">Для завершения
+редактирования необходимо сохранить изменения макета в офисном редакторе,
+закрыть его, затем нажать кнопку <img alt="" height="43" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2507.png?_=000005FCBEF0EC70-v10" style="aspect-ratio:245/43" width="245"/>.</p>
+<p class="Picture"><img alt="" height="900" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2509.png?_=00077CE5968F34CF-v10" style="aspect-ratio:1600/900" width="1600"/></p>
+<p class="Paragraph0c">Приложение позволяет
+выводить на печать данные в зависимости от некоторого условия<span class="Note">, например, в счете на
+оплату можно распечатать данные с НДС или без НДС</span>.  В
+качестве условия обычно выступает поле типа <span class="Interface">Булево</span>. Условный вывод возможен и в макетах Office Open XML. Для этого используются поля <span class="Interface">Начало</span> и <span class="Interface">Окончание условия</span>.
+</p>
+<p class="Paragraph0c">С помощью меню <span class="Interface">Еще</span> можно:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Переименовать макет</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Сохранить макет в файл</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Загрузить макет из файла</span>.
+При загрузке макета с использованием параметров происходит автоматическая
+конвертация. </p>
+<p class="Paragraph0c">При выводе на печать
+печатных форм в <span class="Interface">Office Open XML</span> выводится <span class="Interface">Форма
+печати</span><b>. </b>Если флажок <span class="Interface">Больше не показывать и открывать печатную форму сразу</span> установлен
+и документы формируются сразу, но требуется вернуться к форме печати, то
+следует нажать на гиперссылку во всплывающем уведомлении. Уведомление
+появляется в нижней части экрана при получении печатных форм.</p>
+<p class="Paragraph0c"><span class="Interface"> Форма печати</span> предоставляет возможности:</p>
+<p class="Bullet1">■ 
+Управление выводом факсимиле печатей и подписей
+– с помощью флажка <span class="Interface">Подпись и печать</span></p>
+<p class="Bullet1">■  Выбор
+языка печатной формы (если были проведены соответствующие настройки, подробнее
+см. раздел <a href="5.43 Печать.html#_вывод_печатных_форм">Вывод печатной формы на другом языке</a>).</p>
+<p class="Bullet1">■ 
+Объединение нескольких печатных форм в одну – с
+помощью флажка <span class="Interface">Одним документом</span>.</p>
+<p class="Bullet1">Также по кнопке Сохранить <img alt="" height="24" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2511.png?_=000002C1141893DA-v10" style="aspect-ratio:31/24" width="31"/> имеется
+возможность сохранить печатную форму в каталог на компьютер, дополнительно
+упаковать его в архив (.zip), транслитерировать имена файлов и подписать с
+помощью <span class="Interface">Электронной подписи</span> (если в приложении
+используется электронная подпись и шифрование). При подписании файлов после
+выбора сертификата автоматически заполняется поле <span class="Interface">Тип
+подписи</span>. В зависимости от настроек подписи его можно изменить. Подробнее
+информацию о работе с <span class="Interface">Электронной подписью и шифрованием</span>
+см. раздел документации Электронная подпись.</p>
+<p class="Bullet1">После подписания печатные формы попадают в указанный вами
+каталог вместе с <b>Сертификатом
+безопасности</b> и <span class="Interface">Отсоединенной электронной подписью</span>
+в формате PKCS #7, с их помощью можно проверить подлинность <span class="Interface">Электронной подписи</span> на специальных сайтах, например на
+сайте Госуслуги.</p>
+<p class="Picture"> <img alt="" height="938" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2513.png?_=00040425C24DEDCD-v10" style="aspect-ratio:1004/938" width="1004"/></p>
+<p class="Paragraph0c">С помощью
+переключателя имеется возможность каждую печатную форму <span class="Interface">Присоединить к своему документу</span>. Подробнее о присоединенных файлах см. раздел документации Работа с
+файлами.</p>
+<p class="Paragraph0c">Для печати
+подписанного электронной подписью табличного документа со штампами визуализации
+электронной подписи в списке присоединенных файлов предусмотрена команда <span class="Interface">Печать - Со штампом электронной подписи</span>. Предварительно,
+табличный документ должен быть подписан одной или несколькими электронными
+подписями в соответствии с тем, как это предусмотрено в документе.</p>
+<p class="Picture"><img alt="" height="936" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2515.png?_=0006AB12DF6A703F-v10" style="aspect-ratio:1195/936" width="1195"/></p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Отправить</span> можно отправить печатные формы, предварительно
+выбрав параметры с помощью флажка. В почтовом сообщении, выбранные формы при этом
+автоматически будут его приложением, а в тело письма автоматически добавляется
+перечень вложений. Подробнее см. раздел документации Работа с почтовыми
+сообщениями. </p>
+<a data-original-name="IssOgl2_Редактирование_макетов_печатных_форм" name="issogl2_редактирование_макетов_печатных_форм"><h3>Редактирование макетов печатных форм</h3></a>
+<p class="Paragraph0c">Печатные формы формируются на основе макетов.
+Редактирование макетов осуществляется в списке <span class="Interface">Макеты
+печатных форм</span>, к которому можно перейти с помощью ссылки в разделе <span class="Note"><b>Администрирование – </b></span><span class="Interface">Печатные
+формы, отчеты и обработки</span>. Открыть макет для редактирования можно с
+помощью кнопки <img alt="" height="23" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image743.png?_=000001A47A1F82D0-v10" style="aspect-ratio:26/23" width="26"/> <span class="Interface">Изменить</span>. Также можно открыть макет
+двойным щелчком мыши. Старые версии печатных форм открываются в прежних
+форматах, редактирование новых печатных форм осуществляется как описано в
+разделе <a href="5.43 Печать.html#_создание_макетов_печатных_1">Создание макетов печатных форм</a>.</p>
+<p class="Picture"><img alt="" height="787" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2517.png?_=0001730975990E93-v10" style="aspect-ratio:1204/787" width="1204"/></p>
+<p class="Paragraph0c">К
+редактированию макета можно также перейти с помощью команды <span class="Interface">Еще – Изменить макет</span> из окна <span class="Interface">Печать документа</span>. См. также раздел <a href="5.43 Печать.html#_создание_макетов_печатных">Создание макетов печатных форм</a>.</p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Редактирование</span>
+можно перейти в режим просмотра. </p>
+<p class="Paragraph0c">Макеты в виде
+табличного документа редактируются в самом приложении, а для редактирования
+макетов в виде офисных документов в формате <span class="Interface">Office </span><span class="Interface">Open </span><span class="Interface">XML</span> на компьютере должны быть
+установлены соответствующие офисные приложения. При нажатии кнопки <span class="Interface">Изменить </span>приложение выводит напоминание об этом с
+гиперссылкой для перехода на страницу приложения для ее установки. Нажмите
+кнопку <span class="Interface">Продолжить</span>, если приложение имеется на
+компьютере. Если офисное приложение
+имеется на компьютере, макет будет открыт для редактирования. После внесения
+изменений сохраните макет, закройте офисное приложение.</p>
+<p class="Paragraph0c">Для окончания
+редактирования и сохранения макета в приложении нажмите кнопку <span class="Interface">Завершить изменение</span>. См. также раздел <a href="5.43 Печать.html#_особенности_редактирования_печатных">Особенности
+просмотра и редактирования печатных форм в веб-клиенте</a>.</p>
+<p class="Picture"><img alt="" height="234" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2519.png?_=00003727CD2C5F61-v10" style="aspect-ratio:583/234" width="583"/></p>
+<p class="Paragraph0c">В приложении
+предусмотрены большие возможности по редактированию макетов печатных форм, в
+частности, можно:</p>
+<p class="Bullet1">■ 
+изменить формат (тип, размер и цвет шрифта,
+заливку, центрирование, границы); </p>
+<p class="Bullet1">■ 
+изменить расположение полей документа;</p>
+<p class="Bullet1">■ 
+изменить текстовые поля и их расположение. </p>
+<p class="Paragraph0c">Наиболее часто используемые возможности выведены в виде
+кнопок, остальные команды редактирования макета можно найти в меню <span class="Interface">Еще</span>. С помощью команды меню <span class="Interface">Еще</span>
+можно изменить наименование макета.</p>
+<p class="Paragraph0c">Для макетов, созданных в приложении, имеется возможность
+настроить наименование печатной формы с помощью команды меню <span class="Interface">Еще</span> – <span class="Interface">Изменить настройки макета</span>.
+</p>
+<p class="Paragraph0c">Данная настройка может быть использована при формировании исходящих документов.</p>
+<p class="Picture"><img alt="" height="598" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2521.png?_=000307BDDDD39277-v10" style="aspect-ratio:1308/598" width="1308"/></p>
+<p class="Paragraph0c">В случае необходимости добавить новые поля документа,
+которые не предусмотрены в стандартном макете печатной формы, потребуется
+вносить изменения в приложение. </p>
+<p class="Paragraph0c">После того как
+закончено редактирование, нажмите кнопку<span class="Interface"> Записать
+и закрыть</span> для сохранения
+внесенных изменений.</p>
+<p class="Paragraph0c">После сохранения
+измененного макета в списке у такого макета устанавливается значок <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2523.png?_=000003FE7E1E62A6-v10" style="aspect-ratio:17/19" width="17"/>,
+т. е. отредактированный макет теперь
+будет использоваться при печати. </p>
+<p class="Paragraph0c">Если у макета есть
+отредактированная версия, то с помощью кнопок <img alt="" height="25" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2525.png?_=000003E6B75C4817-v10" style="aspect-ratio:28/25" width="28"/> <span class="Interface">Использовать измененный
+макет</span> или <img alt="" height="25" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2527.png?_=0000030362B3C7AA-v10" style="aspect-ratio:28/25" width="28"/> <span class="Interface">Использовать стандартный
+макет</span> можно выбрать, какой макет
+должен использоваться при печати. Стандартный макет обозначается значком <img alt="" height="20" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2529.png?_=00000187AD2B715C-v10" style="aspect-ratio:19/20" width="19"/>.
+Для удаления измененного макета нажмите кнопку<span class="Interface"> </span><img alt="" height="26" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2531.png?_=0000037B2EA2A042-v10" style="aspect-ratio:28/26" width="28"/> <span class="Interface">Удалить измененный макет</span>. После удаления пользовательского макета в
+приложении будет использоваться стандартный макет.</p>
+<p class="Picture"><img alt="" height="461" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2533.png?_=0000C4A6D2DFCADF-v10" style="aspect-ratio:1127/461" width="1127"/></p>
+<a data-original-name="IssOgl2_Особенности_просмотра_и_редактирования_печатных_форм_в_веб-клиенте" name="issogl2_особенности_просмотра_и_редактирования_печатных_форм_в_веб-клиенте"><h3>Особенности просмотра и редактирования печатных форм в веб-клиенте</h3></a>
+<p class="Paragraph0c">При работе с приложением через Интернет с помощью
+веб-браузера <span class="Interface">Internet Explorer</span> необходимо
+выполнить ряд настроек, которые описаны в разделе <a href="5.43 Печать.html#_особенности_печати_в_веб-клиенте">Особенности печати в веб-клиенте</a>. </p>
+<p class="Paragraph0c">Макеты в виде
+табличного документа в веб-клиенте можно редактировать в самом приложении.</p>
+<p class="Paragraph0c">Для перехода к <span class="Interface">Редактированию во
+внешнем приложении</span> предусмотрена команда меню <span class="Interface">Еще</span>.</p>
+<p class="Picture"><img alt="" height="916" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2535.png?_=000705ADDE866D2C-v10" style="aspect-ratio:1586/916" width="1586"/></p>
+<p class="Paragraph0c">В этом случае предлагается установить дополнительное
+приложение <span class="Interface">1С:Предприятие – Работа с файлами</span>. Ее
+можно скачать по гиперссылке <span class="Interface">Перейти на страницу приложения
+«1С:Предприятие – Работа с файлами» для установки</span> или с сайта фирмы
+«1С»: <a href="http://v8.1c.ru/metod/fileworkshopdownload.htm" target="_blank">http://v8.1c.ru/metod/fileworkshopdownload.htm</a>. </p>
+<p class="Paragraph0c">Для редактирования макета в приложении <span class="Interface">1С:Предприятие – Работа с файлами</span> подтвердите загрузку
+файла на компьютер с помощью кнопки <span class="Interface">Продолжить</span>. </p>
+<p class="Paragraph0c">При открытии макета печатной формы в виде табличного
+документа браузером выводится предложение
+открыть или сохранить файл макета на компьютер:</p>
+<p class="Paragraph0c">Файл можно сохранить
+на компьютер. Выберите каталог для сохранения макета. Затем можно открыть
+приложение <span class="Interface">1С:Предприятие – Работа с файлами</span> для изменения макета.</p>
+<p class="Picture"><img alt="" height="662" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2537.png?_=00010290A352F884-v10" style="aspect-ratio:990/662" width="990"/></p>
+<p class="Paragraph0c">Сохраните изменения,
+затем переключитесь обратно в приложение и в списке макетов нажмите кнопку <span class="Interface">Завершить изменение</span>. Для помещения измененного макета в приложение укажите путь к файлу макета
+с помощью кнопки <span class="Interface">Обзор</span>, нажмите <span class="Interface">ОК</span>.
+</p>
+<p class="Picture"><img alt="" height="674" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2539.png?_=00022867C9BA8BA0-v10" style="aspect-ratio:1290/674" width="1290"/></p>
+<p class="Paragraph0c">Измененный макет обозначается значком <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2523.png?_=000003FE7E1E62A6-v10" style="aspect-ratio:17/19" width="17"/>.</p>
+<p class="Paragraph0c">Редактирование макетов печатных форм в формате <span class="Interface">Office </span><span class="Interface">Open </span><span class="Interface">XML</span>
+возможно только во внешнем приложении. Открытие макета во внешнем приложении и
+его сохранение проходит аналогично.</p>
+<p class="Paragraph0c">Также предусмотрено создание новых макетов в <span class="Interface">Open Office XML</span> в веб-клиенте. Специальное поле в нижней
+части окна предназначено для перетаскивания в Web-клиенте. Сначала необходимо
+выбрать нужное поле, затем  можно
+воспользоваться кнопкой <img alt="" height="24" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2542.png?_=000001E9DAFAA28F-v10" style="aspect-ratio:26/24" width="26"/> <span class="Interface">Копировать</span>.</p>
+<p class="Picture"><img alt="" height="819" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2544.png?_=00071DBDECB50DD2-v10" style="aspect-ratio:1600/819" width="1600"/></p>
+<p class="Picture"><span class="Interface"> </span></p>
+<p class="Picture"> </p>
+<a data-original-name="IssOgl1_Вывод_печатной_формы_на_другом_языке" name="issogl1_вывод_печатной_формы_на_другом_языке"><h2>Вывод печатной формы на другом языке</h2></a>
+<p class="Note"><b>Примечание для технического писателя:</b> для использования
+данной возможности в приложении необходимо наличие подсистемы «Мультиязычность».
+При наличии подсистемы «Перевод текста» имеется возможность подключения
+автоматического перевода текстов (подробнее см. раздел <a href="5.31 Мультиязычность.html" target="_top">Сервис автоматического перевода</a>).</p>
+<p class="Paragraph0c">Формирование печатных форм на разных языках (подробнее см.
+раздел <a href="5.31 Мультиязычность.html" target="_top">Как сформировать печатную форму на
+другом языке</a>) полезно, например, если необходимо предоставить какие-либо
+документы иностранному контрагенту: прайс-лист, счет на оплату и т. д. </p>
+<p class="Paragraph0c">Для
+этого необходимо предварительно произвести настройки:</p>
+<p class="Bullet1">■ 
+<a href="5.31 Мультиязычность.html" target="_top">Добавить
+дополнительный язык печатных форм</a>;</p>
+<p class="Bullet1">■ 
+<a href="5.31 Мультиязычность.html" target="_top">Добавить
+перевод макета печатной формы на дополнительный язык</a>;</p>
+<p class="Bullet1">■ 
+<a href="5.31 Мультиязычность.html" target="_top">Ввести на
+дополнительном языке наименования, выводимые в печатной форме</a>.</p>
+<a data-original-name="IssOgl2_Сервис_автоматического_перевода" name="issogl2_сервис_автоматического_перевода"><h3>Сервис автоматического перевода</h3></a>
+<p class="Paragraph0c">Для упрощения перевода макетов и ввода реквизитов на
+разных языках в приложении предусмотрена возможность использования
+онлайн-сервисов перевода текста (Яндекс.Переводчик и Google Переводчик). Для
+того чтобы задействовать эту возможность, включите флажок <span class="Interface">Перевод текста с помощью внешнего сервиса</span> в разделе <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Печатные формы, отчеты и обработки</span> и выберите из
+списка нужный <span class="Interface">Сервис перевода текста</span>, далее
+следуйте инструкции по настройке выбранного сервиса.</p>
+<p class="Picture"><img alt="" height="844" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2546.png?_=0008E256AEF12E34-v10" style="aspect-ratio:1600/844" width="1600"/></p>
+<p class="Paragraph0c">За использование сервиса перевода текста может взиматься
+плата. Условия использования необходимо уточнить на сайте соответствующего
+сервиса.</p>
+<p class="Paragraph0c">После подключения сервиса перевода текста становится
+возможным:</p>
+<p class="Bullet1">■ 
+перевести макет печатной формы автоматически,
+для этого в окне редактирования макета нужно нажать кнопку <span class="Interface">Перевести</span>.</p>
+<p class="Bullet1">■ 
+автоматически перевести наименования элементов
+списков в окне ввода на разных языках с помощью кнопки <span class="Interface">Перевести
+автоматически</span>.</p>
+<p class="Picture"><img alt="" height="765" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1666.png?_=00022DC251D63E97-v10" style="aspect-ratio:1383/765" width="1383"/></p>
+<a data-original-name="IssOgl2_Как_добавить_дополнительный_язык_печатной_формы" name="issogl2_как_добавить_дополнительный_язык_печатной_формы"><h3>Как добавить дополнительный язык печатной формы</h3></a>
+<p class="Paragraph0c">Перейдите по ссылке <span class="Interface">Языки печатных форм</span> в разделе <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Печатные формы, отчеты и обработки</span>. </p>
+<p class="Picture"><img alt="" height="582" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1648.png?_=0000CD61DA5E940A-v10" style="aspect-ratio:1455/582" width="1455"/></p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Добавить язык</span>
+выберите из списка нужный, при необходимости уточните регион. Для некоторых
+языков доступен выбор региональных настроек (указаны в скобках рядом с
+названием языка). Выбор региональных настроек влияет на вывод дат и чисел. <span class="Note">Например, дата <b>24.12.2020</b>
+на языке «французский» будет выводиться 24/12/2020, а на языке «французский
+(Канада)» – <b>2020-12-24</b></span>.</p>
+<p class="Picture"><img alt="" height="626" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1650.png?_=000060DA533F9BBF-v10" style="aspect-ratio:697/626" width="697"/></p>
+<a data-original-name="IssOgl2_Как_перевести_макет_на_другой_язык" name="issogl2_как_перевести_макет_на_другой_язык"><h3>Как перевести макет на другой язык</h3></a>
+<p class="Paragraph0c">После
+добавления других языков (см. раздел<a href="5.31 Мультиязычность.html" target="_top"> </a><a href="5.31 Мультиязычность.html" target="_top">Как добавить дополнительный язык печатной
+формы</a>) при редактировании макета появляется кнопка выбора языка.</p>
+<p class="Paragraph0c">Откройте
+на редактирование нужный макет, переключите на дополнительный язык и выполните
+перевод.</p>
+<p class="Paragraph0c">В
+макете следует переводить только статический текст, например заголовки, подписи
+и т. д.</p>
+<p class="Paragraph0c">Не нужно переводить параметры. Параметры в печатной
+форме находятся внутри текста и отображаются в квадратных скобках,
+например <span class="Note">Покупатель:
+[Контрагент.Наименование полное]</span>, переводить следует только текст
+за скобками.</p>
+<p class="Paragraph0c">В поставляемых макетах кнопка <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2550.png?_=000002807A6349B0-v10" style="aspect-ratio:22/19" width="22"/> позволяет рядом расположить оригинал и
+переводимую печатную форму для удобства перевода и его проверки. Кнопка
+появляется при переключении на другой язык. Недоступна для макетов, которые
+созданы пользователем (отсутствуют в поставке).</p>
+<p class="Picture"> <img alt="" height="918" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2552.png?_=000782ECE9B45EB9-v10" style="aspect-ratio:1600/918" width="1600"/></p>
+<p class="Paragraph0c">Если подключен <a href="5.31 Мультиязычность.html" target="_top">сервис
+перевода</a>, то перевод макета выполняется автоматически. После выбора нужного
+языка в ответ на сообщение приложения следует нажать <span class="Interface">Выполнить перевод</span>.</p>
+<p class="Picture"><img alt="" height="739" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2554.png?_=000174AA8C115FCA-v10" style="aspect-ratio:1226/739" width="1226"/></p>
+<p class="Paragraph0c">После
+сохранения макета в колонке <span class="Interface">Доступные языки</span> добавляется
+язык, на который был выполнен перевод.</p>
+<p class="Picture"><img alt="" height="468" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2556.png?_=0000C49914517C51-v10" style="aspect-ratio:1231/468" width="1231"/></p>
+<a data-original-name="IssOgl2_Как_перевести_наименования_выводимые_в_печатной_форме_на_другой_язык" name="issogl2_как_перевести_наименования_выводимые_в_печатной_форме_на_другой_язык"><h3>Как перевести наименования, выводимые в печатной форме, на другой язык</h3></a>
+<p class="Paragraph0c">Некоторые текстовые реквизиты элементов списков, выводимые
+в печатной форме, могут быть введены на других языках<span class="Note"> (например, в списке <b>Демо:
+Номенклатура</b></span> <span class="Note">поле
+<b>Наименование для печати</b></span>). У таких реквизитов есть кнопка<img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1658.png?_=000000B38CF6ACE0-v10" style="aspect-ratio:23/22" width="23"/>,
+при нажатии на которую открывается ввод на разных языках. Необходимо её нажать
+и ввести значение на нужном языке.</p>
+<p class="Picture"><img alt="" height="612" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1660.png?_=00010E75C5DF8BE3-v10" style="aspect-ratio:813/612" width="813"/></p>
+<p class="Paragraph0c">Помимо наименований
+может потребоваться перевод суммы прописью на другой язык. Для этого в карточке
+валюты нажмите кнопку <span class="Interface">Параметры прописи</span> в панели навигации, выберите язык из
+выпадающего списка, заполните параметры прописи на этом языке. После выхода из
+окна параметров прописи нажмите <span class="Interface">Записать и закрыть</span>.</p>
+<p class="Picture"><img alt="" height="541" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1662.png?_=00005B0D47A6414C-v10" style="aspect-ratio:768/541" width="768"/></p>
+<a data-original-name="IssOgl2_Как_сформировать_печатную_форму_на_другом_языке" name="issogl2_как_сформировать_печатную_форму_на_другом_языке"><h3>Как сформировать печатную форму на другом языке</h3></a>
+<p class="Paragraph0c">Если для печатной формы предусмотрен вывод на других
+языках, то при просмотре печатной формы появляется меню выбора языка. Выберите
+необходимый язык, печатная форма переформируется на этом языке. Можно проверить
+печатную форму и распечатать. Подробнее см. раздел <span class="MsoHyperlink"><a href="5.43 Печать.html#_формирование_печатных_форм">Формирование печатных форм</a></span>.</p>
+<p class="Paragraph0c">Если в печатной форме наблюдаются проблемы (например, не
+все переведено на требуемый язык), необходимо проверить правильность действий
+на всех этапах работы: проверить корректность переводов макета и элементов
+списков.</p>
+<p class="Picture"><img alt="" height="968" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2560.png?_=000563770F0184F6-v10" style="aspect-ratio:1600/968" width="1600"/></p>
+<a data-original-name="IssOgl1_Роли_для_работы_с_печатью" name="issogl1_роли_для_работы_с_печатью"><h2>Роли для работы с печатью</h2></a>
+<p class="Paragraph0c">Для работы с печатью в приложении предусмотрены следующие
+роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Роль</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Краткое описание</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Изменение макетов печатных форм</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дает право редактирования макетов печатных форм.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Редактирование, отправка по
+  почте, сохранение в файл печатных форм</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дает право редактирования печатных форм перед
+  отправкой на принтер, на сохранение печатных форм в файл или отправку по
+  почте.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Note">&lt;<b>Демо: Печать счета на оплату</b>
+  &gt;<b></b></p>
+</td>
+<td valign="top">
+<p class="Note">Дает право на использование конкретной
+  печатной формы, если такие роли предусмотрены в приложении. </p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"> </p>
+</main></body></html>

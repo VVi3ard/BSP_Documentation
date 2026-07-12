@@ -1,0 +1,22 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>НомерНаПечать</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ПрефиксацияОбъектовКлиентСерверНомерНаПечать" name="_префиксацияобъектовклиентсерверномернапечать"></a><h1>НомерНаПечать</h1>
+<pre> Получает номер документа для вывода на печать; из номера удаляются префиксы и лидирующие нули.
+ Функция:
+ отбрасывает префикс организации,
+ отбрасывает префикс информационной базы (опционально),
+ отбрасывает пользовательские префиксы (опционально),
+ удаляет лидирующие нули в номере объекта.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция НомерНаПечать(Знач НомерОбъекта, УдалитьПрефиксИнформационнойБазы = Ложь, УдалитьПользовательскийПрефикс = Ложь) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>    НомерОбъекта - Строка - номер или код объекта, который преобразуется для вывода на печать.
+    УдалитьПрефиксИнформационнойБазы - Булево - признак удаления префикса информационной базы.
+    УдалитьПользовательскийПрефикс - Булево - признак удаления пользовательского префикса.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>     Строка - номер на печать.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ПрефиксацияОбъектовКлиентСервер.НомерНаПечать(НомерОбъекта, УдалитьПрефиксИнформационнойБазы, УдалитьПользовательскийПрефикс)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Тонкий клиент, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

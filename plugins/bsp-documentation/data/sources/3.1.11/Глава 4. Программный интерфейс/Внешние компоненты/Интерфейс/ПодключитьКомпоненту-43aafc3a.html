@@ -1,0 +1,26 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПодключитьКомпоненту</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ВнешниеКомпонентыСерверПодключитьКомпоненту" name="_внешниекомпонентысерверподключитькомпоненту"></a><h1>ПодключитьКомпоненту</h1>
+<pre> Подключает на сервере 1С:Предприятия внешнюю компоненту из хранилища внешних компонент,
+ выполненную по технологии Native API или COM.
+ В модели сервиса разрешено только подключение общих внешних компонент, одобренных администратором сервиса.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПодключитьКомпоненту(Знач Идентификатор, Версия = Неопределено, ПараметрыПодключения = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Идентификатор - Строка - идентификатор объекта внешней компоненты.
+  Версия        - Строка - версия компоненты.
+  ПараметрыПодключения - см. <a href="ПараметрыПодключения-0d23ae43.html" target="_top">ПараметрыПодключения</a>.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>   Структура - результат подключения компоненты:
+     * Подключено - Булево - признак подключения;
+     * ПодключаемыйМодуль - ОбъектВнешнейКомпоненты - экземпляр объекта внешней компоненты;
+                          - ФиксированноеСоответствие из КлючИЗначение - экземпляры объектов внешней компоненты,
+                            указанные в ПараметрыПодключения.ИдентификаторыСозданияОбъектов:
+                            ** Ключ - Строка - идентификатор,
+                            ** Значение - ОбъектВнешнейКомпоненты - экземпляр объекта внешней компоненты.
+     * ОписаниеОшибки - Строка - краткое описание ошибки. </pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ВнешниеКомпонентыСервер.ПодключитьКомпоненту(Идентификатор, Версия, ПараметрыПодключения)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

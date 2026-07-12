@@ -1,0 +1,23 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ВывестиГиперссылку</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОтчетыСерверВывестиГиперссылку" name="_отчетысервервывестигиперссылку"></a><h1>ВывестиГиперссылку</h1>
+<pre> Оформляет ячейку в виде гиперссылки и заполняет поля адреса и представления ссылки.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ВывестиГиперссылку(Ячейка, АдресСсылки, ПредставлениеСсылки = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>   Ячейка      - ОбластьЯчеекТабличногоДокумента - область табличного документа.
+   АдресСсылки - Строка                          - адрес ссылки, которую необходимо вывести в указанной ячейке.
+          В стандартной форме отчета автоматически открываются ссылки следующих форматов:
+          "http://&lt;адрес&gt;", "https://&lt;адрес&gt;", "e1cib/&lt;адрес&gt;", "e1c://&lt;адрес&gt;"
+          Такие ссылки открываются при помощи процедуры ОбщегоНазначенияКлиент.ОткрытьНавигационнуюСсылку.
+          См. также ПредставлениеНавигационнойСсылки.НавигационнаяСсылка в синтакс-помощнике.
+          Для открытия ссылок других форматов следует написать код
+          в процедуре ОтчетыКлиентПереопределяемый.ОбработкаВыбораТабличногоДокумента.
+   ПредставлениеСсылки - Строка
+                       - Неопределено - наименование, которую необходимо вывести в указанной ячейке.
+                                        Если Неопределено, то выводится как есть АдресСсылки.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОтчетыСервер.ВывестиГиперссылку(Ячейка, АдресСсылки, ПредставлениеСсылки)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

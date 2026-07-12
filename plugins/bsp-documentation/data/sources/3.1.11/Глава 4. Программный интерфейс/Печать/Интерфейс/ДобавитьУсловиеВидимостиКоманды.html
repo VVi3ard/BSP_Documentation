@@ -1,0 +1,19 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ДобавитьУсловиеВидимостиКоманды</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_УправлениеПечатьюДобавитьУсловиеВидимостиКоманды" name="_управлениепечатьюдобавитьусловиевидимостикоманды"></a><h1>ДобавитьУсловиеВидимостиКоманды</h1>
+<pre> Задает условия видимости команды печати на форме в зависимости от контекста.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ДобавитьУсловиеВидимостиКоманды(КомандаПечати, Реквизит, Значение, Знач МетодСравнения = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  КомандаПечати  - СтрокаТаблицыЗначений - элемент коллекции КомандыПечати в процедуре ДобавитьКомандыПечати:
+   * УсловияВидимости - Массив - список условий видимости;
+  Реквизит       - Строка                - имя реквизита объекта;
+  Значение       - Произвольный          - значение реквизита объекта;
+  МетодСравнения - ВидСравнения          - вид сравнения значений. Допустимые для использования виды: 
+                                           Равно, НеРавно, Больше, БольшеИлиРавно, Меньше, МеньшеИлиРавно, ВСписке, НеВСписке.
+                                           Значение по умолчанию - Равно.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>УправлениеПечатью.ДобавитьУсловиеВидимостиКоманды(КомандаПечати, Реквизит, Значение, МетодСравнения)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

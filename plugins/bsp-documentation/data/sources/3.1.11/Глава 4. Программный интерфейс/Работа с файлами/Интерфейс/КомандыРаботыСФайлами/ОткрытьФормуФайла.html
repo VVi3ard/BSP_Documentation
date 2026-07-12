@@ -1,0 +1,23 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ОткрытьФормуФайла</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_РаботаСФайламиКлиентОткрытьФормуФайла" name="_работасфайламиклиентоткрытьформуфайла"></a><h1>ОткрытьФормуФайла</h1>
+<pre> Открывает форму файла.
+ Может использоваться как обработчик открытия файла.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ОткрытьФормуФайла(Знач ПрисоединенныйФайл, СтандартнаяОбработка = Ложь, ДополнительныеПараметры = Неопределено, 
+	ОписаниеОповещенияОЗакрытии = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ПрисоединенныйФайл      - ОпределяемыйТип.ПрисоединенныйФайл - ссылка на элемент справочника с файлом.
+  СтандартнаяОбработка    - Булево - возвращаемое значение. Всегда устанавливается в Ложь.
+  ДополнительныеПараметры - Структура - параметры открытия формы.
+  ОписаниеОповещенияОЗакрытии - ОписаниеОповещения - описание процедуры, которая будет вызвана при закрытии формы,
+                                со следующими параметрами:
+                                &lt;РезультатЗакрытия&gt; - значение, переданное при вызове Закрыть() открываемой формы;
+                                &lt;ДополнительныеПараметры&gt; - значение, указанное при создании 
+                                ОписаниеОповещенияОЗакрытии. 
+                                Если параметр не указан, то по завершении никакая процедура вызвана не будет.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>РаботаСФайламиКлиент.ОткрытьФормуФайла(ПрисоединенныйФайл, СтандартнаяОбработка, ДополнительныеПараметры, ОписаниеОповещенияОЗакрытии)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

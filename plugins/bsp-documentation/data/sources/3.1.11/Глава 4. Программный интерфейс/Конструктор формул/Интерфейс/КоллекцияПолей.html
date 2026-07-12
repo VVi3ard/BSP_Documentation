@@ -1,0 +1,24 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>КоллекцияПолей</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_КонструкторФормулКоллекцияПолей" name="_конструкторформулколлекцияполей"></a><h1>КоллекцияПолей</h1>
+<pre> Конструктор списка полей для процедуры ДобавитьСписокПолейНаФорму.
+ Преобразует  исходную коллекцию полей в коллекцию доступных полей компоновки данных.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция КоллекцияПолей(ИсточникПолей, Знач ИмяКоллекцииСКД = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>   ИсточникПолей   - см. <a href="ТаблицаПолей.html" target="_top">ТаблицаПолей</a>
+                   - ДеревоЗначений  - см. <a href="ДеревоПолей.html" target="_top">ДеревоПолей</a>
+                   - СхемаКомпоновкиДанных - список полей будет взят из коллекции ДоступныеПоляОтбора
+                                             компоновщика настроек. Имя коллекции может быть переопределено
+                                             в параметре ИмяКоллекцииСКД.
+                   - Строка - адрес во временном хранилище значения вышеперечисленного типа.
+   ИмяКоллекцииСКД - Строка - имя коллекции полей в компоновщике настроек. Параметр необходимо использовать, если в
+                              параметре ИсточникПолей передана схема компоновки данных.
+                              Значение по умолчанию - ДоступныеПоляОтбора. </pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>   ДоступныеПоляКомпоновкиДанных</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = КонструкторФормул.КоллекцияПолей(ИсточникПолей, ИмяКоллекцииСКД)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

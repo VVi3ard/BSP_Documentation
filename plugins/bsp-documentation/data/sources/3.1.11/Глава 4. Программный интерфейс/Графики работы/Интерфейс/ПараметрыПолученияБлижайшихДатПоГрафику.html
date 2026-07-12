@@ -1,0 +1,25 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПараметрыПолученияБлижайшихДатПоГрафику</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ГрафикиРаботыПараметрыПолученияБлижайшихДатПоГрафику" name="_графикиработыпараметрыполученияближайшихдатпографику"></a><h1>ПараметрыПолученияБлижайшихДатПоГрафику</h1>
+<pre> Конструктор параметров получения ближайших к заданным дат, включенных в график.
+  См. <a href="../../Календарные графики/Интерфейс/БлижайшиеРабочиеДаты.html" target="_top">БлижайшиеРабочиеДаты</a>.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПараметрыПолученияБлижайшихДатПоГрафику() Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Структура:
+   * ПолучатьПредшествующие - Булево - способ получения ближайшей даты:
+       если Истина - определяются рабочие даты, предшествующие переданным в параметре НачальныеДаты,
+       если Ложь - получаются ближайшие рабочие даты, следующие за начальными датами.
+       Значение по умолчанию - Ложь:
+   * ИгнорироватьНезаполненностьГрафика - Булево - если Истина, то в любом случае будет возвращено соответствие.
+       Начальные даты, для которых не будет значений из-за незаполненности графика, включены не будут.
+       Значение по умолчанию - Ложь:
+   * ВызыватьИсключение - Булево - вызов исключения в случае не заполненного графика
+       если Истина, вызвать исключение, если график не заполнен.
+       если Ложь - даты, по которым не удалось определить ближайшую дату, будут просто пропущены.
+       Значение по умолчанию - Истина.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ГрафикиРаботы.ПараметрыПолученияБлижайшихДатПоГрафику()</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

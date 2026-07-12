@@ -1,0 +1,111 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.41 Отчет о движениях документа</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.41 Отчет о движениях документа</h1>
+<p class="Paragraph0c">Отчет предоставляет информацию о том, в каких регистрах и
+какие записи (движения) сформированы при проведении документа.</p>
+<a data-original-name="IssOgl1_Назначение" name="issogl1_назначение"><h2>Назначение</h2></a>
+<p class="Paragraph0c">Отчет <span class="Interface">Движения документа</span> предназначен
+для «продвинутых» пользователей: внедренцы, разработчики, тестеры и т. д. для
+«ремонта» какой-либо нештатной ситуации, связанной с проблемами в самом приложений
+или с некорректным вводом. Можно использовать при внедрении приложения, в
+начале ее работы, когда необходимо исследовать правильность проведения
+документов.</p>
+<p class="Paragraph0c">Может быть полезным для проблемных ситуаций, например,
+когда документ имеет движения, но формально не проведен. Пример: <span class="Note">после ряда обменов
+получили непроведенный документ с движениями</span>.</p>
+<p class="Paragraph0c">Также отчет может быть полезен для быстрого анализа
+различных нештатных учетных ситуаций. Пример: <span class="Note">в документе вдруг возникает «красная» сумма
+в одной из строк (отрицательное число, которое невозможно в бухгалтерской
+отчетности, т. к. речь идет о денежных суммах). Причиной этого могут быть
+некорректные записи по регистру накопления <b>НДС
+предъявленный</b>. Вывод об этом можно получить, просмотрев все движения
+документа <b>Формирование записей книги
+покупок</b> в данном отчете.</span></p>
+<p class="Paragraph0c">Отчет можно сформировать для любого документа в
+приложении, но имеются ограничения:</p>
+<p class="Bullet1">■ 
+Для штатного анализа движений конкретных
+документов в приложении предусмотрены более специализированные отчеты, например
+движения документов <span class="Note"><b>Демо:
+Поступление товаров</b></span> и <span class="Note"><b>Демо: Реализация товаров</b></span>
+можно проанализировать с помощью журнала <span class="Note"><b>Демо: Журнал проводок бухгалтерского
+учета</b></span>;</p>
+<p class="Bullet1">■ 
+Не предназначен для корректировки движений, для
+этого существуют другие средства.</p>
+<a data-original-name="IssOgl1_Работа_с_отчетом" name="issogl1_работа_с_отчетом"><h2>Работа с отчетом</h2></a>
+<p class="Paragraph0c">К просмотру движений можно перейти из документа или списка
+документов с помощью команды <span class="Interface">Еще –</span> <span class="Interface">Отчеты</span> <span class="Interface">– Движения документа</span>.</p>
+<p class="Picture"><img alt="" height="631" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2301.png?_=0000ECF5E6D00E56-v10" style="aspect-ratio:770/631" width="770"/></p>
+<p class="Paragraph0c">Команда <span class="Interface">Движения документа</span> в
+меню <span class="Interface">Еще –</span> <span class="Interface">Отчеты</span>
+предусмотрена для всех документов, поддерживающих операцию проведения,
+например, <span class="Note"><b>Демо:
+Поступления товаров</b></span>. </p>
+<p class="Paragraph0c">Следует иметь в виду, что если документ имеет движения, но
+не поддерживает операцию проведения, то он не будет учтен в отчете <span class="Interface">Движения документов</span>. В отчете можно анализировать список
+регистров и записи в них:</p>
+<p class="Bullet1">■ 
+В поле <span class="Interface">Выводить только</span>
+с помощью кнопки <img alt="" height="22" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1471.png?_=000000A540A4BC5C-v10" style="aspect-ratio:23/22" width="23"/> можно <span class="Paragraph0c0">выбрать</span> данные по
+конкретному регистру или вывести все регистры, по которым проводится документ;</p>
+<p class="Picture"><img alt="" height="488" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2303.png?_=000105721DEC172E-v10" style="aspect-ratio:1050/488" width="1050"/></p>
+<p class="Bullet1">■ 
+Перейти с помощью гиперссылки из отчета к списку
+интересующего регистра. Затем можно, отключив отбор по <span class="Interface">Регистратору</span><span class="Paragraph0c0"> (выбранному
+документу), </span>проанализировать все записи регистра. Подробнее о
+работе со списком см. книгу 1С:Предприятие 8.3. Руководство пользователя.</p>
+<p class="Picture"><img alt="" height="647" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2305.png?_=00013366EB3B2650-v10" style="aspect-ratio:1061/647" width="1061"/></p>
+<p class="Paragraph0c">Также можно дополнительно:</p>
+<p class="Bullet1">■ 
+С помощью кнопки <span class="Interface">Настройки</span>
+поменять внешний вид отчета: выделять красным цветом отрицательные числа, а
+также виды движений регистра накопления; </p>
+<p class="Bullet1">■ 
+Использовать все прочие возможности для
+настройки отчета: отборы, сортировки, группировки и т. п. (с помощью кнопки <span class="Interface">Настройки </span><span class="Paragraph0c0">открыть настройки и нажать в поле </span><span class="Interface">Вид</span><span class="Paragraph0c0"> на тумблер </span><span class="Interface">Расширенный</span>);</p>
+<p class="Bullet1">■ 
+Использовать все стандартные функции работы с
+отчетами, такие как: вычислить показатели ячеек, распечатать, отправить по
+почте и т. д. (подробнее см. раздел документации Варианты отчетов).</p>
+<a data-original-name="IssOgl1_Варианты_отчета_о_движениях_документа" name="issogl1_варианты_отчета_о_движениях_документа"><h2>Варианты отчета о движениях документа</h2></a>
+<p class="Paragraph0c"><a data-original-name="_Вариант_отчета_Горизонтально" name="_вариант_отчета_горизонтально"></a>Выбрать
+варианты отчета можно с помощью кнопки <img alt="" height="20" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image529.png?_=000002F15397CFF0-v10" style="aspect-ratio:31/20" width="31"/>.
+Подробнее см. раздел документации Варианты отчетов. Если колонок
+немного, то для просмотра движений документа удобен вариант отчета <span class="Interface">Горизонтально</span>.</p>
+<p class="Picture"><img alt="" height="384" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2308.png?_=0000C9B9C596A04E-v10" style="aspect-ratio:1056/384" width="1056"/></p>
+<p class="Paragraph0c"><a data-original-name="_Вариант_отчета_Вертикально" name="_вариант_отчета_вертикально"></a>Вариант отчета <span class="Interface">Вертикально</span> предоставляет возможность расположить данные
+более компактно, что облегчает просмотр регистров с большим количеством
+колонок. Для наглядности строки дополнительно пронумерованы, а в подсказке
+выводятся названия колонок в выбранной строке.</p>
+<p class="Picture"><img alt="" height="515" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2310.png?_=0000E8334F62F631-v10" style="aspect-ratio:1058/515" width="1058"/></p>
+<p class="Paragraph0c">При необходимости
+можно сохранить изменения варианта отчета с помощью команд <span class="Interface">Сохранить</span> или <span class="Interface">Сохранить как</span>
+(в последнем случае в списке можно
+выбрать также и ранее сохраненный вариант отчета). Подробнее см. раздел
+документации Варианты отчета.</p>
+<p class="Picture"><img alt="" height="386" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2312.png?_=0000CC1CCF4C8120-v10" style="aspect-ratio:1058/386" width="1058"/></p>
+<a data-original-name="IssOgl1_Роли_для_работы_с_отчетом_о_движениях_документа" name="issogl1_роли_для_работы_с_отчетом_о_движениях_документа"><h2>Роли для работы с отчетом о движениях документа</h2></a>
+<p class="Paragraph0c">Для работы с отчетом о движениях документа могут быть
+назначены следующие роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Роль</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Краткое описание</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Просмотр отчета Движения
+  документа</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Позволяет сформировать отчет о движениях документа.</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+</main></body></html>

@@ -1,0 +1,21 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>СформироватьСообщениеИОтправить</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ШаблоныСообщенийСформироватьСообщениеИОтправить" name="_шаблонысообщенийсформироватьсообщениеиотправить"></a><h1>СформироватьСообщениеИОтправить</h1>
+<pre> Отправляет сообщение почты или SMS на основании предмета по шаблону сообщения.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция СформироватьСообщениеИОтправить(Шаблон, Предмет, УникальныйИдентификатор,
+	ДополнительныеПараметры = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Шаблон                   - СправочникСсылка.ШаблоныСообщений - ссылка на шаблон сообщения.
+  Предмет                  - Произвольный - объект основание для шаблона сообщений, типы объектов перечислены в
+                                            определяемом типе ПредметШаблонаСообщения.
+  УникальныйИдентификатор  - УникальныйИдентификатор - идентификатор формы, необходим для размещения вложений во
+                                                       временном хранилище.
+  ДополнительныеПараметры  - см. <a href="ПараметрыОтправкиПисьмаПоШаблону.html" target="_top">ПараметрыОтправкиПисьмаПоШаблону</a></pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>   см. ШаблоныСообщенийСлужебный.РезультатОтправкиПисьма</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ШаблоныСообщений.СформироватьСообщениеИОтправить(Шаблон, Предмет, УникальныйИдентификатор, ДополнительныеПараметры)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

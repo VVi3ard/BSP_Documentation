@@ -1,0 +1,19 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПриИзмененииСтатусаДоверенности</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_МашиночитаемыеДоверенностиФНСКлиентПереопределяемыйПриИзмененииСтатусаДоверенности" name="_машиночитаемыедоверенностифнсклиентпереопределяемыйприизменениистатусадоверенности"></a><h1>ПриИзмененииСтатусаДоверенности</h1>
+<pre> Вызывается при изменении статуса доверенности, например, когда статус обновляется из реестра ФНС, для обработки
+ изменившегося статуса доверенности. К примеру, в процедуре можно сообщить о том, что доверенность готова и 
+ можно продолжить отправку отчетности или документов по ЭДО.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ПриИзмененииСтатусаДоверенности(СтатусыДоверенностей) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  СтатусыДоверенностей - Соответствие из КлючИЗначение:
+   * Ключ - СправочникСсылка.МашиночитаемыеДоверенности - доверенность с изменившимся статусом
+   * Значение - Структура:
+    ** СтатусДоИзменения - ПеречислениеСсылка.ТехническиеСтатусыМЧД
+    ** НовыйСтатус - ПеречислениеСсылка.ТехническиеСтатусыМЧД</pre>
+<p class="Paragraph0c"><span class="Bold">Расположение</span></p>
+<pre> Общий модуль МашиночитаемыеДоверенностиФНСКлиентПереопределяемый</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

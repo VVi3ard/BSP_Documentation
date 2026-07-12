@@ -1,0 +1,19 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ОтменитьВыполнениеЗадания</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ДлительныеОперацииОтменитьВыполнениеЗадания" name="_длительныеоперацииотменитьвыполнениезадания"></a><h1>ОтменитьВыполнениеЗадания</h1>
+<pre> Отменяет выполнение фонового задания по переданному идентификатору.
+ При этом если в длительной операции открывались транзакции, то будет произведен откат последней открытой транзакции.
+ Таким образом, если длительная операция выполняет обработку (запись) данных, то для полной отмены всей операции
+ следует выполнять запись в одной транзакции (в таком случае, будет отменена вся транзакция целиком).
+ Если же достаточно, чтобы длительная операция была не отменена целиком, а прервана на достигнутом этапе,
+ то, напротив, открывать одну длинную транзакцию не требуется.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ОтменитьВыполнениеЗадания(Знач ИдентификаторЗадания) Экспорт </pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ИдентификаторЗадания - УникальныйИдентификатор - идентификатор фонового задания, полученный при запуске
+                           длительной операции. Смотри ДлительныеОперации.ВыполнитьВФоне.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ДлительныеОперации.ОтменитьВыполнениеЗадания(ИдентификаторЗадания)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

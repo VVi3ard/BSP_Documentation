@@ -1,0 +1,42 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.26 Конструктор формул</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.26 Конструктор формул</h1>
+<p class="Paragraph0c">В приложении предусмотрен конструктор формул, который
+позволяет быстро составлять формулы и использовать их в различных списках,
+настройках вариантов отчетов или макетах печатных форм. </p>
+<p class="Paragraph0c">Окно конструктора формул состоит из трёх частей. Сверху
+вводится формула, снизу слева – операнды формулы, снизу справа - операторы и
+функции. Состав операндов и операторов для формулы, а также способ перехода в
+конструктор формул зависит от контекста, где эта формула применяется. См.
+соответствующий раздел документации.</p>
+<p class="Picture"><img alt="" height="539" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1317.png?_=000080C8D86B0B97-v10" style="aspect-ratio:843/539" width="843"/></p>
+<p class="Paragraph0c">Способ построения формулы зависит от контекста, но условно
+можно разделить на три вида:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Арифметическое выражение</span>
+– для выражения выполняется указанное арифметическое действие после подстановки
+значений операндов. <span class="Note">Например,
+вычисляется курс валюты <b>Условная единица</b> на основе значений курсов евро
+и доллара США по формуле:<br/>
+</span><span class="Interface">(0,5 * </span><span class="Interface">USD</span><span class="Interface">  + 0,5 * </span><span class="Interface">EUR</span><span class="Interface">) / 2</span><span class="Paragraph0c0">. Подробнее см.
+раздел документации Валюты;</span></p>
+<p class="Bullet1">■ 
+<span class="Interface">Выражение для поля отчета</span>
+– похоже на арифметическое выражение, но вычисляется в контексте строк отчетов
+и может использовать различные агрегатные функции, например, <span class="Interface">Среднее</span>, <span class="Interface">Количество</span> и т. д.
+Подробнее см. раздел документации Варианты отчетов.</p>
+<p class="Bullet1">■ 
+<span class="Interface">Шаблон строки</span>–
+простой тест, в который подставляются какие-либо значения. <span class="Note">Например, «Счет на оплату № <b>[Номер]</b>
+от <b>[Дата]</b>»</span>. См. также раздел документации Печать.</p>
+<p class="Paragraph0c">Построение формулы с помощью конструктора сводится к
+выбору доступных операндов (полей) и операторов или функций из списка и
+подстановке их в текст формулы.</p>
+<p class="Paragraph0c">Поля и операторы формулы можно добавлять двойным щелчком
+мыши либо перетаскиванием.</p>
+<p class="Paragraph0c">С помощью кнопки панели навигации можно <span class="Interface">Проверить формулу</span>.</p>
+<p class="Paragraph0c">После составления формулы необходимо нажать кнопку <span class="Interface">Завершить редактирование</span>, для того чтобы добавить
+формулу в выбранное поле.</p>
+<p class="Paragraph0c">Правила построения выражений подробнее см. в Руководстве
+пользователя Приложение 1. Язык выражений системы компоновки данных.<a data-original-name="_Математические_формулы" name="_математические_формулы"></a></p>
+</main></body></html>

@@ -1,0 +1,40 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПараметрыXMLDSig</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ЭлектроннаяПодписьКлиентПараметрыXMLDSig" name="_электроннаяподписьклиентпараметрыxmldsig"></a><h1>ПараметрыXMLDSig</h1>
+<pre> Формирует структуру свойств для настройки нестандартной обработки
+ конверта XML и алгоритмов подписания и хеширования.
+ Рекомендуется не заполнять параметры XPathSignedInfo и XPathПодписываемыйТег
+ Параметр XPathSignedInfo вычисляется по алгоритмам канонизации,
+ а параметр XPathПодписываемыйТег вычисляется по ссылке
+ в атрибуте URI элемента SignedInfo.Reference конверта XML.
+ Параметры оставлены для обратной совместимости. Если указаны, работает по-старому:
+ не выполняется извлечение параметров из конверта XML и их контроль, при этом
+ конверт должен содержать алгоритмы канонизации и иметь элементы
+ размещения сертификата, как в варианте конверта "furs.mark.crpt.ru_v1".
+ Не требуется заполнять алгоритмы для использования сертификатов
+ с алгоритмами открытого ключа ГОСТ 94, ГОСТ 2001, ГОСТ 2012/256 и ГОСТ 2012/512.
+ Алгоритмы подписания и хеширования вычисляются по алгоритму открытого ключа,
+ извлекаемого из сертификата, которым выполняется подписание. Сначала
+ по переданной таблице, затем если таблица не заполнена или соответствие
+ не найдено, по внутренней таблице соответствия (рекомендуется).</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПараметрыXMLDSig() Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Структура:
+   * XPathSignedInfo         - Строка - по умолчанию: "(//. | //@* | //namespace::*)[ancestor-or-self::*[local-name()='SignedInfo']]".
+   * XPathПодписываемыйТег   - Строка - по умолчанию: "(//. | //@* | //namespace::*)[ancestor-or-self::soap:Body]".
+   * OIDАлгоритмаОткрытогоКлюча - Строка - например, "1.2.643.2.2.19"    + Символы.ПС + "1.2.643.7.1.1.1.1" + ...
+   * ИмяАлгоритмаПодписи        - Строка - например, "GOST R 34.10-2001" + Символы.ПС + "GOST R 34.11-2012" + ...
+   * OIDАлгоритмаПодписи        - Строка - например, "1.2.643.2.2.3"     + Символы.ПС + "1.2.643.7.1.1.3.2" + ...
+   * ИмяАлгоритмаХеширования    - Строка - например, "GOST R 34.11-94"   + Символы.ПС + "GOST R 34.11-12"   + ...
+   * OIDАлгоритмаХеширования    - Строка - например, "1.2.643.2.2.9"     + Символы.ПС + "1.2.643.7.1.1.2.2" + ...
+   * АлгоритмПодписи            - Строка - например, "http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"
+                                      + Символы.ПС +
+                                      "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256" + ...
+   * АлгоритмХеширования        - Строка - например, "http://www.w3.org/2001/04/xmldsig-more#gostr3411"
+                                      + Символы.ПС + "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256" + ...</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ЭлектроннаяПодписьКлиент.ПараметрыXMLDSig()</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

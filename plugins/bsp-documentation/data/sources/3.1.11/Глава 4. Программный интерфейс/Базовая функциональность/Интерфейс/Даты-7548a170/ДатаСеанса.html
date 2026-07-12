@@ -1,0 +1,22 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ДатаСеанса</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбщегоНазначенияКлиентДатаСеанса" name="_общегоназначенияклиентдатасеанса"></a><h1>ДатаСеанса</h1>
+<pre> Возвращает текущую дату, приведенную к часовому поясу сеанса.
+ Предназначена для использования вместо функции ТекущаяДата() в клиентском коде
+ в тех случаях, когда нет возможности перевести выполнение алгоритма в серверный код.
+ Функция возвращает время, близкое к результату функции ТекущаяДатаСеанса в серверном коде.
+ Погрешность обусловлена временем выполнения серверного вызова.
+ Кроме того, если на клиентском компьютере перевести время, то функция учтет это изменение 
+ не сразу, а только после следующего сброса кеша повторно используемых значений
+ (см. также метод ОбновитьПовторноИспользуемыеЗначения).
+ Поэтому алгоритмы, для которых точное время критически важно, следует размещать в серверном коде,
+ а не в клиентском.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ДатаСеанса() Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Дата - текущая дата сеанса.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ОбщегоНазначенияКлиент.ДатаСеанса()</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

@@ -1,0 +1,693 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.67 Формат параметров</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.67 Формат параметров</h1>
+<p class="Paragraph0c">При работе в приложении бывают ситуации, когда пользователю
+требуется выводить число или дату в каком-либо особенном виде, например, можно
+отформатировать дату, указав месяц прописью, или получить форматированное
+число, с двумя знаками после запятой. Для этого можно применить <b>Формат параметров</b>. Для форматирования
+значений в приложении предназначено окно – <b>Конструктор
+форматной строки</b>, которое открывается при подготовке рассылки отчетов,
+шаблонов сообщений, печатных форм и в дополнительных реквизитах.<b> </b>В <b>Конструкторе
+форматной строки,</b> в зависимости от выбранного типа параметра, можно вывести
+отличный от стандартного типы <b>(Число,
+Дата, Булево)</b>.</p>
+<a data-original-name="IssOgl1_Формат_чисел" name="issogl1_формат_чисел"><h2>Формат чисел</h2></a>
+<p class="Paragraph0c"><b>ЧЦ</b> –   максимальная длина целой части числа. </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Сумма]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧЦ</b> =
+  6</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">545 787</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>ЧДЦ</b> – число десятичных разрядов в
+дробной части. </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Сумма]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧДЦ</b> =
+  4</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">545 787,3210</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>ЧС –</b> сдвиг разрядов: положительный -
+деление, отрицательный - умножение. </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Сумма]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧC</b> =
+  1</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">54 578,7321</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧС</b> =
+  -1</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">5 457 873,21</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>ЧРД </b>– символ-разделитель целой и
+дробной части.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Сумма]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧРД</b> =.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">545 787.321</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>ЧРГ </b>– символ-разделитель групп целой
+части числа. Если в качестве разделителя использовать пустую строку, то в этом
+случае разделителем будет символ неразрывного пробела.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Сумма]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧРГ</b> =,</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">545,787,321</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>ЧГ</b> – порядок группировки разрядов
+числа. </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Сумма]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧГ</b> =
+  0</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">545787,321</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>ЧН </b>– строка, представляющая нулевое
+значение числа. Если параметр отсутствует, то нулевое значение будет
+представлено пустой строкой.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Номер]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧН</b> =
+  Пусто</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">0,000</p>
+</td>
+<td>
+<p class="TextinTable81">Пусто</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>ЧВН</b> – нужно ли выводить лидирующие
+нули. Значение данного параметра не задается, собственно наличие параметра
+определяет вывод лидирующих нулей.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Номер]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧЦ</b> = 5; <b>ЧВН</b> =; <b>ЧГ</b> = 0</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">55,000</p>
+</td>
+<td>
+<p class="TextinTable81">00055</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>ЧО –</b> представление отрицательных
+чисел. </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Итог]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧО</b> =
+  0</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">-545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">(545 787,321)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧО</b> =
+  1</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">-545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">-545 787,321</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ЧО </b>= 3</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">-545 787,321</p>
+</td>
+<td>
+<p class="TextinTable81">545 787,321-</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c"><b>ЧФ </b>– задает шаблон форматирования
+числа. Позиция исходного числа, отформатированного с учетом остальных
+параметров, указывается символом <b>Ч</b>.
+Остальные символы выводятся как есть.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Сумма]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><b>ЧЦ </b>= 15; <b>ЧДЦ</b> = 2; <b>ЧС</b> = 3; <b>ЧФ</b> = <b>Ч</b> тыс</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">545 787,321</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">545,79 тыс</p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+<a data-original-name="IssOgl1_Формат_даты" name="issogl1_формат_даты"><h2>Формат даты                 </h2></a>
+<p class="MsoNormal"><b>ДЛФ</b> - локальный формат
+даты. Указывается вариант отображения частей даты. Рекомендуется использовать
+данный формат, т.к. локальный формат для чисел и дат зависит от языка. Если выбрать
+нужный язык из списка, то локальный формат числа и даты будет указываться в
+соответствии с выбранным языком. В ином случае – будет использоваться текущий
+язык.</p>
+<p class="Bullet1">● 
+<b>D</b> - дата (цифрами);</p>
+<p class="Bullet1">● 
+<b>DD</b> -
+длинная дата (месяц прописью);</p>
+<p class="Bullet1">● 
+<b>T</b> -
+полное время, дата может объединяться со временем;</p>
+<p class="Bullet1">● 
+<b>DT</b> - дата время.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Дата]</p>
+</td>
+<td>
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДЛФ</b> = DD</p>
+</td>
+<td>
+<p class="TextinTable81">10.10.2022 18:10:05</p>
+</td>
+<td>
+<p class="TextinTable81">10 октября 2022 г.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДЛФ</b> = DDT</p>
+</td>
+<td>
+<p class="TextinTable81">10.10.2022 18:10:05</p>
+</td>
+<td>
+<p class="TextinTable81">10 октября 2022 г. 18:10:05</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДЛФ</b> = D</p>
+</td>
+<td>
+<p class="TextinTable81">10.10.2022 18:10:05</p>
+</td>
+<td>
+<p class="TextinTable81">10.10.2022</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДЛФ</b> = T</p>
+</td>
+<td>
+<p class="TextinTable81">10.10.2022 18:10:05</p>
+</td>
+<td>
+<p class="TextinTable81">18:10:05</p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal">                        </p>
+<p class="MsoNormal"><b>ДФ </b>– задает
+произвольный шаблон даты с помощью подстановочных символов.</p>
+<p class="Bullet1">● 
+d
+- день месяца (цифрами) без лидирующего нуля;</p>
+<p class="Bullet1">● 
+dd - день месяца (цифрами) с лидирующим нулем;</p>
+<p class="Bullet1">● 
+ddd
+- краткое название дня недели;</p>
+<p class="Bullet1">● 
+dddd - полное название дня недели;</p>
+<p class="Bullet1">● 
+M
+- номер месяца (цифрами) без лидирующего нуля;</p>
+<p class="Bullet1">● 
+MM
+- номер месяца (цифрами) с лидирующим нулем;</p>
+<p class="Bullet1">● 
+MMM
+- краткое название месяца;</p>
+<p class="Bullet1">● 
+MMMM
+- полное название месяца;</p>
+<p class="Bullet1">● 
+q
+- номер квартала в году;</p>
+<p class="Bullet1">● 
+y
+- номер года без века и лидирующего нуля;</p>
+<p class="Bullet1">● 
+yy
+- номер года без века с лидирующим нулем;</p>
+<p class="Bullet1">● 
+yyyy
+- номер года с веком;</p>
+<p class="Bullet1">● 
+h
+- час в 12 часовом варианте без лидирующих нулей;</p>
+<p class="Bullet1">● 
+hh
+- час в 12 часовом варианте с лидирующим нулем;</p>
+<p class="Bullet1">● 
+H
+- час в 24 часовом варианте без лидирующих нулей;</p>
+<p class="Bullet1">● 
+HH - час в 24 часовом варианте с лидирующим
+нулем;</p>
+<p class="Bullet1">● 
+m
+- минута без лидирующего нуля;</p>
+<p class="Bullet1">● 
+mm
+- минута с лидирующим нулем;</p>
+<p class="Bullet1">● 
+s
+- секунда без лидирующего нуля;</p>
+<p class="Bullet1">● 
+ss
+- секунда с лидирующим нулем;</p>
+<p class="Bullet1">● 
+tt
+- отображение половины дня AM/PM </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Пример для параметра [Дата документа]</p>
+</td>
+<td>
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДФ</b> = d.M.yy</p>
+</td>
+<td>
+<p class="TextinTable81">01.01.2022 18:10:05</p>
+</td>
+<td>
+<p class="TextinTable81">1.1.22</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДФ</b> = HH:mm:ss</p>
+</td>
+<td>
+<p class="TextinTable81">01.01.2022 18:10:05</p>
+</td>
+<td>
+<p class="TextinTable81">18:10:05</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДФ</b> =
+  yyyy-MM-dd</p>
+</td>
+<td>
+<p class="TextinTable81">10.10.2022 18:10:05</p>
+</td>
+<td>
+<p class="TextinTable81">2022-10-10</p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"><b>ДП</b> – представление пустой даты.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Пример для параметра [Дата отчета]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДП</b> = -</p>
+</td>
+<td>
+<p class="TextinTable81">(пустая дата)</p>
+</td>
+<td>
+<p class="TextinTable81">-</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДП</b> = Нет
+  даты</p>
+</td>
+<td>
+<p class="TextinTable81">(пустая дата)</p>
+</td>
+<td>
+<p class="TextinTable81">Нет даты</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>ДП</b> = Сейчас</p>
+</td>
+<td>
+<p class="TextinTable81">(пустая дата)</p>
+</td>
+<td>
+<p class="TextinTable81">Сейчас</p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+<a data-original-name="IssOgl1_Формат_Булево" name="issogl1_формат_булево"><h2>Формат Булево</h2></a>
+<p class="MsoNormal"><b>БЛ </b>–
+строка, представляющая логическое значение <b>Ложь.</b></p>
+<p class="MsoNormal"><b>БИ</b> –
+строка, представляющая логическое значение <b>Истина. </b></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Примеры для параметров [Доступность товара]  и [Важность]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>БЛ</b>=Отсутствует;
+  <b>БИ</b>=Доступен</p>
+</td>
+<td>
+<p class="TextinTable81">Истина</p>
+</td>
+<td>
+<p class="TextinTable81">Доступен </p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>БЛ</b>=Обычный;
+  БИ=Важный</p>
+</td>
+<td>
+<p class="TextinTable81">Ложь</p>
+</td>
+<td>
+<p class="TextinTable81">Обычный</p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+<a data-original-name="_Формат_параметров_в" name="_формат_параметров_в"></a><a data-original-name="IssOgl1_Прочие_параметры" name="issogl1_прочие_параметры"><h2>Прочие параметры</h2></a>
+<p class="Paragraph0c"><b>Л</b> – имя языка или страны, для которых
+будет выполняться форматирование чисел, дат и значений типа булево.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td>
+<p class="TextinTable81">Примеры для параметров [Дата] и [Сумма]</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Исходное значение</p>
+</td>
+<td>
+<p class="TextinTable81">Результат</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>Л</b> =
+  en (англ.)</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">10.10.2022 18:01:05</p>
+</td>
+<td>
+<p class="TextinTable81">10/10/2022 6:01:05 PM</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>Л</b> = de (нем.)</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Истина</p>
+</td>
+<td>
+<p class="TextinTable81">Ja</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TextinTable81"><b>Л</b> = it_IT
+  (итальян.)</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">5 749 321,123</p>
+</td>
+<td>
+<p class="TextinTable81">5.749.321,123</p>
+</td>
+</tr>
+</tbody></table>
+<a data-original-name="IssOgl1_Формат_параметров_в_рассылке_отчетов" name="issogl1_формат_параметров_в_рассылке_отчетов"><h2>Формат параметров в рассылке отчетов</h2></a>
+<p class="MsoNormal">При создании <b>Рассылки отчетов </b>заходим во вкладку <b>Доставка,</b>
+в <b>Теме</b> письма укажем нужную нам функцию
+формата <b>Даты</b> с помощью <b>Параметра форматной строки, </b>также укажем
+<b>Формат даты</b> рассылки. (При желании
+прописать формулу можно и вручную. Это не повлияет на результат) см. раздел <span class="Note">Администрирование</span><b> – Печатные формы, отчеты, обработки – Рассылки отчетов</b>.</p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"><img alt="" height="634" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3567.png?_=00029786F6CD5EF8-v10" style="aspect-ratio:925/634" width="925"/></p>
+<p class="MsoNormal"><img alt="" height="254" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3569.png?_=00001F3277B74014-v10" style="aspect-ratio:749/254" width="749"/></p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"> </p>
+<a data-original-name="IssOgl1_Формат_параметров_в_макетах_печатных_форм" name="issogl1_формат_параметров_в_макетах_печатных_форм"><h2>Формат параметров в макетах печатных форм</h2></a>
+<p class="MsoNormal">Создадим новый<b> Макет печати </b>с помощью <b>Конструктора печатных форм</b>, в поле
+списка доступных реквизитов укажем нужный формат, нажмем на кнопку<b> </b><img alt="" height="18" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3571.png?_=00000499D10D650F-v10" style="aspect-ratio:17/18" width="17"/> (настройка формата поля) и выберем формат <b>Процента оплаты</b>, отличный от стандартного см. раздел <span class="Note">Администрирование</span><b> – Печатные формы, отчеты, обработки – Макеты печатных форм.</b></p>
+<p class="MsoNormal"><img alt="" height="840" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3573.png?_=00052E08071C6087-v10" style="aspect-ratio:1600/840" width="1600"/></p>
+<p class="MsoNormal"> </p>
+<a data-original-name="IssOgl1_Формат_параметров_в_шаблонах_сообщений" name="issogl1_формат_параметров_в_шаблонах_сообщений"><h2>Формат параметров в шаблонах сообщений</h2></a>
+<p class="MsoNormal">Создадим
+новый <b>Шаблон сообщений. </b>Выберем
+нужный <b>Параметр</b> и зададим формат
+отображения реквизита (вызовем контекстное меню) см. раздел <span class="Note">Администрирование</span><b> – Органайзер – Заметки, напоминания, анкетирование, шаблоны сообщений –
+Шаблоны сообщений.</b></p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"><img alt="" height="898" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3575.png?_=0006BA060D150DF2-v10" style="aspect-ratio:1600/898" width="1600"/></p>
+<a data-original-name="IssOgl1_Формат_параметров_в_дополнительных_реквизитах" name="issogl1_формат_параметров_в_дополнительных_реквизитах"><h2>Формат параметров в дополнительных реквизитах</h2></a>
+<p class="MsoNormal">Создадим <b>Дополнительные реквизиты Срок оплаты</b> и<b> Согласован с клиентом</b> (да/нет) для
+документа <b>Счет на оплату покупателю</b>.
+Далее, применим соответствующие параметры формата для типа <b>Даты</b> и <b>Булево</b>. Включить
+возможность создавать дополнительные реквизиты и сведения и настроить их можно
+в разделе <span class="Note">Администрирование</span><b> — Общие настройки</b>.  </p>
+<p class="MsoNormal"><img alt="" height="633" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3577.png?_=0001C72EB0C19F54-v10" style="aspect-ratio:960/633" width="960"/></p>
+<p class="MsoNormal"> </p>
+<p class="Paragraph0c"> </p>
+<p class="MsoNormal"> </p>
+</main></body></html>

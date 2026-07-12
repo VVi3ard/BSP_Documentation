@@ -1,0 +1,23 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПредставленияЗначенийСвойств</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_УправлениеСвойствамиПредставленияЗначенийСвойств" name="_управлениесвойствамипредставлениязначенийсвойств"></a><h1>ПредставленияЗначенийСвойств</h1>
+<pre> Возвращает значения дополнительных свойств объектов.
+ Подходит для подстановки параметров при формировании печатных форм.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПредставленияЗначенийСвойств(ОбъектыСоСвойствами, КодЯзыка = "") Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ОбъектыСоСвойствами  - Массив      - объекты, для которых нужно получить значения дополнительных свойств.
+                       - ЛюбаяСсылка - ссылка на объект, например, СправочникСсылка.Номенклатура,
+                                       ДокументСсылка.ЗаказПокупателя, ...
+  КодЯзыка             - Строка - код языка, на котором нужно получить представление.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Соответствие из КлючИЗначение:
+   * Ключ - ЛюбаяСсылка - ссылка на объект.
+   * Значение - Структура:
+        * Ключ - Строка - имя свойства.
+        * Значение - Строка - представление свойства на переданном языке.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = УправлениеСвойствами.ПредставленияЗначенийСвойств(ОбъектыСоСвойствами, КодЯзыка)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

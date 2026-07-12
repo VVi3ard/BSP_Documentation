@@ -1,0 +1,27 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПриСозданииНаСервере</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОтчетыПереопределяемыйПриСозданииНаСервере" name="_отчетыпереопределяемыйприсозданиинасервере"></a><h1>ПриСозданииНаСервере</h1>
+<pre> Вызывается в обработчике одноименного события формы отчета после выполнения кода формы.
+ См. "ФормаКлиентскогоПриложения.ПриСозданииНаСервере" в синтакс-помощнике и ОтчетыКлиентПереопределяемый.ОбработчикКоманды.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ПриСозданииНаСервере(Форма, Отказ, СтандартнаяОбработка) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>   Форма - ФормаКлиентскогоПриложения - форма отчета.
+         - РасширениеУправляемойФормыДляОтчета
+         - Структура:
+           * НастройкиОтчета - см. <a href="../Интерфейс/НастройкиОтчетаПоУмолчанию.html" target="_top">ОтчетыКлиентСервер.НастройкиОтчетаПоУмолчанию</a>
+   Отказ - Булево - признак отказа от создания формы.
+   СтандартнаяОбработка - Булево - признак выполнения стандартной (системной) обработки события.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример реализации</span></p>
+<pre> //Добавление команды с обработчиком в ОтчетыКлиентПереопределяемый.ОбработчикКоманды:
+ Команда = ФормаОтчета.Команды.Добавить("МояОсобеннаяКоманда");
+ Команда.Действие  = "Подключаемый_Команда";
+ Команда.Заголовок = НСтр("ru = 'Моя команда...'");
+ Кнопка = ФормаОтчета.Элементы.Добавить(Команда.Имя, Тип("КнопкаФормы"), ФормаОтчета.Элементы.&lt;ИмяПодменю&gt;);
+ Кнопка.ИмяКоманды = Команда.Имя;
+ ФормаОтчета.ПостоянныеКоманды.Добавить(КомандаСоздать.Имя);</pre>
+<p class="Paragraph0c"><span class="Bold">Расположение</span></p>
+<pre> Общий модуль ОтчетыПереопределяемый</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

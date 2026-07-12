@@ -1,0 +1,412 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.42 Оценка производительности</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.42 Оценка производительности</h1>
+<p class="Paragraph0c">В приложении предусмотрены встроенные средства для сбора и
+анализа данных о производительности работы по APDEX, которая является международным
+стандартом оценки производительности информационных систем. Оценка
+производительности приложения по методике APDEX состоит из следующих основных
+этапов:</p>
+<p class="Bullet1">■ 
+заполнение профиля ключевых операций (в профиле
+заполняются приоритет и целевое значение времени для каждой ключевой операции,
+предусмотренной в приложении);</p>
+<p class="Bullet1">■ 
+сбор информации о времени выполнения каждой
+ключевой операции;</p>
+<p class="Bullet1">■ 
+на основании собранных данных – формирование отчета
+<span class="Interface">Оценка производительности по ключевым операциям</span>.</p>
+<p class="Paragraph0c">Для администратора приложения предусмотрена возможность
+оценить результаты замеров в наглядной форме – в виде таблицы и диаграммы.</p>
+<a data-original-name="IssOgl1_Настройка_приложения" name="issogl1_настройка_приложения"><h2>Настройка приложения</h2></a>
+<p class="Paragraph0c">Для начала замера производительности включите флажок <span class="Interface">Оценка производительности</span> в разделе<span class="Interface"> </span><span class="Note"><b>Администрирование – </b></span><span class="Interface">Обслуживание – Оценка производительности</span>. После этого в
+фоне будет автоматически собираться информация о времени выполнения по всем
+ключевым операциям, предусмотренным в приложении, а также становятся доступными
+ссылки:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Профили ключевых операций</span>
+– переход к настройке профилей ключевых операций (подробнее см. раздел <a href="5.42 Оценка производительности.html#_список_профили_ключевых">Список Профили ключевых операций</a>);</p>
+<p class="Bullet1">■ 
+<span class="Interface">Настройки </span>– переход
+к настройке автоматического экспорта замеров производительности (подробнее см.
+раздел <a href="5.42 Оценка производительности.html#_настройка_выгрузки_замеров_1">Настройка выгрузки замеров
+производительности</a>);</p>
+<p class="Bullet1">■ 
+<span class="Interface">Экспорт замеров</span> –
+экспорт замеров производительности за произвольный период (подробнее см. раздел
+<a href="5.42 Оценка производительности.html#_экспорт_и_импорт">Экспорт замеров производительности</a>);</p>
+<p class="Bullet1">■ 
+<span class="Interface">Импорт замеров</span> –
+получение замеров производительности из указанного файла на компьютере
+(подробнее см. раздел <a href="5.42 Оценка производительности.html#_импорт_замеров_производительности">Импорт
+замеров производительности</a>).</p>
+<p class="Picture"><img alt="" height="556" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2314.png?_=0000ECC09142C3F0-v10" style="aspect-ratio:1119/556" width="1119"/></p>
+<a data-original-name="_Ключевые_операции" name="_ключевые_операции"></a><a data-original-name="IssOgl1_Ключевые_операции" name="issogl1_ключевые_операции"><h2>Ключевые операции</h2></a>
+<p class="Paragraph0c">Ключевые операции для оценки производительности приложения
+(это различные действия пользователей в приложении: формирование отчетов,
+проведение документов и т. д.) заранее вносятся в список, который открывается
+по команде <span class="Interface">Ключевые операции</span> раздела <span class="Note"><b>Сервисные подсистемы</b></span>.
+Приложение поставляется со списком ключевых операций.</p>
+<p class="Paragraph0c">Некоторые операции являются предопределенными, их нельзя
+удалить из списка:</p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Общая
+производительность системы</span><span class="Paragraph0c0">.</span></p>
+<p class="Paragraph0c">В список можно добавить и другие ключевые операции.</p>
+<p class="Picture"><img alt="" height="556" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2316.png?_=000108CCA04B3F09-v10" style="aspect-ratio:1119/556" width="1119"/></p>
+<p class="Paragraph0c">Каждая ключевая операция характеризуется свойствами: </p>
+<p class="Bullet1">■ 
+<span class="Interface">Приоритет</span>; </p>
+<p class="Bullet1">■ 
+<span class="Interface">Целевое время</span>; </p>
+<p class="Bullet1">■ 
+<span class="Interface">Минимально допустимый
+уровень</span>. </p>
+<p class="Paragraph0c">В списке можно просмотреть информацию о ключевой операции.
+Иногда невозможно точно определить целевое время, но можно дать качественную
+оценку производительности ключевой операции (например, оценить от 1 до 5 в
+соответствии с приведенными рекомендациями) по APDEX (см. также таблицу оценок в
+разделе <a href="5.42 Оценка производительности.html#_анализ_производительности">Анализ производительности</a>). </p>
+<p class="Picture"><img alt="" height="452" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2318.png?_=00006F9F7C890984-v10" style="aspect-ratio:847/452" width="847"/></p>
+<p class="Paragraph0c">Выберите ключевую операцию, дважды щелкните по ней мышью
+или выполните команду <span class="Interface">Еще -</span> <span class="Interface">Изменить</span>,
+для того чтобы просмотреть или заполнить данные. При этом заполнение в данном
+списке является необязательным.</p>
+<p class="Paragraph0c">Нажмите ссылку <span class="Interface">Замеры времени</span>
+на панели навигации ключевой операции, для того чтобы посмотреть историю
+замеров производительности.</p>
+<p class="Picture"><img alt="" height="341" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2320.png?_=000077D50E8A77C5-v10" style="aspect-ratio:1079/341" width="1079"/></p>
+<p class="Paragraph0c">С помощью кнопки панели навигации приложение позволяет
+произвести автоматический <span class="Interface">Подбор целевого времени</span>
+ключевой операции по данным имеющихся замеров времени. </p>
+<p class="Paragraph0c">Кнопка доступна как в списке, так и в карточке ключевых
+операций. Для подбора целевого времени необходимо заполнить:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Период</span>, за который
+проводились замеры (поле обязательно для заполнения);</p>
+<p class="Bullet1">■ 
+<span class="Interface">Текущий APDEX</span> (поле
+обязательно для заполнения, принимает значения от <span class="Interface">0</span>
+до <span class="Interface">1</span>, подробнее см. раздел <a href="5.42 Оценка производительности.html#_анализ_производительности">Анализ производительности</a>).</p>
+<p class="Paragraph0c">Нажмите кнопку <span class="Interface">Подобрать целевое
+время</span>. После этого автоматически заполняются поля:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Количество замеров</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Целевое время</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Расчетный APDEX</span>.</p>
+<p class="Picture"><img alt="" height="620" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2322.png?_=0000833677FE54DA-v10" style="aspect-ratio:818/620" width="818"/></p>
+<p class="Paragraph0c"><span class="Interface">Внимание!</span> Если в указанный период не было произведено ни
+одного замера, автоматический подбор целевого времени невозможен. Приложение
+выводит об этом сообщение. Просмотрите историю замеров производительности,
+укажите период, в котором замеры были произведены. После этого нажмите кнопку <span class="Interface">Подобрать целевое время</span>.</p>
+<a data-original-name="_Список_Профили_ключевых" name="_список_профили_ключевых"></a><a data-original-name="IssOgl1_Список_Профили_ключевых_операций" name="issogl1_список_профили_ключевых_операций"><h2>Список Профили ключевых операций</h2></a>
+<p class="Paragraph0c">Для дальнейшей оценки производительности приложения
+необходимо заполнить список <span class="Interface">Профили ключевых операций</span>.
+Подробнее о ключевых операциях см. раздел <a href="5.42 Оценка производительности.html#_ключевые_операции">Ключевые
+операции</a>.</p>
+<p class="Paragraph0c">С помощью ссылки <span class="Interface">Профили ключевых
+операций</span> можно открыть список профилей и заполнить необходимые данные.</p>
+<p class="Picture"><img alt="" height="711" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2324.png?_=00013067661D1AF1-v10" style="aspect-ratio:1120/711" width="1120"/></p>
+<p class="Paragraph0c">Приложение
+поставляется с профилем ключевых операций по умолчанию – <span class="Note"><b>Демо: Профиль</b></span>. </p>
+<p class="Paragraph0c">В список можно
+ввести новую ключевую операцию с помощью соответствующей кнопки<span class="Interface"> Добавить</span>, для
+этого в добавленной строке нажмите кнопку <img alt="" height="22" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1196.png?_=000000A09D535135-v10" style="aspect-ratio:22/22" width="22"/>,
+выберите нужную ключевую операцию из списка <span class="Interface">Ключевые операции замеров производительности</span>.</p>
+<p class="Picture"><img alt="" height="654" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2327.png?_=0000E41F80AF631D-v10" style="aspect-ratio:895/654" width="895"/></p>
+<p class="Paragraph0c">После добавления ключевой операции заполните <span class="Interface">Целевое время</span> (<span class="Note">например, <b>1.00</b></span>) и <span class="Interface">Приоритет</span> (<span class="Note">например, <b>5</b></span>).</p>
+<p class="Paragraph0c">Можно <span class="Interface">Сохранить профиль</span> с
+помощью кнопки панели навигации. Укажите путь для сохранения файла на
+компьютер.</p>
+<p class="Paragraph0c">При необходимости
+можно ввести новый профиль ключевых операций с помощью кнопки <span class="Interface">Создать</span>.</p>
+<p class="Picture"><img alt="" height="513" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2329.png?_=0000C48F4F1942BC-v10" style="aspect-ratio:1079/513" width="1079"/></p>
+<p class="Paragraph0c">Далее необходимо
+заполнить профиль. Сделать это можно несколькими способами:</p>
+<p class="Bullet1">■ 
+С помощью кнопки <span class="Interface">Загрузить
+профиль</span> воспользоваться ранее сохраненным профилем или полученным в
+файле. Укажите путь к профилю на компьютере. После этого указанный профиль
+будет загружен.</p>
+<p class="Picture"><img alt="" height="516" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2331.png?_=0000BF27C42574C7-v10" style="aspect-ratio:1062/516" width="1062"/></p>
+<p class="Bullet1">■ 
+С помощью кнопки <span class="Interface">Заполнить</span>
+можно по умолчанию перенести все ключевые операции из списка <span class="Interface">Ключевые операции</span>, при этом автоматически заполняются
+поля <span class="Interface">Целевое время</span> (значением <span class="Interface">1.00</span>) и <span class="Interface">Приоритет</span>
+(значением <span class="Interface">5</span>).</p>
+<p class="Picture"><img alt="" height="689" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2333.png?_=0001021598E0D428-v10" style="aspect-ratio:1063/689" width="1063"/></p>
+<p class="Bullet1">■ 
+Ввести ключевые операции с помощью кнопки <span class="Interface">Добавить</span> (см. выше), заполнить необходимую информацию.</p>
+<p class="Paragraph0c">После заполнения
+профиля заполните <span class="Interface">Наименование</span>. Поле является обязательным для заполнения.</p>
+<a data-original-name="_Анализ_производительности" name="_анализ_производительности"></a><a data-original-name="IssOgl1_Анализ_производительности" name="issogl1_анализ_производительности"><h2>Анализ производительности</h2></a>
+<p class="Paragraph0c">Для оценки производительности приложения по методике APDEX
+требуются административные права. </p>
+<p class="Paragraph0c">Анализ производительности осуществляется с помощью отчета <span class="Interface">Оценка производительности по ключевым операциям</span>, к
+которому можно перейти, воспользовавшись ссылкой в разделе <span class="Note"><b>Администрирование – </b></span><span class="Interface">Обслуживание – Отчеты и обработки – Отчеты администратора</span>.
+</p>
+<p class="Picture"><img alt="" height="704" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2335.png?_=0001656CC5F4226F-v10" style="aspect-ratio:1175/704" width="1175"/></p>
+<p class="Paragraph0c">Перед проведением оценки производительности нужно задать <span class="Interface">Период</span>, за который будет проводиться оценка
+производительности. Для этого задайте <span class="Interface">Дату начала</span>
+и <span class="Interface">Дату окончания</span> периода (обязательно указание
+времени). Подробнее о работе с отчетами см. раздел документации Варианты
+отчетов.</p>
+<p class="Paragraph0c">Установкой поля <span class="Interface">Периодичность
+замеров</span> регулируется количество результатов, которые будут отображаться
+в периоде. <span class="Note">Например,
+если в качестве периода установить день, а в качестве шага – час, то в окне
+будет выведено двадцать четыре результата (для каждой ключевой операции).</span>
+При этом результат за час будет рассчитан по специальной формуле по методике
+APDEX. Если в течение часа операция не выполнялась в приложении, то в
+соответствующей ячейке таблицы будет ноль. Поле является обязательным.</p>
+<p class="Paragraph0c">В поле <span class="Interface">Профиль</span> с помощью
+кнопки <img alt="" height="20" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image690.png?_=000000B819076193-v10" style="aspect-ratio:19/20" width="19"/> выберите из списка один из профилей ключевых
+операций. Поле является обязательным. Подробнее см. раздел <a href="5.42 Оценка производительности.html#_список_профили_ключевых">Список Профили ключевых операций</a>.</p>
+<p class="Paragraph0c"><span class="Note">Замеры
+производятся, например, при вводе нового элемента в список <b>Демо:
+Номенклатура</b> или при проведении документа <b>Демо: Заказы Покупателя</b></span>.
+Результаты замеров можно просмотреть в отчете в виде: </p>
+<p class="Bullet1">■ 
+Графика; </p>
+<p class="Picture"><img alt="" height="754" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2337.png?_=0000D3BC1EB35E6C-v10" style="aspect-ratio:1129/754" width="1129"/></p>
+<p class="Bullet1">■ 
+Таблицы.</p>
+<p class="Picture"><img alt="" height="404" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2339.png?_=0000C83DFA798325-v10" style="aspect-ratio:1139/404" width="1139"/></p>
+<p class="Paragraph0c">При необходимости можно отобрать данные также по
+параметрам:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Ключевая операция</span>;</p>
+<p class="Bullet1"><span class="Interface">■ 
+</span><span class="Interface">Пользователь</span><span class="Paragraph0c0">;</span></p>
+<p class="Bullet1"><span class="Paragraph0c0">■ 
+</span><span class="Interface">Выполнен с ошибкой
+–</span><span class="Paragraph0c0"> анализ
+корректных выполнений ключевых операций особенно актуален для операций,
+связанных с проведением документов. Это позволяет отделить корректные замеры
+проведения документов от ошибочных замеров, например, связанных с некорректным
+заполнением. Включите флажок, для того чтобы учитывать этот признак, по
+умолчанию будут рассматриваться только корректные операции (значение </span><span class="Interface">Нет</span><span class="Paragraph0c0">).</span></p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Настройки</span>
+можно настроить отчет более детально. Подробнее см. раздел документации
+Варианты отчетов.</p>
+<p class="Paragraph0c">Оценка производительности выводится в диапазоне от нуля до
+единицы. В зависимости от значения оценки поле с оценкой будет выделено
+определенным цветом. Полученные оценки можно интерпретировать следующим
+образом: </p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Диапазон оценок</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Цвет поля</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Изображение цвета</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Интерпретация оценки</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">От 1 до 5</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">0,0–0,5</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Серый</p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><img alt="" height="29" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2341.png?_=0000015066A7C010-v10" style="aspect-ratio:102/29" width="102"/></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Неприемлемая
+  производительность</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">0,5–0,7</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Оранжевый</p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><img alt="" height="28" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2343.png?_=000001472BBA6BF4-v10" style="aspect-ratio:103/28" width="103"/></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Очень
+  плохая производительность</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">2</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">0,7–0,85</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Желтый</p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><img alt="" height="29" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2345.png?_=00000139DF12CF6C-v10" style="aspect-ratio:102/29" width="102"/></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Плохая
+  производительность</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">3</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">0,85–0,94</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Зеленый</p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><img alt="" height="29" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2347.png?_=0000013099C734D7-v10" style="aspect-ratio:104/29" width="104"/></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Хорошая
+  производительность</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">4</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">0,94–1,0</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Голубой</p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><img alt="" height="29" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2349.png?_=0000010566C48E9F-v10" style="aspect-ratio:103/29" width="103"/></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Отличная
+  производительность</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">5</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="MsoNormal"></p>
+<p class="Paragraph0c">Дважды щелкнув мышью по наименованию ключевой операции в
+таблице, можно просмотреть данные ключевой операции.</p>
+<p class="Paragraph0c">У отчета предусмотрены варианты:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Оценка производительности
+(период в колонках)</span> – отличается
+тем, что в таблице период выведен в колонки, виден весь список ключевых
+операций, по которым были проведены замеры.</p>
+<p class="Picture"><img alt="" height="411" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2351.png?_=0000CF2621C8C003-v10" style="aspect-ratio:1177/411" width="1177"/></p>
+<p class="Bullet1">■ 
+<span class="Interface">Сравнение оценки
+производительности</span> – сравнение оценок производительности за периоды –
+настоящий и прошлый. Можно посмотреть производительность приложения в динамике.</p>
+<p class="Picture"><img alt="" height="790" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2353.png?_=0000ED8ADDE059E5-v10" style="aspect-ratio:1172/790" width="1172"/></p>
+<p class="Paragraph0c">По умолчанию
+варианты отчета не выведены на панель Отчеты администратора. При необходимости
+можно это сделать самостоятельно. Подробнее см. раздел документации Варианты
+отчетов.</p>
+<a data-original-name="_Настройка_выгрузки_замеров" name="_настройка_выгрузки_замеров"></a><a data-original-name="IssOgl1_Выгрузка_замеров_производительности" name="issogl1_выгрузка_замеров_производительности"><h2>Выгрузка замеров производительности</h2></a>
+<p class="Paragraph0c">Полученные замеры производительности приложение позволяет
+автоматически в фоне выгружать во внешние файлы, например, для выполнения
+анализа производительности в приложении <span class="Interface">Центр Контроля
+Качества</span>, входящей в <span class="Interface">Корпоративный
+Инструментальный Пакет</span>, или в другом приложении.</p>
+<p class="Paragraph0c">Можно настроить автоматическую выгрузку замеров, также
+можно в любой момент вручную выгрузить замеры.</p>
+<a data-original-name="_Настройка_выгрузки_замеров_1" name="_настройка_выгрузки_замеров_1"></a><a data-original-name="IssOgl2_Настройка_выгрузки_замеров_производительности" name="issogl2_настройка_выгрузки_замеров_производительности"><h3>Настройка выгрузки замеров производительности</h3></a>
+<p class="Paragraph0c">Для того чтобы настроить автоматическую выгрузку замеров
+производительности, необходимо перейти по ссылке <span class="Interface">Настройки</span>
+раздела <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Обслуживание – Оценка производительности</span>.</p>
+<p class="Picture"><img alt="" height="560" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2355.png?_=000153606359A948-v10" style="aspect-ratio:1312/560" width="1312"/></p>
+<p class="Paragraph0c">Включите флажок <span class="Interface">Выполнять экспорт</span>,
+при этом автоматически включаются флажки <span class="Interface">Выполнять
+экспорт в локальный каталог</span>, <span class="Interface">Выполнять экспорт на
+FTP</span>. </p>
+<p class="Paragraph0c">При необходимости включите флажок <span class="Interface">Экспорт
+всех ключевых операций</span>. В этом случае производится экспорт замеров
+производительности всех ключевых операций, в том числе и тех, у которых не
+заполнены поля <span class="Interface">Приоритет</span> и <span class="Interface">Целевое
+время</span>.</p>
+<p class="Paragraph0c">При необходимости можно изменить <span class="Interface">Период
+записи</span> – по умолчанию равен <span class="Interface">60 сек</span>.</p>
+<p class="Paragraph0c">Укажите количество <span class="Interface">Замеров в пакете</span>,
+по умолчанию <span class="Interface">1000</span>.</p>
+<p class="Paragraph0c">На просмотр выводится <span class="Interface">Дата
+последнего выгруженного замера в UTC</span> (заполняется приложением
+автоматически).</p>
+<p class="Paragraph0c">Укажите, по истечении какого срока можно удалять замеры
+времени, например, <span class="Interface">Удалять через 3650 дн</span>.</p>
+<p class="Paragraph0c">Выберите путь для сохранения данных в поле <span class="Interface">Локальный каталог экспорта</span><span class="Note">, например, <b>C:\Экспорт замеров производительности</b></span>. </p>
+<p class="Paragraph0c">При необходимости укажите <span class="Interface">Адрес </span><span class="Interface">ftp-сервера</span><span class="Note">, например, <b>ftp://ftp.Demo.ru</b>.</span>Экспорт
+выполняется автоматически с помощью регламентного задания. Для перехода к
+дальнейшей настройке экспорта нажмите ссылку <span class="Interface">Настроить
+расписание экспорта</span>. Подробнее о регламентных заданиях и настройке
+расписания см. раздел документации Регламентные задания.</p>
+<p class="Paragraph0c">Сформированные внешние файлы, а также файлы, содержащие
+настройки, при которых были получены эти замеры, автоматически упаковываются в ZIP-архив. </p>
+<a data-original-name="_Экспорт_и_импорт" name="_экспорт_и_импорт"></a><a data-original-name="IssOgl2_Экспорт_замеров_производительности" name="issogl2_экспорт_замеров_производительности"><h3>Экспорт замеров производительности</h3></a>
+<p class="Paragraph0c">Выгрузить показатели
+производительности можно в любой момент времени с помощью ссылки <span class="Interface">Экспорт замеров</span> в
+разделе <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Обслуживание – Оценка производительности</span>.</p>
+<p class="Picture"><img alt="" height="560" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2357.png?_=0001349D73C77736-v10" style="aspect-ratio:1312/560" width="1312"/></p>
+<p class="Paragraph0c">Заполните поля <span class="Interface">Дата начала</span> и <span class="Interface">Дата окончания</span>.
+Выберите <span class="Interface">Профиль</span> из списка. Для сохранения выберите путь к файлу на компьютере. </p>
+<p class="Paragraph0c">В поле <span class="Interface">Каталог экспорта</span> с
+помощью кнопки <img alt="" height="21" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image208.png?_=000000895E493751-v10" style="aspect-ratio:19/21" width="19"/> выберите каталог на компьютере для экспорта
+замеров производительности, <span class="Note">например, <b>C:\Экспорт
+замеров производительности</b></span>.</p>
+<p class="Paragraph0c">Напишите <span class="Interface">Имя архива</span>, <span class="Note">например, </span><span class="Note"><b>zamer</b></span>.</p>
+<p class="Paragraph0c">Нажмите кнопку <span class="Interface">Экспорт</span> для
+сохранения замеров в файл.</p>
+<a data-original-name="_Импорт_замеров_производительности" name="_импорт_замеров_производительности"></a><a data-original-name="IssOgl2_Импорт_замеров_производительности" name="issogl2_импорт_замеров_производительности"><h3>Импорт замеров производительности</h3></a>
+<p class="Paragraph0c">Можно также проанализировать замеры производительности
+другим приложением с помощью импорта из соответствующего файла. </p>
+<p class="Paragraph0c">Для импорта воспользуйтесь ссылкой <span class="Interface">Импорт
+замеров</span> в разделе <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Обслуживание - Оценка производительности</span>.</p>
+<p class="Picture"><img alt="" height="560" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image2359.png?_=00011E8F2CD2F18F-v10" style="aspect-ratio:1312/560" width="1312"/></p>
+<p class="Paragraph0c">В поле <span class="Interface">Файл импорта</span> с
+помощью кнопки <img alt="" height="18" loading="lazy" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1471.png?_=000000A540A4BC5C-v10" style="aspect-ratio:18/18" width="18"/> укажите путь к файлу на компьютере,
+нажмите кнопку <span class="Interface">Импорт</span>.</p>
+<a data-original-name="IssOgl1_Роли_для_оценки_производительности" name="issogl1_роли_для_оценки_производительности"><h2>Роли для оценки производительности</h2></a>
+<p class="Paragraph0c">Для оценки производительности приложения необходимо
+назначить следующие роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Роль</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Краткое описание</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Настройка и оценка производительности</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дает
+  право анализировать производительность работы приложения.</p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+</main></body></html>

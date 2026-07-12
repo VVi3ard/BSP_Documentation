@@ -1,0 +1,20 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>одЗначениеЭлемента</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_УниверсальныйОбменДаннымиXMLодЗначениеЭлемента" name="_универсальныйобменданнымиxmlодзначениеэлемента"></a><h1>одЗначениеЭлемента</h1>
+<pre> Читает текст элемента и приводит значение к указанному типу.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция одЗначениеЭлемента(Объект, Тип, ИскатьПоСвойству = "", ОбрезатьСтрокуСправа = Истина) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Объект           - ЧтениеXML - объект типа XMLЧтение, из которого осуществляется чтение.
+  Тип              - Тип - тип получаемого значения.
+  ИскатьПоСвойству - Строка - для ссылочных типов может быть указано свойство, по которому.
+                     следует искать объект: "Код", "Наименование", &lt;ИмяРеквизита&gt;, "Имя" (предопределенного значения).
+  ОбрезатьСтрокуСправа - Булево - признак необходимости обрезать строку справа.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Произвольный - значение xml-элемента, приведенное к соответствующему типу.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОбработкаОбъект = Обработки.УниверсальныйОбменДаннымиXML.Создать();
+Результат = ОбработкаОбъект.одЗначениеЭлемента();</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

@@ -1,0 +1,25 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ДополнитьСтроку</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_СтроковыеФункцииКлиентСерверДополнитьСтроку" name="_строковыефункцииклиентсервердополнитьстроку"></a><h1>ДополнитьСтроку</h1>
+<pre> Дополняет строку символами слева или справа до заданной длины и возвращает ее.
+ При этом удаляются незначащие символы слева и справа (подробнее про незначащие символы 
+ см. синтакс-помощник к методу платформы СокрЛП). 
+ По умолчанию функция дополняет строку символами "0" (ноль) слева.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ДополнитьСтроку(Знач Значение, Знач ДлинаСтроки, Знач Символ = "0", Знач Режим = "Слева") Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Значение    - Строка - исходная строка, которую необходимо дополнить символами;
+  ДлинаСтроки - Число  - требуемая результирующая длина строки;
+  Символ      - Строка - символ, которым необходимо дополнить строку;
+  Режим       - Строка - "Слева" или "Справа" - вариант добавления символов к исходной строке.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Строка - строка, дополненная символами.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>  1. Результат = СтроковыеФункцииКлиентСервер.ДополнитьСтроку("1234", 10, "0", "Слева");
+  Возвращает: "0000001234".
+  2. Результат = СтроковыеФункцииКлиентСервер.ДополнитьСтроку(" 1234  ", 10, "#", "Справа");
+  Строка = " 1234  "; ДлинаСтроки = 10; Символ = "#"; Режим = "Справа"
+  Возвращает: "1234######".</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Тонкий клиент, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

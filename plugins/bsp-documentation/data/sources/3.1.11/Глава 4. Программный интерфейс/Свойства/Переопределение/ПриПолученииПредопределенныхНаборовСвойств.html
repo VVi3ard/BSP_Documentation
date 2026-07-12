@@ -1,0 +1,27 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПриПолученииПредопределенныхНаборовСвойств</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_УправлениеСвойствамиПереопределяемыйПриПолученииПредопределенныхНаборовСвойств" name="_управлениесвойствамипереопределяемыйприполучениипредопределенныхнаборовсвойств"></a><h1>ПриПолученииПредопределенныхНаборовСвойств</h1>
+<pre> Получает описание предопределенных наборов свойств.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ПриПолученииПредопределенныхНаборовСвойств(Наборы) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Наборы - ДеревоЗначений:
+     * Имя           - Строка - имя набора свойств. Формируется из полного имени объекта
+          метаданных заменой символа "." на "_".
+          Например, "Документ_ЗаказПокупателя".
+     * Идентификатор - УникальныйИдентификатор - уникальный идентификатор предопределенного набора свойств.
+          Не должен повторяться в других наборах свойств.
+          Формат идентификатора Random UUID (Version 4).
+          Чтобы получить идентификатор, нужно в режиме 1С:Предприятие вычислить значение
+          конструктора платформы "Новый УникальныйИдентификатор" или воспользоваться online-генератором,
+          например, https://www.uuidgenerator.net/version4.
+     * Используется  - Неопределено
+                     - Булево - признак того, что набор свойств используется.
+          Например, можно использовать для скрытия набора по функциональным опциям.
+          Значение по умолчанию - Неопределено, соответствует значению Истина.
+     * ЭтоГруппа     - Булево - Истина, если набор свойств является группой.</pre>
+<p class="Paragraph0c"><span class="Bold">Расположение</span></p>
+<pre> Общий модуль УправлениеСвойствамиПереопределяемый</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

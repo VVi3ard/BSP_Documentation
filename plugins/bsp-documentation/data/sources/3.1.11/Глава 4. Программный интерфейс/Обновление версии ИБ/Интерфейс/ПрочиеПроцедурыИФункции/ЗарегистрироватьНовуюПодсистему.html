@@ -1,0 +1,23 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ЗарегистрироватьНовуюПодсистему</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбновлениеИнформационнойБазыЗарегистрироватьНовуюПодсистему" name="_обновлениеинформационнойбазызарегистрироватьновуюподсистему"></a><h1>ЗарегистрироватьНовуюПодсистему</h1>
+<pre> Выполняет регистрацию новой подсистемы в регистре сведений ВерсииПодсистем.
+ Необходима, например, в тех случаях, когда новая подсистема создается на
+ основе уже существующих метаданных и не требуется выполнять обработчики начального заполнения.
+ Если подсистема уже зарегистрирована, то повторная регистрация не выполняется.
+ Вызывать данный метод следует из процедуры ПередОбновлениемИнформационнойБазы общего
+ модуля ОбновлениеИнформационнойБазыПереопределяемый.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ЗарегистрироватьНовуюПодсистему(ИмяПодсистемы, НомерВерсии = "") Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ИмяПодсистемы - Строка - имя подсистемы в том виде, в котором оно задано в общем модуле
+                           ОбновлениеИнформационнойБазыХХХ.
+                           Например - "СтандартныеПодсистемы".
+  НомерВерсии   - Строка - полный номер версии, на которую необходимо зарегистрировать подсистему.
+                           Если не указан, то регистрируется на версию "0.0.0.1". Следует указывать,
+                           если нужно, чтобы выполнились не все обработчики, а только последние.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОбновлениеИнформационнойБазы.ЗарегистрироватьНовуюПодсистему(ИмяПодсистемы, НомерВерсии)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

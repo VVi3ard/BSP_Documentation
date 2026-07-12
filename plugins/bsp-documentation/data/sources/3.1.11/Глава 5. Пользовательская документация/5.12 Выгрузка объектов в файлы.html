@@ -1,0 +1,240 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.12 Выгрузка объектов в файлы</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.12 Выгрузка объектов в файлы</h1>
+<p class="Paragraph0c">Справочники и документы в приложении можно выгрузить в
+виде файла в различных форматах: DBF, XML, JSON, HTML, TXT (в кодировках ANSI и
+UTF-8), XLS, XLSX, MXL. Структуру и содержимое файлов можно настраивать с
+помощью <a href="https://its.1c.ru/db/bsp3111doc/content/2962/hdoc/issogl1_создание_макетов_печатных_форм" target="_top">конструктора
+печатных форм</a>.</p>
+<a data-original-name="IssOgl1_Настройка_приложения" name="issogl1_настройка_приложения"><h2>Настройка приложения</h2></a>
+<p class="Paragraph0c">Создать макеты можно в списке <b>Макеты файлов выгрузки</b>,
+к которому можно перейти с помощью ссылки в разделе <span class="Note">Администрирование </span><b>–
+Печатные формы, отчеты и обработки</b>.</p>
+<p class="Paragraph0c">Список макетов файлов выгрузки доступен в двух режимах: <b>По подсистемам</b> (по разделам интерфейса)
+и <b>По объектам</b> (видам объектов). </p>
+<p class="Paragraph0c">В списке<b> Макеты файлов выгрузки </b>можно с помощью
+кнопки панели навигации <b>Создать </b>новый макет выгрузки. По умолчанию
+наименование макета <b>Новая форма выгрузки</b>, которое можно изменить на
+произвольное. Также можно создать новый макет с помощью копирования.</p>
+<p class="Picture"><img alt="" height="504" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image936.png?_=0000D85990EFA75E-v10" style="aspect-ratio:1149/504" width="1149"/></p>
+<p class="Paragraph0c">После ввода наименования макета выгрузки необходимо нажать
+<b>ОК</b>, для того чтобы открыть макет в
+конструкторе и начать работу.</p>
+<p class="Picture"><img alt="" height="583" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image938.png?_=0000DCDC6A79A625-v10" style="aspect-ratio:999/583" width="999"/></p>
+<p class="Paragraph0c">Новый макет выгрузки автоматически сохраняется в списке
+макетов, но по умолчанию не отображается в списке подменю <b>Выгрузить</b> и в
+списке макетов выделяется серым цветом. </p>
+<p class="Paragraph0c">Для того чтобы показывать форму в подменю <b>Выгрузить</b>,
+нажмите флажок в колонке <b>Показывать в подменю Выгрузить файл</b>. После
+этого макет выгрузки будет доступен в подменю <b>Выгрузить в файл</b>.</p>
+<p class="Paragraph0c">Доступно создание произвольного количества макетов
+выгрузки одного формата (DBF, XML, JSON, HTML, TXT, XLS, XLSX, MXL). В списке
+для каждого макета выводится формат сохранения.</p>
+<p class="Picture"><img alt="" height="485" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image940.png?_=0000D671D830E4D3-v10" style="aspect-ratio:1149/485" width="1149"/></p>
+<p class="Paragraph0c">С помощью кнопки <b>Показать в списке</b> можно перейти в
+список объектов, для которого настраивается выбранная печатная форма.</p>
+<a data-original-name="IssOgl1_Создание_макета_выгрузки" name="issogl1_создание_макета_выгрузки"><h2>Создание макета выгрузки</h2></a>
+<p class="Paragraph0c">После ввода наименования макета выгрузки необходимо нажать
+<b>ОК</b>, для того чтобы открыть макет в конструкторе и начать работу. Работа
+с макетом выгрузки осуществляется в конструкторе макетов (подробнее о
+возможностях конструктора см. раздел <a href="5.43 Печать.html" target="_top"><b>Создание
+макета табличного документа</b></a>).</p>
+<p class="Paragraph0c">В макете выгрузки необходимо указать формат сохранения
+выгрузки.</p>
+<p class="Paragraph0c">На панели навигации доступны стандартные кнопки
+редактирования и форматирования. В зависимости от формата сохранения выгрузки
+могут быть ограничены определенные кнопки:</p>
+<p class="Paragraph0c">● 
+в макетах форматов XML, JSON, DBF недоступны
+кнопки настройки форматированием текста;</p>
+<p class="Paragraph0c">● 
+в макетах форматов XML, JSON доступны команды <b>Назначить
+имя</b>/<b>Убрать имя</b> для управления областями строк.</p>
+<p class="Picture"><img alt="" height="557" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image942.png?_=0000F155524501D0-v10" style="aspect-ratio:1149/557" width="1149"/></p>
+<p class="Picture"><img alt="" height="557" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image944.png?_=0000F373A67B7401-v10" style="aspect-ratio:1149/557" width="1149"/></p>
+<a data-original-name="IssOgl2_Ограничения_при_настройке_макетов" name="issogl2_ограничения_при_настройке_макетов"><h3>Ограничения при настройке макетов</h3></a>
+<p class="Paragraph0c">Некоторые форматы имеют свои структурные ограничения,
+которые необходимо учитывать при настройке макетов для корректного формирования
+файлов.</p>
+<a data-original-name="IssOgl3_DBF" name="issogl3_dbf"><h4>DBF</h4></a>
+<p class="Paragraph0c">Структура макета должна представлять собой таблицу:
+заголовок и его значение.</p>
+<p class="Picture"><img alt="" height="557" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image946.png?_=0000DA807589D4E1-v10" style="aspect-ratio:1149/557" width="1149"/></p>
+<p class="Paragraph0c">Иные ограничения формата:</p>
+<p class="Paragraph0c">● 
+Наименование колонок должно содержать только
+латинские буквы.</p>
+<p class="Paragraph0c">● 
+Длина наименования колонки не более 10 символов.</p>
+<p class="Paragraph0c">● 
+Объединение колонок запрещено.</p>
+<a data-original-name="IssOgl3_XML_и_JSON" name="issogl3_xml_и_json"><h4>XML и JSON</h4></a>
+<p class="Paragraph0c">Структура макета должна состоять из двух столбцов:
+наименование поля и его значение.</p>
+<p class="Picture"><img alt="" height="1000" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image948.png?_=0005775ED2142F2D-v10" style="aspect-ratio:890/1000" width="890"/></p>
+<p class="Paragraph0c">Поля могут быть объединены в один элемент - тогда они
+должны входить в одну область строки. Например, если нужно задать определённое
+имя тега для данных табличной части <span class="Note">Товары</span>, тогда необходимо объединить их в одну
+область. В макетах формата XML также возможна настройка подчиненных тегов: для
+этого необходимо задать наименование области строки через разделитель
+"_": например, <span class="Note">"Товары_товар".</span>
+Пересечение областей строк недопустимо.</p>
+<p class="Picture"><img alt="" height="1000" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image950.png?_=00059367B1415E0F-v10" style="aspect-ratio:842/1000" width="842"/></p>
+<p class="Paragraph0c">Для форматов JSON и XML при записи макета производится
+проверка написания имен элементов согласно спецификации форматов (использование
+тех или иных символов).</p>
+<a data-original-name="IssOgl4_Особенности_вывода_чисел_и_дат" name="issogl4_особенности_вывода_чисел_и_дат"><h5>Особенности вывода чисел и дат</h5></a>
+<p class="Paragraph0c">Если при выводе числовых полей или дат в макете XML
+требуется представление, отличное от стандартного для XML, то можно задать
+формат полей, чтобы их значения были выгружены как строки.</p>
+<p class="Paragraph0c">При выводе числовых полей в макет JSON можно задать
+формат, чтобы значение числового поля выгружалось как строка.</p>
+<p class="Paragraph0c">Сравнительная таблица вывода дат в зависимости от формата
+сохранения файла и параметров.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td rowspan="2" valign="top">
+<p class="Paragraph0c"><b>Формат</b></p>
+</td>
+<td colspan="2" valign="top">
+<p class="Paragraph0c"><b>Данные</b></p>
+</td>
+</tr>
+<tr>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">[Дата]</p>
+</td>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">[Формат([Дата],
+  "ДФ='dd.MM.yyyy'; ДЛФ='D'")]</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">JSON</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">"Дата":
+  "2023-09-06T18:13:11"</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">"Дата":
+  "06.09.2023"</p>
+</td>
+</tr>
+<tr>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">XML</p>
+</td>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">&lt;Дата&gt;2023-09-06T18:13:11&lt;/Дата&gt;</p>
+</td>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">&lt;Дата&gt;06.09.2023&lt;/Дата&gt;</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c">Сравнительная таблица вывода числовых данных в зависимости
+от формата сохранения файла и параметров.</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td rowspan="2" valign="top">
+<p class="Paragraph0c">Формат</p>
+</td>
+<td colspan="2" valign="top">
+<p class="Paragraph0c">Данные</p>
+</td>
+</tr>
+<tr>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">[Товары.Цена]</p>
+</td>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">[Формат([Товары.Цена],
+  "ЧЦ='15'; ЧДЦ='2'; ЧРД='.'; ЧГ='0'")]</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="Paragraph0c">JSON</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">"Цена": 15000</p>
+</td>
+<td valign="top">
+<p class="Paragraph0c">"Цена":
+  "15000.00"</p>
+</td>
+</tr>
+<tr>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">XML</p>
+</td>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">&lt;Цена&gt;15000&lt;/Цена&gt;</p>
+</td>
+<td style="background:#F2F2F2" valign="top">
+<p class="Paragraph0c">&lt;Цена&gt;15000.00&lt;/Цена&gt;</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<a data-original-name="IssOgl3_Иные_форматы" name="issogl3_иные_форматы"><h4>Иные форматы</h4></a>
+<p class="Paragraph0c">В макетах формата DBF, HTML, TXT, XLS, MXL запрещено
+использование областей строк/столбцов/ячеек (проверяется при записи макета).</p>
+<p class="Paragraph0c">Использование изображений и форматированного текста
+поддерживается в форматах XLS, XLSX, HTML, MXL.</p>
+<a data-original-name="IssOgl1_Выгрузка_файлов" name="issogl1_выгрузка_файлов"><h2>Выгрузка файлов</h2></a>
+<p class="Paragraph0c">Для выгрузки файлов по настроенным макетам не требуется
+наличия каких-либо специальных прав - выгрузка доступна, если есть права на
+просмотр документа или справочника.</p>
+<p class="Paragraph0c">В списке справочников или документов (элементе списка)
+доступно подменю <b>Выгрузить в файл</b>, которое содержит настроенные макеты
+файлов выгрузки. Возможна выгрузка файлов по макету на основании нескольких
+объектов. Из подменю выгрузки доступен переход в общий список макетов файлов
+выгрузки.</p>
+<p class="Picture"><img alt="" height="489" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image952.png?_=0000DBB9102D798F-v10" style="aspect-ratio:1149/489" width="1149"/></p>
+<p class="Paragraph0c">Доступна выгрузка полученного файла на компьютер или
+прикрепление к объекту в системе.</p>
+<p class="Picture"><img alt="" height="561" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image954.png?_=0000D640F2FA136E-v10" style="aspect-ratio:1149/561" width="1149"/></p>
+<p class="Paragraph0c">Также макеты файлов выгрузки можно прикрепить к шаблону
+электронного сообщения или к электронному письму, сформированному без использования
+шаблона (подробнее см. раздел документации Шаблоны сообщений).</p>
+<a data-original-name="IssOgl1_Роли_для_работы_с_выгрузкой_объектов_в_файлы" name="issogl1_роли_для_работы_с_выгрузкой_объектов_в_файлы"><h2>Роли для работы с выгрузкой объектов в файлы</h2></a>
+<p class="Paragraph0c">Для работы с выгрузкой объектов в файлы предусмотрены
+следующие роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Роль</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Краткое описание</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Изменение макетов файлов
+  выгрузки</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дает право добавлять и редактировать макеты файлов
+  выгрузки. Используется совместно с ролью <span class="Interface">Изменение макетов печатных форм</span>.
+  </p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Вывод на принтер, в файл, в
+  буфер обмена</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дает право выгружать файлы по настроенным макетам и
+  отправлять их по электронной почте. </p>
+</td>
+</tr>
+</tbody></table>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"> </p>
+<p class="Paragraph0c"> </p>
+</main></body></html>

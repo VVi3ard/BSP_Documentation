@@ -1,0 +1,29 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>МакетПечатнойФормы</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_УправлениеПечатьюМакетПечатнойФормы" name="_управлениепечатьюмакетпечатнойформы"></a><h1>МакетПечатнойФормы</h1>
+<pre> Возвращает макет печатной формы по полному пути к макету.
+ Если конфигурация рассчитана на несколько языков, в ней могут быть предусмотрены несколько макетов для этих языков:
+ - ПФ_DOC_СчетНаОплату_ru
+ - ПФ_DOC_СчетНаОплату_en
+ - и т.п.
+ В этом случае при поиске нужного макета учитывается следующий приоритет:
+ 1) на языке, указанном в параметре КодЯзыка,
+ 2) на языке конфигурации (ОбщегоНазначения.КодОсновногоЯзыка()),
+ 3) без указания языка.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция МакетПечатнойФормы(ПутьКМакету, Знач КодЯзыка = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ПутьКМакету - Строка - полный путь к макету в формате:
+                         "Документ.&lt;ИмяДокумента&gt;.&lt;ИмяМакета&gt;"
+                         "Обработка.&lt;ИмяОбработки&gt;.&lt;ИмяМакета&gt;"
+                         "ОбщийМакет.&lt;ИмяМакета&gt;".
+  КодЯзыка    - Строка - язык, на котором требуется получить макет.
+                         Состоит из кода языка по ISO 639-1 и, опционально, кода страны по ISO 3166-1, разделенных
+                         символом подчеркивания. Примеры: "en", "en_US", "en_GB", "ru", "ru_RU".</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  ТабличныйДокумент, ДвоичныеДанные - макет.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = УправлениеПечатью.МакетПечатнойФормы(ПутьКМакету, КодЯзыка)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

@@ -1,0 +1,25 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ОтправитьСообщение</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбсужденияОтправитьСообщение" name="_обсужденияотправитьсообщение"></a><h1>ОтправитьСообщение</h1>
+<pre> Отправляет сообщение пользователям от другого пользователя. 
+ Если между пользователями не было обсуждения,
+ то будет создано отображаемое обсуждение.
+ Выбрасывает исключение, если не удалось отправить сообщение.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ОтправитьСообщение(Знач Автор, Знач Получатели, Сообщение, ОбсуждениеКонтекст = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>   Автор - СправочникСсылка.Пользователи
+         - ПользовательСистемыВзаимодействия
+   Получатели - Массив из СправочникСсылка.Пользователи
+              - Массив из ПользовательСистемыВзаимодействия
+   Сообщение - см. <a href="ОписаниеСообщения.html" target="_top">ОписаниеСообщения</a>
+   ОбсуждениеКонтекст - ЛюбаяСсылка - сообщение будет отправлено в контекстное обсуждение.
+                      - ИдентификаторОбсужденияСистемыВзаимодействия - сообщение будет отправлено в указанное обсуждение.
+                      - Неопределено - сообщение будет отправлено в негрупповое обсуждение между автором и получателем.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre> Сообщение = Обсуждения.ОписаниеСообщения("Привет, мир!");
+ Получатель = ОбщегоНазначенияКлиентСервер.ЗначениеВМассиве(Администратор);
+ Обсуждения.ОтправитьСообщение(Пользователи.ТекущийПользователь(), Получатель, Сообщение);</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

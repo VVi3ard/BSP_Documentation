@@ -1,0 +1,22 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ОтправитьSMS</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОтправкаSMSОтправитьSMS" name="_отправкаsmsотправитьsms"></a><h1>ОтправитьSMS</h1>
+<pre> Отправляет SMS через настроенного поставщика услуги, возвращает идентификатор сообщения.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ОтправитьSMS(НомераПолучателей, Знач Текст, ИмяОтправителя = Неопределено, ПеревестиВТранслит = Ложь) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  НомераПолучателей  - Массив из Строка - номера получателей в формате +7ХХХХХХХХХХ;
+  Текст              - Строка - текст сообщения, максимальная длина у операторов может быть разной;
+  ИмяОтправителя     - Строка - имя отправителя, которое будет отображаться вместо номера у получателей;
+  ПеревестиВТранслит - Булево - Истина, если требуется переводить текст сообщения в транслит перед отправкой.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Структура:
+    * ОтправленныеСообщения - Массив из Структура:
+      ** НомерПолучателя - Строка - номер получателя SMS.
+      ** ИдентификаторСообщения - Строка - идентификатор SMS, присвоенный провайдером для отслеживания доставки.
+    * ОписаниеОшибки - Строка - пользовательское представление ошибки, если пустая строка, то ошибки нет.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ОтправкаSMS.ОтправитьSMS(НомераПолучателей, Текст, ИмяОтправителя, ПеревестиВТранслит)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

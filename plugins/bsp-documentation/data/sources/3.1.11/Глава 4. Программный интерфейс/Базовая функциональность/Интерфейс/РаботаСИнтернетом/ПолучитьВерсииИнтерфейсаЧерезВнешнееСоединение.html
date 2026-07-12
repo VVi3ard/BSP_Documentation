@@ -1,0 +1,20 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПолучитьВерсииИнтерфейсаЧерезВнешнееСоединение</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбщегоНазначенияПолучитьВерсииИнтерфейсаЧерезВнешнееСоединение" name="_общегоназначенияполучитьверсииинтерфейсачерезвнешнеесоединение"></a><h1>ПолучитьВерсииИнтерфейсаЧерезВнешнееСоединение</h1>
+<pre> Возвращает номера версий программных интерфейсов удаленной системы, подключенной через внешнее соединение.
+ Позволяет обеспечивать полную обратную совместимость при изменениях в программных интерфейсах
+ с помощью их явного версионирования. Например, если программный интерфейс выше определенной версии,
+ то только в этом случае допустимо вызывать у него новую функцию.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПолучитьВерсииИнтерфейсаЧерезВнешнееСоединение(ВнешнееСоединение, Знач ИмяИнтерфейса) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>   ВнешнееСоединение - COMОбъект - внешнее соединение, которое используется для работы с удаленной системой.
+   ИмяИнтерфейса     - Строка    - имя запрашиваемого программного интерфейса, например "СервисПередачиФайлов".</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>   ФиксированныйМассив - массив строк, каждая строка является представлением номера версии интерфейса. 
+                         Например "1.0.2.1".</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>  Версии = ОбщегоНазначения.ПолучитьВерсииИнтерфейсаЧерезВнешнееСоединение(ВнешнееСоединение, "СервисПередачиФайлов");</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

@@ -1,0 +1,40 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПрочитатьXMLВТаблицу</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбщегоНазначенияПрочитатьXMLВТаблицу" name="_общегоназначенияпрочитатьxmlвтаблицу"></a><h1>ПрочитатьXMLВТаблицу</h1>
+<pre> Преобразует текст указанного формата XML в таблицу значений,
+ при этом колонки таблицы формируются на основе описания в XML.
+ Схема XML:
+ &lt;?xml version="1.0" encoding="utf-8"?&gt;
+  &lt;xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+   &lt;xs:element name="Items"&gt;
+    &lt;xs:complexType&gt;
+     &lt;xs:sequence&gt;
+      &lt;xs:element maxOccurs="unbounded" name="Item"&gt;
+       &lt;xs:complexType&gt;
+        &lt;xs:attribute name="Code" type="xs:integer" use="required" /&gt;
+        &lt;xs:attribute name="Name" type="xs:string" use="required" /&gt;
+        &lt;xs:attribute name="Socr" type="xs:string" use="required" /&gt;
+        &lt;xs:attribute name="Index" type="xs:string" use="required" /&gt;
+       &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+     &lt;/xs:sequence&gt;
+    &lt;xs:attribute name="Description" type="xs:string" use="required" /&gt;
+    &lt;xs:attribute name="Columns" type="xs:string" use="required" /&gt;
+   &lt;/xs:complexType&gt;
+  &lt;/xs:element&gt;
+ &lt;/xs:schema&gt;</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПрочитатьXMLВТаблицу(Знач XML) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  XML - Строка
+      - ЧтениеXML - текст в формате XML или ЧтениеXML.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Структура:
+   * ИмяТаблицы - Строка          - имя таблицы.
+   * Данные     - ТаблицаЗначений - преобразованная из XML таблица.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>   КлассификаторТаблица = ОбщегоНазначения.ПрочитатьXMLВТаблицу(
+     Обработки.ЗагрузкаКурсовВалют.ПолучитьМакет("ОбщероссийскийКлассификаторВалют").ПолучитьТекст()).Данные;</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

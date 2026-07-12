@@ -1,0 +1,28 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ОписаниеКолонкиМакета</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ЗагрузкаДанныхИзФайлаКлиентСерверОписаниеКолонкиМакета" name="_загрузкаданныхизфайлаклиентсерверописаниеколонкимакета"></a><h1>ОписаниеКолонкиМакета</h1>
+<pre> Создает структуру описания колонок для макета загрузки данных из файла.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ОписаниеКолонкиМакета(Имя, Тип, Заголовок = Неопределено, Ширина = 0, Подсказка = "") Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Имя        -Строка - имя колонки.
+  Тип       - ОписаниеТипов - тип колонки.
+  Заголовок - Строка - заголовок колонки выводимый в бланке для загрузки.
+  Ширина    - Число - ширина колонки.
+  Подсказка - Строка - подсказка, выводимая в заголовке колонки.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Структура - структура с описание колонки:
+    * Имя                      - Строка - имя колонки.
+    * Заголовок                - Строка - заголовок колонки выводимый в бланке для загрузки.
+    * Тип                      - ОписаниеТипов - тип колонки.
+    * Ширина                   - Число  - ширина колонки.
+    * Позиция                  - Число  - позиция колонки в таблице
+    * Подсказка                - Строка - подсказка выводимая в заголовке колонки.
+    * ОбязательнаДляЗаполнения - Булево - истина, если колонка обязательно должна содержать значения.
+    * Группа                   - Строка - имя группы колонок.
+    * Родитель                 - Строка - используется для связи динамической колонки с реквизитом табличной части объекта.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ЗагрузкаДанныхИзФайлаКлиентСервер.ОписаниеКолонкиМакета(Имя, Тип, Заголовок, Ширина, Подсказка)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Тонкий клиент, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

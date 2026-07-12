@@ -1,0 +1,27 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ИзменениеЗаписейНабора</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбщегоНазначенияИзменениеЗаписейНабора" name="_общегоназначенияизменениезаписейнабора"></a><h1>ИзменениеЗаписейНабора</h1>
+<pre> Возвращает удаленные и добавленные строки регистра
+ для указанного набора записей с учетом режима замещения.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ИзменениеЗаписейНабора(ЗаписиИзБазыДанных, НаборЗаписей, Замещение, ТолькоИзменения = Ложь) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ЗаписиИзБазыДанных - см. <a href="ЗаписиНабораИзБазыДанных.html" target="_top">ЗаписиНабораИзБазыДанных</a>
+  НаборЗаписей - РегистрСведенийНаборЗаписей
+               - РегистрНакопленияНаборЗаписей
+               - РегистрБухгалтерииНаборЗаписей
+               - РегистрРасчетаНаборЗаписей - набор записей,
+                   который используется вычисления изменений.
+  Замещение - РежимЗамещения, Булево - как передается в подписку на событие ПередЗаписью.
+  ТолькоИзменения - Булево - если установить Истина, тогда в результате
+                      не будет строк без изменений (ВидИзмененияСтроки = 0).</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  ТаблицаЗначений:
+   * ВидИзмененияСтроки - Число - если 1, то строка добавлена,
+       если -1, то удалена, если 0, то не изменилась.
+   Далее поля из таблицы ЗаписиИзБазыДанных.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ОбщегоНазначения.ИзменениеЗаписейНабора(ЗаписиИзБазыДанных, НаборЗаписей, Замещение, ТолькоИзменения)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

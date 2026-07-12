@@ -1,0 +1,20 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ВыбратьИзСправочникаБИК</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_РаботаСБанкамиКлиентВыбратьИзСправочникаБИК" name="_работасбанкамиклиентвыбратьизсправочникабик"></a><h1>ВыбратьИзСправочникаБИК</h1>
+<pre> Открывает форму выбора Справочника БИК с отбором по переданному БИК.
+ Если в списке выбора единственная запись, то выбор в форме осуществляется автоматически.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ВыбратьИзСправочникаБИК(БИК, Форма, ОбработчикОповещения = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  БИК - Строка - банковский идентификационный код.
+  Форма - ФормаКлиентскогоПриложения - форма, из которой открывается форма выбора.
+  ОбработчикОповещения - ОписаниеОповещения - процедура, в которую передается управление после осуществления выбора.
+                                              Если параметр не указан, то будет вызван стандартный обработчик выбора.
+    Параметры процедуры:
+     * БИК - СправочникСсылка.КлассификаторБанков - выбранный элемент.
+     * ДополнительныеПараметры - Произвольный - параметр, переданный в конструкторе описания оповещения.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>РаботаСБанкамиКлиент.ВыбратьИзСправочникаБИК(БИК, Форма, ОбработчикОповещения)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

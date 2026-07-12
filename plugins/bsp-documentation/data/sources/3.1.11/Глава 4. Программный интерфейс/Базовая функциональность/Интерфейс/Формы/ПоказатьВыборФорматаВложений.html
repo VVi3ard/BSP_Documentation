@@ -1,0 +1,19 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПоказатьВыборФорматаВложений</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбщегоНазначенияКлиентПоказатьВыборФорматаВложений" name="_общегоназначенияклиентпоказатьвыборформатавложений"></a><h1>ПоказатьВыборФорматаВложений</h1>
+<pre> Открывает форму выбора формата вложений.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ПоказатьВыборФорматаВложений(ОписаниеОповещения, НастройкиФормата = Неопределено, Владелец = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ОписаниеОповещения  - ОписаниеОповещения - обработчик результата выбора.
+  НастройкиФормата - Структура - настройки по умолчанию в форме:
+   * УпаковатьВАрхив   - Булево - признак необходимости упаковки вложений в архив.
+   * ФорматыСохранения - Массив из Строка - список выбранных форматов вложений.
+   * ПереводитьИменаФайловВТранслит - Булево - преобразовывать кириллические символы в латиницу.
+   * Подписать - Булево - подписать вложения электронной подписью.
+  Владелец - ФормаКлиентскогоПриложения - форма, из которой вызывается форма выбора вложений.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОбщегоНазначенияКлиент.ПоказатьВыборФорматаВложений(ОписаниеОповещения, НастройкиФормата, Владелец)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

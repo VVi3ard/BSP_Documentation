@@ -1,0 +1,199 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.19 Загрузка данных из файла</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<h1>5.19 Загрузка данных из файла</h1>
+<p class="Paragraph0c">Приложение предоставляет возможность загрузки табличных
+данных из файлов в произвольные списки (справочники) и табличные части
+документов, например, для разового переноса нормативно-справочной информации
+при переходе с других приложений, или для регулярной загрузки данных в
+табличные части при заполнении документов.</p>
+<p class="Paragraph0c">Можно легко расширять варианты загрузок без вмешательства
+в приложение через подключение внешних обработок. Подробнее об этом см. раздел
+документации Дополнительные отчеты и обработки.</p>
+<p class="Paragraph0c">Загрузка данных из файла: </p>
+<p class="Bullet1">■ 
+позволяет задействовать для ввода данных
+возможности других приложений (например, можно вводить данные в Excel, а потом загрузить их в
+приложение); </p>
+<p class="Bullet1">■ 
+не требует для ввода данных в файл наличия на
+компьютере приложения 1С:Предприятие, поэтому ввод данных в такой файл может
+осуществляться в удаленных офисах, небольших складах, точках розничных продаж,
+т.е. там, где может не быть возможности наладить полноценную работу приложения
+1С:Предприятие (например, компьютер уже устарел для работы с данным
+приложением); </p>
+<p class="Bullet1">■ 
+позволяет подключить к вводу данных
+дополнительные кадры. Ввод данных во внешний файл требует только соблюдения
+структуры таблицы, а также знания правил ввода в том приложении, для которой он
+предназначен, например, Excel,
+поэтому может быть поручен сотрудникам, которые имеют только начальные навыки
+работы с компьютером.</p>
+<p class="Paragraph0c">Для загрузки данных из файла не требуется особых прав,
+достаточно прав на изменение списков или документов приложения. </p>
+<a data-original-name="_Загрузка_из_файла" name="_загрузка_из_файла"></a><a data-original-name="IssOgl1_Загрузка_из_файла_в_элементы_списков_и_табличную_часть_документов" name="issogl1_загрузка_из_файла_в_элементы_списков_и_табличную_часть_документов"><h2>Загрузка из файла в элементы списков и табличную часть документов</h2></a>
+<p class="Paragraph0c">Загрузка данных из файла возможна в документы приложения с
+помощью кнопки панели навигации.</p>
+<p class="Picture"><img alt="" height="763" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1184.png?_=000101FB48781941-v10" style="aspect-ratio:1089/763" width="1089"/></p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Заполнение таблицы</span> (включена по умолчанию) можно перейти к вводу данных в таблицу для
+последующей загрузки в документ непосредственно в приложении.</p>
+<p class="Paragraph0c">С помощью ссылки <span class="Interface">Изменить бланк</span>
+можно открыть список полей таблицы для ввода и с помощью флажков изменить ее
+структуру. Необходимо учитывать, что поля, выделенные жирным шрифтом (<span class="Note">например, на рисунке –</span> <span class="Note"><b>Номенклатура</b></span><span class="Note"> и</span> <span class="Note"><b>Цена</b></span>) являются обязательными для заполнения и их
+трогать нельзя.</p>
+<p class="Picture"><img alt="" height="614" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1186.png?_=0000E135AB1E5A61-v10" style="aspect-ratio:978/614" width="978"/></p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Загрузка из файла</span>
+можно заполнить таблицу <span class="Interface">Аналоги</span> на вкладке элемента списка <span class="Note"><b>Демо: Номенклатура</b></span>. </p>
+<p class="Picture"><img alt="" height="682" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1188.png?_=0000CD0035786758-v10" style="aspect-ratio:815/682" width="815"/> </p>
+<p class="Paragraph0c">После загрузки
+данных из файла и сопоставления таблица <span class="Interface">Аналоги</span> будет заполнена. Подробнее см. раздел <a href="5.19 Загрузка данных из файла.html#_загрузка_из_внешнего">Загрузка из внешнего файла</a>.</p>
+<a data-original-name="_Загрузка_из_внешнего" name="_загрузка_из_внешнего"></a><a data-original-name="IssOgl2_Загрузка_из_внешнего_файла" name="issogl2_загрузка_из_внешнего_файла"><h3>Загрузка из внешнего файла</h3></a>
+<p class="Paragraph0c">Нажав кнопку <span class="Interface">Из внешнего файла</span>,
+можно загрузить данные из ранее подготовленного файла, сохраненного на
+компьютере, или сохранить бланк для заполнения и заполнить данные позже.</p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Загрузить таблицу из файла</span> можно загрузить данные из внешнего файла. Выберите путь к файлу на
+компьютере. </p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Сохранить бланк для заполнения</span> можно сохранить таблицу для ввода данных в файлe выбранного формата:</p>
+<p class="Bullet1">■ 
+Книги Microsoft Excel 97 (<span class="Interface">.xls</span>) и Excel 2007(<span class="Interface">.xlsx</span>);</p>
+<p class="Bullet1">■ 
+Электронные
+таблицы OpenDocument
+Spreadsheet (<span class="Interface">.ods</span>);</p>
+<p class="Bullet1">■ 
+Текст с разделителями (<span class="Interface">.</span><span class="Interface">csv</span>);</p>
+<p class="Bullet1">■ 
+Табличный документ (<span class="Interface">.</span><span class="Interface">mxl</span>).</p>
+<p class="Paragraph0c">Необходимо
+учитывать, что в данном файле имеются колонки, обязательные для заполнения – <span class="Note"><b>Номенклатура</b></span> и <span class="Note"><b>Цена</b></span>. Укажите путь к файлу на компьютере.
+Приложение присваивает файлу имя <span class="Interface">Товары</span> по умолчанию.</p>
+<p class="Picture"><img alt="" height="589" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1190.png?_=0000AC6CE600BC74-v10" style="aspect-ratio:892/589" width="892"/></p>
+<p class="Paragraph0c">Приложение
+предоставляет возможность заполнять внешние файлы для загрузки в документы.
+Заполните файл по рекомендованным правилам (обязательные для заполнения поля
+выделены в таблице жирным шрифтом).</p>
+<p class="Picture"><img alt="" height="474" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1192.png?_=0001B4DF86EB9403-v10" style="aspect-ratio:1056/474" width="1056"/></p>
+<p class="Paragraph0c">После заполнения
+таблицы непосредственно в бланке в приложении или во внешнем файле можно
+загрузить данные в нужные документы. </p>
+<p class="Paragraph0c">Для загрузки данных
+из внешнего файла в окне <span class="Interface">Загрузка списка товаров
+из файла</span> нажмите кнопку <span class="Interface">Загрузить таблицу из файла</span>, укажите файл на компьютере, нажмите кнопку <span class="Interface">Открыть</span>.</p>
+<p class="Paragraph0c">После загрузки
+приложение производит автоматическое сопоставление данных. Если автоматическое
+сопоставление не состоялось, то данные выводятся для сопоставления вручную. </p>
+<p class="Picture"><img alt="" height="634" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1194.png?_=0004DC646C662DDB-v10" style="aspect-ratio:1600/634" width="1600"/></p>
+<p class="Paragraph0c">Для того чтобы
+вручную сопоставить данные, с помощью кнопки <img alt="" height="17" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1196.png?_=000000A09D535135-v10" style="aspect-ratio:17/17" width="17"/> откройте список приложения (<span class="Note">например,</span> <span class="Note"><b>Демо: Номенклатура</b></span>), найдите в нем подходящее значение или
+введите новое, затем нажмите кнопку <span class="Interface">Выбрать</span>.</p>
+<p class="Paragraph0c">Для того чтобы
+просмотреть сопоставленные или несопоставленные данные, можно использовать
+отбор с помощью поля <span class="Interface">Показывать</span>, можно оставить в списке элементы:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Все</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Несопоставленные</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Сопоставленные</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Неоднозначные</span>. </p>
+<p class="Paragraph0c">Если в таблице
+имеются неоднозначные элементы, воспользуйтесь кнопкой, с помощью которой можно
+<span class="Interface">Устранить неоднозначность</span>.</p>
+<p class="Paragraph0c">Несопоставленные
+данные подчеркиваются красным. </p>
+<p class="Picture"><img alt="" height="386" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1198.png?_=000076BFE89FAF64-v10" style="aspect-ratio:762/386" width="762"/></p>
+<p class="Paragraph0c">Кроме обязательных
+полей, сопоставляться могут также и необязательные. Например, в перечне товаров
+в табличной части документа <span class="Note"><b>Демо: Счет на оплату покупателю</b></span> присутствует поле <span class="Interface">Характеристика</span>.
+При загрузке это поле также можно сопоставить и включить в документ с помощью
+кнопки <img alt="" height="18" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1196.png?_=000000A09D535135-v10" style="aspect-ratio:18/18" width="18"/> <span class="Interface">Выбрать из
+списка</span>. Если нужного элемента в
+списке нет, то его можно <span class="Interface">Создать</span><span class="Note"><b> </b></span>с помощью кнопки панели навигации. Ввести
+элементы в список можно также заранее в разделе <span class="Note"><b>Интегрируемые подсистемы (часть 2)</b></span> по команде <span class="Note"><b>Характеристики номенклатуры</b></span>.</p>
+<p class="Paragraph0c">После
+автоматического или ручного сопоставления данных, в случае, если все данные
+сопоставлены, нажмите кнопку <span class="Interface">Загрузить данные</span>. После этого данные будут загружены в
+документ. Остается лишь заполнить недостающие поля. </p>
+<a data-original-name="IssOgl1_Загрузка_данных_в_произвольный_список_справочник_приложения" name="issogl1_загрузка_данных_в_произвольный_список_справочник_приложения"><h2>Загрузка данных в произвольный список (справочник) приложения</h2></a>
+<p class="Paragraph0c"><span class="Interface">Загрузку данных из файла</span>
+администратору можно также произвести по команде раздела <span class="Note"><b>Администрирование – Демо:Перенос данных</b></span>.
+В этом случае для загрузки данных можно выбрать один из списков приложения.
+Можно загружать в списки контактную информацию, а также и дополнительные
+реквизиты и сведения.</p>
+<p class="Picture"><img alt="" height="1000" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1201.png?_=00076B1FA25D4975-v10" style="aspect-ratio:883/1000" width="883"/></p>
+<p class="Paragraph0c">После выбора списка для загрузки данных нажмите кнопку <span class="Interface">Далее</span>. Приложение предлагает таблицу для заполнения.
+Подробнее о заполнении и загрузке см. раздел <a href="5.19 Загрузка данных из файла.html#_загрузка_из_файла">Загрузка
+из файла в табличную часть документов</a>.</p>
+<p class="Paragraph0c">Заполнив таблицу,
+нажмите кнопку <span class="Interface">Далее</span>. Данные будут автоматически сопоставлены, если соответствия не будет
+найдено, таблица выводится с предложением сопоставить данные. </p>
+<p class="Paragraph0c">С помощью
+переключателей в нижней части таблицы можно определить поведение приложения с
+сопоставленными и несопоставленными элементами. По умолчанию оно таково:</p>
+<p class="Paragraph0c">Сопоставленные
+элементы: </p>
+<p class="Bullet1">■ 
+<span class="Interface">Обновлять</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Пропускать</span>
+(установлено по умолчанию);</p>
+<p class="Paragraph0c">Несопоставленные
+элементы:</p>
+<p class="Bullet1">■ 
+<span class="Interface">Создавать</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Пропускать</span>.</p>
+<p class="Picture"><img alt="" height="639" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1203.png?_=0000E0CE9FFD95D1-v10" style="aspect-ratio:1376/639" width="1376"/></p>
+<p class="Paragraph0c">При загрузке данных
+в список существует возможность автоматического создания новых элементов для
+несопоставленных данных. Такие элементы в списке помечаются цветом. Для
+автоматического создания новых элементов в списке выберите <span class="Interface">Создавать</span> с
+помощью переключателя (выбрано по умолчанию). </p>
+<p class="Paragraph0c">Нажмите кнопку <span class="Interface">Загрузить данные</span>.
+После этого данные из таблицы будут загружены в список с созданием новых
+элементов, открывается окно со списком загружаемых данных. В списке можно
+изменить введенные элементы, если они не устраивают. Для изменения нескольких
+выделенных элементов нажмите кнопку <span class="Interface">Изменить
+реквизиты</span>. При необходимости можно
+несколько выделенных строк <span class="Interface">Сохранить</span> в файл, подкорректировать и позднее загрузить
+повторно. </p>
+<p class="Paragraph0c">При необходимости
+включите флажок <span class="Interface">Открыть справочник «</span><span class="Note"><b>Демо: Номенклатура</b></span><span class="Interface">» по кнопке «Готово»</span>. Если в таблице все данные корректны, нажмите кнопку <span class="Interface">Готово</span> для
+подтверждения. </p>
+<p class="Picture"><img alt="" height="749" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1205.png?_=0000FDF397D19284-v10" style="aspect-ratio:914/749" width="914"/></p>
+<p class="Paragraph0c">Если был включен
+флажок, открывается список <span class="Note"><b>Демо: Номенклатура</b></span> с введенными элементами.</p>
+<p class="Picture"><img alt="" height="506" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image1207.png?_=00008EF8B4E0A906-v10" style="aspect-ratio:875/506" width="875"/></p>
+<a data-original-name="IssOgl1_Роли_для_загрузки_данных_из_файла" name="issogl1_роли_для_загрузки_данных_из_файла"><h2>Роли для загрузки данных из файла</h2></a>
+<p class="Paragraph0c">Для загрузки данных из файла в приложении предусмотрены
+следующие роли:</p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Роль</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Краткое описание</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Полные права</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Позволяет произвести
+  загрузку данных в произвольный список приложения.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Базовые права</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Позволяет загрузить данные
+  из файла в списки приложения. </p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+</main></body></html>

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "bsp_documentation": {
+      "command": "python",
+      "args": ["scripts/run_bsp_mcp.py"],
+      "cwd": "."
+    }
+  }
+}

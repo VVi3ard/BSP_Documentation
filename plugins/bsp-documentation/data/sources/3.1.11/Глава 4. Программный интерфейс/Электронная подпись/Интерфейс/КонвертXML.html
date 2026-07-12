@@ -1,0 +1,70 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>КонвертXML</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ЭлектроннаяПодписьКлиентКонвертXML" name="_электроннаяподписьклиентконвертxml"></a><h1>КонвертXML</h1>
+<pre> Возвращает шаблон формата XML, содержащий один стандартный элемент
+ Signature (см. стандарт https://www.w3.org/TR/xmldsig-core1)
+ с одним элементом Reference и заполненным атрибутом URI
+ (ссылка на сообщение XML, которое будет подписано).
+ Возвращаемый шаблон содержит параметры %SignatureMethod%, %DigestMethod%,
+ %DigestValue%, %SignatureValue%, %BinarySecurityToken%,
+ которые автоматически заполняются при подписании.
+ Параметры %SignatureMethod% (алгоритм подписи в формате xml) и
+ %DigestMethod% (алгоритм хеширования в формате xml) вычисляются по
+ алгоритму открытого ключа сертификата, которым выполняется подписание,
+ сначала по таблице, указанной в ПараметрыXMLDSig, затем
+ если таблица не заполнена или соответствие не найдено,
+ по внутренней таблице соответствия (рекомендуется).
+ Поддерживаются также шаблоны с несколькими элементами Signature
+ и несколькими элементами Reference.
+ Подпись будет добавлена в первый найденный элемент Signature, не содержащий значение подписи.
+ Поддерживаются алгоритмы подписания и хеширования ГОСТ 94…2012.
+ Поддерживаются алгоритмы канонизации:
+  Exclusive XML Canonicalization 1.0
+   http://www.w3.org/2001/10/xml-exc-c14n#
+   http://www.w3.org/2001/10/xml-exc-c14n#WithComments
+  Canonical XML 1.0
+   http://www.w3.org/TR/2001/REC-xml-c14n-20010315
+   http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments
+  Canonical XML 1.1
+   http://www.w3.org/2006/12/xml-c14n11
+   http://www.w3.org/2006/12/xml-c14n11#WithComments
+  Enveloped signature (по факту игнорируется, так как
+  не поддерживается пустой URI в элементе SignedInfo.Reference):
+   http://www.w3.org/2000/09/xmldsig#enveloped-signature
+  СМЭВ рекомендации 3.5.0.1, "АЛГОРИТМ трансформации XML":
+   urn://smev-gov-ru/xmldsig/transform
+ Сертификат может быть указан в KeyInfo, как base64 значение:
+ - либо в виде элемента X509Data.X509Certificate
+ - либо в виде элемента KeyInfoReference.Reference или
+   SecurityTokenReference.Reference с URI на элемент со значением.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция КонвертXML(Параметры = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Параметры - см. <a href="ПараметрыКонвертаXML.html" target="_top">ЭлектроннаяПодписьКлиент.ПараметрыКонвертаXML</a>
+            - Неопределенно - использовать параметры по умолчанию.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Строка</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre> ПараметрыКонверта = ЭлектроннаяПодписьКлиент.ПараметрыКонвертаXML();
+ ПараметрыКонверта.Вариант = "furs.mark.crpt.ru_v1";
+ ПараметрыКонверта.СообщениеXML =
+ "    &lt;getProductDetailsResponse xmlns=""http://warehouse.example.com/ws""&gt;
+ |      &lt;getProductDetailsResult&gt;
+ |       &lt;productID&gt;12345&lt;/productID&gt;
+ |       &lt;productName&gt;Стакан граненый&lt;/productName&gt;
+ |       &lt;description&gt;Стакан граненый. 250 мл.&lt;/description&gt;
+ |       &lt;price&gt;9.95&lt;/price&gt;
+ |       &lt;currency&gt;
+ |         &lt;code&gt;840&lt;/code&gt;
+ |         &lt;alpha3&gt;USD&lt;/alpha3&gt;
+ |         &lt;sign&gt;$&lt;/sign&gt;
+ |         &lt;name&gt;US dollar&lt;/name&gt;
+ |         &lt;accuracy&gt;2&lt;/accuracy&gt;
+ |       &lt;/currency&gt;
+ |       &lt;inStock&gt;true&lt;/inStock&gt;
+ |     &lt;/getProductDetailsResult&gt;
+ |   &lt;/getProductDetailsResponse&gt;";
+ КонвертXML = ЭлектроннаяПодписьКлиент.КонвертXML(Параметры);</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

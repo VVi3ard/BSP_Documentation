@@ -1,0 +1,924 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>5.56 Регламентные задания</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../index.html">Оглавление</a></nav>
+
+<a name="_top"></a><h1>5.56 Регламентные задания</h1>
+<p class="Paragraph0c">Ряд действий в приложении может выполняться автоматически
+в фоне, по определенному расписанию. Такие действия называются регламентными
+заданиями, <span class="Note">например,
+это ежедневная загрузка курсов валют, регулярная рассылка отчетов, отложенное
+проведение документов и т. п.</span> Регламентные задания облегчают
+работу в приложении, позволяя перенести выполнение рутинных задач в само
+приложение, и в то же время они снижают человеческий фактор (<span class="Note">например, можно забыть загрузить курсы
+валют в один из перегруженных другими задачами дней</span>). </p>
+<p class="Paragraph0c">Запуск регламентных заданий осуществляет планировщик
+регламентных заданий <span class="Interface">1С:Предприятия</span>. При этом
+несколько заданий могут выполняться параллельно.</p>
+<a data-original-name="IssOgl1_Настройка_выполнения_регламентных_заданий" name="issogl1_настройка_выполнения_регламентных_заданий"><h2>Настройка выполнения регламентных заданий</h2></a>
+<p class="Paragraph0c">Настройка регламентных заданий выполняется в списке <span class="Interface">Регламентные и фоновые задания</span>, который открывается с
+помощью соответствующей ссылки в разделе <span class="Note"><b>Администрирование</b></span><span class="Interface"> – Обслуживание</span>. </p>
+<p class="Picture"><img alt="" height="595" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3075.png?_=00011EA79A7205C4-v10" style="aspect-ratio:1094/595" width="1094"/></p>
+<p class="Paragraph0c">В этом списке можно включить (или отключить) то или иное
+регламентное задание и поменять расписание. </p>
+<p class="Paragraph0c">Кроме того, на вкладке <span class="Interface">Фоновые
+задания</span> можно просматривать историю выполнения регламентных заданий, а
+также анализировать неполадки, возникающие в процессе выполнения заданий.
+Подробнее см. раздел <a href="5.56 Регламентные задания.html#_контроль_выполнения_регламентных">Контроль
+выполнения регламентных заданий</a>. </p>
+<p class="Paragraph0c">Для детального анализа хода выполнения регламентных
+заданий можно использовать отчет <span class="Interface">Продолжительность работы
+регламентных заданий</span> (Подробнее см. раздел документации Анализ журнала
+регистрации). </p>
+<p class="Paragraph0c">В списке представлены следующие регламентные задания:</p>
+<p class="Paragraph0c"><span class="Note"><b>Примечание для технического писателя:</b></span><span class="Note"> в зависимости от
+состава подсистем, используемых в приложении, этот список может различаться. При
+подготовке документации из него нужно исключить те библиотечные регламентные
+задания, которых нет в приложении, а также дополнительно включить те
+регламентные задания, которые предусмотрены в приложении, но не являются частью
+библиотеки.</span></p>
+<table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable">
+<thead>
+<tr>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Регламентное задание</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Назначение</span></p>
+</td>
+<td valign="top">
+<p class="TextinTable81"><span class="Interface">Раздел руководства с подробным описанием</span></p>
+</td>
+</tr>
+</thead>
+<tbody><tr>
+<td valign="top">
+<p class="TextinTable81">Загрузка курсов валют</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Загружает курсы валют (для которых установлен <span class="Interface">признак
+  загружается из Интернета</span>) с сайта 1С.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Валюты</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Заполнение данных для ограничения доступа</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обновляет данные, необходимые для работы механизма
+  управления доступом. Рекомендуется запускать после обновления конфигурации.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Управление доступом</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Заполнение параметров работы расширений</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обновляет и настраивает параметры, необходимые для
+  корректной работы расширений конфигурации.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Базовая функциональность </p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Запрос лицензий уникальных услуг</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Автоматизирует процесс получения и проверки лицензии
+  на уникальные услуги. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Запуск дополнительных обработок</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Запускает дополнительные обработки.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Дополнительные отчеты и обработки</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Запуск обработки заданий</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Запускает обработку заданий.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Бизнес-процессы и задачи</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Извлечение текста файлов для поиска</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Извлекает текст из файлов для построения индекса
+  полнотекстового поиска.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Работа с файлами</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Исправление устаревших адресов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Автоматически ищет и обновляет устаревшие адреса, сравнивает
+  с внешними источниками (ФИАС). </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Контактная информация</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Контроль удаления помеченных объектов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Контролирует объекты конфигурации, помеченные на
+  удаление. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Удаление помеченных объектов</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Мониторинг задач</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Рассылает письма по электронной почте с уведомлениями
+  о наличии «зависших» задач</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Бизнес-процессы и задачи</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Мониторинг ЦКК</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Позволяет собирать, агрегировать информацию и вовремя
+  оповещать обо всех важных событиях в работе системы. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление агрегатов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Переносит данные из таблиц движений регистров в
+  соответствующие таблицы агрегатов.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Управление итогами и агрегатам</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление внешних компонент</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обновляет внешние компоненты. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Внешние компоненты</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление доступа на уровне записей</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Предназначено
+  для заполнения и обновления данных, необходимых для работы подсистемы <b>Управление доступом</b> в режиме
+  ограничения доступа на уровне записей.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Управление доступом</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление индекса ППД</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обновляет индекс полнотекстового поиска данных.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Полнотекстовый поиск</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление информации о версиях платформы</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обновляет информацию о версиях платформы. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление классификаторов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обновляет классификаторы с портала 1С:ИТС. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление классификаторов МЧД</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Актуализирует классификаторы полномочий МЧД,
+  ограничений полномочий и значений ограничений полномочий.</p>
+</td>
+<td valign="top">
+<p class="MsoNormal">Машиночитаемые доверенности</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление областей данных</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Планирует задания по обновление областей данных.
+  Используется только в модели сервиса.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Полнотекстовый поиск</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление статусов доставки SMS</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Осуществляет контроль состояния отправленных сообщений
+  SMS.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Взаимодействия</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обновление статусов МЧД</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Автоматически обновляет статус машиночитаемой
+  доверенности. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Машиночитаемые доверенности</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обработка оповещений пользователей</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Запускает обработку оповещения пользователей. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обработка сервисов интеграции</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Запускает обработку сервисов интеграции, синхронизирует
+  данные между системой и внешними сервисами. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Базовая функциональность</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Обслуживание областей данных</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Контролирует переходные состояния областей данных. При
+  обнаружении невосстановимых ошибок обработки областей данных, отправляет
+  сообщения в менеджер сервиса. Используется только в модели сервиса.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Отложенное обновление ИБ</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Фоновая отложенная обработка данных</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обновление версии ИБ</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Отправка SMS</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Отправка SMS-сообщений</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Взаимодействия</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Отправка и получение сообщений системы</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обмен сообщениями с менеджером сервиса</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Отправка серверных оповещений клиентам</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Выполняет работу вместо периодических серверных
+  вызовов с клиента на сервер, отправляет в клиентские сеансы оповещения о
+  событиях: изменились права пользователя, требуется завершить работу по
+  требованию администратора, изменилась версия приложения и т.д.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Взаимодействия</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Очистка замеров времени</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Удаление ненужных замеров времени</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Оценка производительности</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Очистка истории рассылки отчетов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Очищает записи из регистра сведении истории рассылки
+  отчетов в зависимости от указанного периода. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Рассылка отчетов</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Очистка ненужных файлов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Удаление ненужных файлов.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Работа с файлами</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Очистка устаревших версий объектов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Приложение производит удаление устаревших версий
+  объектов </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Версионирование объектов</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Перестроение агрегатов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">На основании анализа приложения включает или выключает
+  использование того или иного агрегата.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Управление итогами и агрегатами</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Планирование обработки заданий</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Отслеживает необходимость выполнения задания из
+  очереди заданий. Контролирует фоновые задания, выполняющие задания очереди.
+  Используется только в модели сервиса.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Получение и отправка электронных писем</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Получает и отправляет электронные письма.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Взаимодействия</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Получение и установка исправлений конфигурации</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Получает обновление конфигурации с сайта и проводит
+  установку</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обновление приложения</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Получение статусов электронных писем</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Получает статусы электронных писем.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Взаимодействия</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Проверка ведения учета</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Проверка корректности данных информационной базы
+  (например: нарушение ссылочной целостности, отрицательные остатки в регистре
+  накопления, сбой в нумерации счетов фактур и т.д.) по произвольным правилам.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Контроль ведения учета</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Продление достоверности подписей</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Автоматизирует процесс проверки и продления срока
+  действия электронных подписей, используемых в системе. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Электронная подпись</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Рассылка отчетов: Демо: Личная (HTML, ZIP)</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Приложение позволяет настраивать рассылки вариантов
+  отчетов и дополнительных отчетов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Варианты отчетов, Дополнительные отчеты и обработки</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Рассылка отчетов: Демо: Личная (HTML, ZIP)</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Приложение позволяет настраивать рассылки вариантов
+  отчетов и дополнительных отчетов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Варианты отчетов, Дополнительные отчеты и обработки</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Рассылка отчетов: Демо: Персонализированная по
+  получателям (HTML, NOZIP)</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Приложение позволяет настраивать рассылки вариантов
+  отчетов дополнительных отчетов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Варианты отчетов, Дополнительные отчеты и обработки</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Расчет сроков хранения персональных данных </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Рассчитывает и отслеживает сроки хранения персональных
+  данных в соответствии с законодательством. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Защита персональных данных</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Регистрация услуг сервиса</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Регистрирует услуги сервиса. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Сбор и отправка статистики</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Собирается статистика по работе приложения и
+  отсылается в 1С. Работа этого регламентного задания не замедляет работу
+  приложения</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Центр мониторинга</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Слияние индекса ППД</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Объединяет части индекса полнотекстового поиска данных
+  после нескольких обновлений для ускорения работы. Задание может выполняться
+  значительное время. Рекомендуется выполнять ежедневно, например, по ночам.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Полнотекстовый поиск</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Старт отложенных процессов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Начинает выполнение отложенных бизнес-процессов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Бизнес-процессы и задачи</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Уведомление исполнителей о новых задачах</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Рассылает письма по электронной почте с уведомлениями
+  о новых задачах.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Бизнес-процессы и задачи</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Удаление неактуальной информации синхронизации </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Производит удаление неактуальных сообщений обмена.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обмен данными</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Удаление неактуальных данных</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Производит удаление неактуальных данных конфигурации. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Удаление помеченных объектов приложения</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Производит автоматическое удаление объектов
+  приложения, помеченных на удаление.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Настройки приложения</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Удаление устаревших параметров работы версий
+  расширений</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Производит автоматическое удаление неактуальных
+  параметров работы версий расширений.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Базовая функциональность</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Удаление файлов временного хранилища</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Производит автоматическое удаление файлов временного хранилища.
+  </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Установка периода рассчитанных итогов</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Переносит период рассчитанных итогов на начало
+  текущего месяца.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Управление итогами и агрегатам</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Установка порядка отложенного обновления в модели
+  сервиса</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Устанавливает порядок отложенного обновления в модели
+  сервиса.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Обновление версии ИБ</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Чтение новостей службы поддержки</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Автоматизирует процесс получения и обработки новостей
+  от службы поддержки. </p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Документации не предусмотрено</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p class="TextinTable81">Экспорт оценки производительности</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Полученные замеры производительности приложение
+  позволяет автоматически в фоне выгружать во внешние файлы, </p>
+<p class="TextinTable81">например, для выполнения анализа производительности в
+  другом приложении.</p>
+</td>
+<td valign="top">
+<p class="TextinTable81">Оценка производительности</p>
+</td>
+</tr>
+</tbody></table>
+<p class="Paragraph0c"> </p>
+<p class="Paragraph0c">В особых случаях можно добавить регламентное задание.
+Подробнее см. раздел <a href="5.56 Регламентные задания.html#_дополнительные_возможности_по">Дополнительные
+возможности по настройке</a>.</p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Регламентные задания</span>
+кроме наименования (<span class="Interface">Представления</span>) регламентного задания
+отображается его <span class="Interface">Состояние</span> и <span class="Interface">Дата окончания</span> последнего сеанса работы. В списке можно
+контролировать выполнение регламентных заданий – им присваивается
+соответствующее состояние и дата/время его выполнения.</p>
+<p class="Paragraph0c">В колонке <img alt="" height="19" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3077.png?_=000002AD517CF07E-v10" style="aspect-ratio:19/19" width="19"/> <span class="Interface">Включено</span> флажками
+выделены регламентные задания, у которых включен флажок <span class="Interface">Включено</span>
+и которые должны выполняться. Если в колонках <span class="Interface">Состояние</span>
+и <span class="Interface">Дата окончания</span> проставлено &lt;<span class="Interface">не определено</span>&gt;, а флажок включен, следует проверить
+расписание регламентного задания. Возможно, оно некорректное, поэтому
+регламентное задание не может выполняться.</p>
+<p class="Paragraph0c">Расписание можно задать и в списке <span class="Interface">Регламентные
+и фоновые задания</span>. Для этого воспользуйтесь кнопкой <span class="Interface">Настроить Расписание</span>. Подробнее см. раздел <a href="5.56 Регламентные задания.html#_расписание_регламентного_задания">Расписание регламентного задания</a>.</p>
+<p class="Paragraph0c">С помощью кнопки <img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3079.png?_=00000208BA53BDD3-v10" style="aspect-ratio:27/22" width="27"/> можно просмотреть события журнала регистрации,
+связанные с выполнением выделенного регламентного задания. События отбираются
+на текущую дату. Это может помочь разобраться, если регламентное задание
+выполнялось некорректно. Подробнее о журнале регистрации см. раздел
+документации Настройки приложения. </p>
+<p class="Paragraph0c">Регламентное задание можно принудительно выполнить вручную
+в любой момент времени с помощью кнопки <span class="Interface">Выполнить сейчас</span>.
+</p>
+<p class="Paragraph0c">В файловом варианте работы результат запуска будет
+отображаться до перезапуска приложения.  </p>
+<p class="Paragraph0c">Список не является динамическим. Для того чтобы сделать
+список актуальным, нажмите кнопку <span class="Interface">Обновить</span>.</p>
+<p class="Paragraph0c">Также в списке
+регламентных заданий с помощью команд меню <span class="Interface">Еще</span> можно <span class="Interface">Изменить</span> или <span class="Interface">Скопировать</span> уже существующие регламентные задания. Вновь
+созданные регламентные задания можно <span class="Interface">Пометить на удаление</span> или <span class="Interface">Снять пометку
+на удаление </span>(также это можно
+сделать с помощью клавиши <span class="Interface">Del</span>). Предопределенные регламентные задания невозможно удалить.</p>
+<p class="Paragraph0c">С помощью команд
+контекстного меню по правой кнопке мыши можно <span class="Interface">Включить</span> или <span class="Interface">Выключить</span> регламентное задание.</p>
+<p class="Paragraph0c">Открыть регламентное задание можно в списке с помощью
+двойного щелчка мыши.</p>
+<p class="Paragraph0c">Автоматический запуск регламентных заданий можно
+регулировать флажком <span class="Interface">Включено</span> из карточки <span class="Interface">Регламентного задания</span>. </p>
+<p class="Paragraph0c">С помощью ссылки <span class="Interface">Расписание</span>
+можно проконтролировать, с какой периодичностью выполняется регламентное
+задание. Подробнее см. раздел <a href="5.56 Регламентные задания.html#_расписание_регламентного_задания">Расписание
+регламентного задания</a>.</p>
+<p class="Paragraph0c">Можно изменить <span class="Interface">Наименование</span>
+регламентного задания.</p>
+<p class="Paragraph0c">Также можно указать число попыток выполнения регламентного
+задания, и временной интервал между ними при возникновении нештатной ситуации (<span class="Interface">Действия при ошибках</span>) в процессе выполнения задания. </p>
+<p class="Paragraph0c">Для клиент-серверного варианта работы можно указать <span class="Interface">Пользователя</span> приложения, который будет использован для
+выполнения регламентного задания. </p>
+<p class="Paragraph0c">Раздел <span class="Interface">Техническая информация</span>
+носит служебный характер и недоступен для редактирования. Данный раздел
+предназначен для разработчиков приложения. Более подробно с назначением этих
+полей можно ознакомиться во встроенной справочной системе с помощью кнопки <img alt="" height="23" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3081.png?_=000001358A24D726-v10" style="aspect-ratio:23/23" width="23"/>.</p>
+<p class="Picture"><img alt="" height="874" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3083.png?_=0000B9E2091C00B6-v10" style="aspect-ratio:1078/874" width="1078"/></p>
+<a data-original-name="IssOgl2_Расписание_регламентного_задания" name="issogl2_расписание_регламентного_задания"><h3>Расписание регламентного задания</h3></a>
+<p class="Paragraph0c">Для каждого регламентного задания может быть задано расписание,
+в соответствии с которым регламентное задание будет автоматически запущено на
+исполнение. В приложении поддерживаются однократные и периодические расписания.
+Можно задать дату начала и окончания выполнения, дневное, недельное и месячные
+расписания. </p>
+<p class="Paragraph0c"><span class="Interface">Настроить расписание</span> можно из
+списка <span class="Interface">Регламентные и фоновые задания</span> с помощью
+кнопки панели навигации.</p>
+<p class="Picture"><img alt="" height="607" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3085.png?_=0000ECE7E8153949-v10" style="aspect-ratio:1004/607" width="1004"/></p>
+<p class="Paragraph0c"><span class="Interface">Расписание</span> можно задать и в карточке регламентного
+задания по ссылке. </p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Общие</span> можно задать
+<span class="Interface">Дату начала</span>, <span class="Interface">Дату окончания</span>,
+период повторения, <span class="Note">например,
+<b>Каждый день</b></span>. В нижней части в зависимости от выбранных
+настроек приложением составляется полное расписание. Если указана <span class="Interface">Дата окончания</span>, то выполнение регламентного задания
+прекратится в указанный день.</p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Дневное</span> можно
+задать несколько периодов в день с помощью кнопки <span class="Interface">Добавить</span>. Периодичность в течение дня не поддерживается, поэтому при формировании
+расписания на вкладке <span class="Interface">Дневное</span> можно задать только <span class="Interface">Время начала</span>. Для
+того чтобы задать несколько напоминаний в день, нажмите кнопку <span class="Interface">Добавить</span>, введите <span class="Interface">Время начала</span> для
+новой строки.</p>
+<p class="Picture"><img alt="" height="519" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3087.png?_=00006729D7F7EE5D-v10" style="aspect-ratio:564/519" width="564"/></p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Недельное</span> можно
+указать, в какие дни недели будет выполняться регламентное задание, задать
+период повторения, <span class="Note">например,
+<b>через неделю</b></span>.</p>
+<p class="Picture"><img alt="" height="360" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3089.png?_=0000381663A0F3AE-v10" style="aspect-ratio:509/360" width="509"/></p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Месячное</span> можно
+выбрать, в какие месяцы года будет выполняться регламентное задание, а также
+указать, в какие дни месяца и недели, <span class="Note">например,<b> в последнее число каждого
+квартала</b></span>.</p>
+<p class="Picture"><img alt="" height="456" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3091.png?_=00005430F1BCB3B7-v10" style="aspect-ratio:510/456" width="510"/></p>
+<p class="Paragraph0c">Для подтверждения
+выбора и возврата к дальнейшей настройке регламентного задания нажмите кнопку <span class="Interface">ОК</span>.</p>
+<a data-original-name="IssOgl1_Контроль_выполнения_регламентных_заданий" name="issogl1_контроль_выполнения_регламентных_заданий"><h2>Контроль выполнения регламентных заданий</h2></a>
+<p class="Paragraph0c">Технически, в соответствии с заданным расписанием для
+выполнения регламентного задания создается фоновое задание, которое выполняет
+регламентные действия. Например, если задано ежедневное расписание на <span class="Interface">9:15</span>, то каждый день в <span class="Interface">9:15</span>
+будет запускаться новый сеанс фонового задания. После завершения регламентной
+операции фоновое задание автоматически завершается.</p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Фоновые задания</span>
+можно проконтролировать выполнение фоновых заданий. </p>
+<p class="Picture"><img alt="" height="423" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3093.png?_=000088022AF7EEAC-v10" style="aspect-ratio:998/423" width="998"/></p>
+<p class="Paragraph0c">Для этого можно воспользоваться отборами фоновых заданий: </p>
+<p class="Bullet1">■ 
+<span class="Interface">Состояние</span> –
+включить данный отбор можно с помощью флажков рядом с состояниями регламентного
+задания: <span class="Interface">Выполнено</span>, <span class="Interface">Завершено
+с ошибками</span>, <span class="Interface">Отменено</span>, <span class="Interface">Выполняется</span>;</p>
+<p class="Bullet1">■ 
+<span class="Interface">За период</span> –
+выберите из списка нужное значение: <span class="Interface">Все время</span>, <span class="Interface">Прошлая ночь</span>, <span class="Interface">Вчера</span>, <span class="Interface">Сегодня</span>, <span class="Interface">Произвольный</span>. В
+последнем случае можно написать или выбрать даты из календаря;</p>
+<p class="Bullet1">■ 
+ по
+интересующему регламентному заданию – для этого включите флажок <span class="Interface">Отбирать по регламентному заданию</span>, выберите из списка
+нужное.</p>
+<p class="Paragraph0c">Отбор фоновых заданий производится только с помощью
+кнопки <span class="Interface">Обновить</span>, поэтому после изменения
+настройки отбора нужно нажать эту кнопку. </p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Открыть</span> можно
+просмотреть карточку регламентного задания. Подробнее см. раздел <a href="5.56 Регламентные задания.html#_настройка_выполнения_регламентных">Настройка выполнения регламентных заданий</a>.</p>
+<p class="Paragraph0c">С помощью кнопки <span class="Interface">Отменить</span> можно
+прекратить выполнение выделенного регламентного задания.</p>
+<p class="Paragraph0c">С помощью кнопки <img alt="" height="22" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3079.png?_=00000208BA53BDD3-v10" style="aspect-ratio:27/22" width="27"/> можно отобрать события журнала регистрации,
+связанные с выполнением выбранного регламентного здания. Подробнее см. раздел
+документации Настройки приложения.</p>
+<p class="Picture"><img alt="" height="418" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3096.png?_=00008C2AEABCA2F2-v10" style="aspect-ratio:987/418" width="987"/></p>
+<a data-original-name="IssOgl1_Дополнительные_возможности_по_настройке" name="issogl1_дополнительные_возможности_по_настройке"><h2>Дополнительные возможности по настройке</h2></a>
+<p class="Paragraph0c">На вкладке <span class="Interface">Регламентные задания</span>
+списка <span class="Interface">Регламентные и фоновые задания</span> предусмотрены
+дополнительные возможности по управлению регламентными заданиями. </p>
+<p class="Paragraph0c">В некоторых случаях бывает необходимо задать два разных
+расписания для одного регламентного задания. Тогда в список можно добавить новое
+регламентное задание по одному из предопределенных шаблонов, предусмотренных в
+приложении. </p>
+<p class="Paragraph0c">Для добавления нового регламентного задания воспользуйтесь
+командой <span class="Interface">Добавить</span> меню <span class="Interface">Еще</span>
+или клавишей <span class="Interface">Ins</span>.</p>
+<p class="Paragraph0c">Выберите из списка
+шаблон, нажмите кнопку <span class="Interface">ОК</span>. </p>
+<p class="Picture"><img alt="" height="724" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3098.png?_=00014A7CACB20366-v10" style="aspect-ratio:1118/724" width="1118"/></p>
+<p class="Paragraph0c">Настройте новое
+регламентное задание, измените его наименование, можно также изменить поле <span class="Interface">Имя пользователя</span>,
+выбрав пользователя из списка. Остальные поля редактированию не подлежат. Новое
+задание приложение по умолчанию отмечает, как не предопределенное.</p>
+<p class="Picture"><img alt="" height="910" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3100.png?_=0000B5487BF677C4-v10" style="aspect-ratio:1074/910" width="1074"/></p>
+<p class="Paragraph0c">На вкладке <span class="Interface">Фоновые задания</span>
+можно проконтролировать выполнение регламентного задания. Подробнее см. раздел <a href="5.56 Регламентные задания.html#_контроль_выполнения_регламентных">Контроль выполнения регламентных
+заданий</a>.</p>
+<a data-original-name="IssOgl1_Особенности_выполнения_регламентных_заданий_в_разных_вариантах_работы" name="issogl1_особенности_выполнения_регламентных_заданий_в_разных_вариантах_работы"><h2>Особенности выполнения регламентных заданий в разных вариантах работы</h2></a>
+<a data-original-name="IssOgl2_Регламентные_задания_в_файловой_базе" name="issogl2_регламентные_задания_в_файловой_базе"><h3>Регламентные задания в файловой базе</h3></a>
+<p class="Paragraph0c">В файловой базе регламентные задания выполняются в том же
+приложении, с которым работает пользователь. В некоторых случаях это может
+замедлять его работу. Поэтому при одновременной работе с файловой базой более
+10 пользователей рекомендуется выделить для выполнения регламентных заданий
+отдельное приложение (запуск с параметром <span class="Interface">/AllowExecuteScheduledJobs
+-Force</span>). Желательно, чтобы оно запускалось на том же компьютере, где
+расположена информационная база.</p>
+<a data-original-name="IssOgl2_Блокировка_регламентных_заданий_при_переносе_информационной_базы" name="issogl2_блокировка_регламентных_заданий_при_переносе_информационной_базы"><h3>Блокировка регламентных заданий при переносе информационной базы</h3></a>
+<p class="Paragraph0c">При копировании информационной базы в другое
+местоположение возможны ситуации, когда обе информационные базы (и исходная и
+скопированная) продолжают взаимодействовать с внешними ресурсами (например,
+выполнение регламентных заданий, связанных с рассылкой отчетов, синхронизацией
+данных с другими приложениями, отправкой или получением почты и т. п.). Для
+предотвращения таких ситуаций при изменении местоположения информационной базы
+теперь блокируются все подобные регламентные задания. </p>
+<p class="Paragraph0c">Приложение автоматически
+определяет факт перемещения информационной базы (например, при копировании или
+восстановлении из резервной копии). Работа с внешними ресурсами на время
+блокируется.</p>
+<p class="Paragraph0c">Выводится сообщение.</p>
+<p class="Paragraph0c">При первом входе в перемещенную базу администратор должен
+принять решение о ее роли и выбрать с помощью кнопок: </p>
+<p class="Bullet1">■ 
+<span class="Interface">Информационная база
+перемещена</span> – в этом случае будет восстановлено выполнение работы с
+внешними ресурсами;</p>
+<p class="Bullet1">■ 
+<span class="Interface">Это копия информационной
+базы</span> – в этом случае работа со всеми внешними ресурсами остается
+заблокированной.</p>
+<p class="Picture"><img alt="" height="600" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3102.png?_=000133BBBDC7D888-v10" style="aspect-ratio:1178/600" width="1178"/></p>
+<p class="Paragraph0c">В серверной информационной базе в отказоустойчивом
+кластере рекомендуется первому пользователю, у которого открылось данное окно выключить
+флажок <span class="Interface">Еще – Проверять имя сервера</span>.</p>
+<p class="Paragraph0c">Также если необходимо временно заблокировать выполнение
+регламентных заданий и отметить информационную базу как копию, то это можно
+сделать в списке регламентных и фоновых заданий с помощью меню <b>Еще</b> - З<b>аблокировать работу с внешними ресурсами</b>.<b> </b>Снять отметку блокировки можно в этом же списке.</p>
+<p class="Picture"><img alt="" height="1000" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3104.png?_=0007A88BA2726354-v10" style="aspect-ratio:1136/1000" width="1136"/></p>
+<p class="Paragraph0c">Блокировку также можно снять позднее в разделе <span class="Note"><b>Администрирование –</b></span>
+<span class="Interface">Обслуживание – Регламентные операции</span> с помощью
+кнопки <span class="Interface">Разблокировать работу с внешними ресурсами</span>.
+После снятия блокировки кнопка больше не отображается.</p>
+<p class="Picture"><img alt="" height="560" loading="eager" src="https://its.1c.ru/db/content/bsp3111doc/src/_img/пользовательская документация бсп.files/image3106.png?_=0000EB5B123F38F6-v10" style="aspect-ratio:1118/560" width="1118"/></p>
+<p class="Picture"><a data-original-name="_Настройка_выполнения_регламентных" name="_настройка_выполнения_регламентных"></a><a data-original-name="_Расписание_регламентного_задания" name="_расписание_регламентного_задания"></a><a data-original-name="_Контроль_выполнения_регламентных" name="_контроль_выполнения_регламентных"></a><a data-original-name="_Дополнительные_возможности_по" name="_дополнительные_возможности_по"></a><a data-original-name="_Особенности_запуска_регламентных" name="_особенности_запуска_регламентных"></a></p>
+</main></body></html>

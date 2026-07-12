@@ -1,0 +1,25 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ИспользуемыеТаблицы</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ВариантыОтчетовИспользуемыеТаблицы" name="_вариантыотчетовиспользуемыетаблицы"></a><h1>ИспользуемыеТаблицы</h1>
+<pre> Извлекает информацию о таблицах, используемых в схеме или запросе.
+ Обработка исключений (например, в случае передачи некорректного текста запроса) выполняется вызывающим кодом.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ИспользуемыеТаблицы(Объект) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Объект - СхемаКомпоновкиДанных
+         - Строка - схема отчета или текст запроса.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>   Массив - имена таблиц, используемые в схеме или запросе.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>  // Вызов из собственной формы отчета, использующего СКД.
+  ИспользуемыеТаблицы = ВариантыОтчетов.ИспользуемыеТаблицы(РеквизитФормыВЗначение("Отчет").СхемаКомпоновкиДанных);
+  ВариантыОтчетов.ПроверитьИспользуемыеТаблицы(ИспользуемыеТаблицы);
+  // Вызов из обработчика ПриКомпоновкеРезультата отчета, использующего СКД.
+  ИспользуемыеТаблицы = ВариантыОтчетов.ИспользуемыеТаблицы(СхемаКомпоновкиДанных);
+  ВариантыОтчетов.ПроверитьИспользуемыеТаблицы(ИспользуемыеТаблицы);
+  // Вызов из обработчика ПриКомпоновкеРезультата отчета, использующего запрос.
+  ИспользуемыеТаблицы = ВариантыОтчетов.ИспользуемыеТаблицы(ТекстЗапроса);
+  ВариантыОтчетов.ПроверитьИспользуемыеТаблицы(ИспользуемыеТаблицы);</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

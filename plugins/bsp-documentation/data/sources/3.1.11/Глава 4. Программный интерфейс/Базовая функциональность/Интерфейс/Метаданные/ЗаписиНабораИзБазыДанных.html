@@ -1,0 +1,27 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ЗаписиНабораИзБазыДанных</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбщегоНазначенияЗаписиНабораИзБазыДанных" name="_общегоназначениязаписинабораизбазыданных"></a><h1>ЗаписиНабораИзБазыДанных</h1>
+<pre> Возвращает указанные поля строк регистра из базы данных, которые будут
+ записаны при записи указанного набора записей с учетом режима замещения.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ЗаписиНабораИзБазыДанных(НаборЗаписей, Замещение = Неопределено, СписокПолей = "") Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  НаборЗаписей - РегистрСведенийНаборЗаписей
+               - РегистрНакопленияНаборЗаписей
+               - РегистрБухгалтерииНаборЗаписей
+               - РегистрРасчетаНаборЗаписей - набор записей,
+                   который используется вычисления изменений.
+  Замещение - РежимЗамещения, Булево - как передается в подписку на событие ПередЗаписью.
+            - Неопределено - получить и установить в этот параметр значение из свойства
+                Замещение структуры ДополнительныеСвойства указанного набора записей
+                (если свойства нет, тогда устанавливается Истина).
+  СписокПолей - Строка - список полей набора записей через запятую.
+                  Если не указан, значит все поля набора записей.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  ТаблицаЗначений - поля из параметра СписокПолей,
+    строки без повторений для указанного списка полей.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = ОбщегоНазначения.ЗаписиНабораИзБазыДанных(НаборЗаписей, Замещение, СписокПолей)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

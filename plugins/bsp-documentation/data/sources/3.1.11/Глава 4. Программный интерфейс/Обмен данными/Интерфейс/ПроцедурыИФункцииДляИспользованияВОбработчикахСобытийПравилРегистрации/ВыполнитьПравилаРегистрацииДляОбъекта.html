@@ -1,0 +1,18 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ВыполнитьПравилаРегистрацииДляОбъекта</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ОбменДаннымиСобытияВыполнитьПравилаРегистрацииДляОбъекта" name="_обменданнымисобытиявыполнитьправиларегистрациидляобъекта"></a><h1>ВыполнитьПравилаРегистрацииДляОбъекта</h1>
+<pre> Определяет массив узлов-получателей для объекта при заданном плане обмена и выполняет регистрацию объекта на
+ полученных узлах.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ВыполнитьПравилаРегистрацииДляОбъекта(Объект, ИмяПланаОбмена, Отправитель = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Объект         - Произвольный - СправочникОбъект, ДокументОбъект и т.п. объект, для которого необходимо выполнить
+                   правила регистрации, и выполнить регистрацию на узлах.
+  ИмяПланаОбмена - Строка - имя плана обмена как оно задано в конфигураторе.
+  Отправитель    - ПланОбменаСсылка - узел плана обмена от которого принимается сообщение обмена.
+                    Если задан, то регистрация объекта не этом узле выполнятся не будет.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОбменДаннымиСобытия.ВыполнитьПравилаРегистрацииДляОбъекта(Объект, ИмяПланаОбмена, Отправитель)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

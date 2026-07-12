@@ -1,0 +1,24 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПриНачалеРаботыСистемы</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_СтандартныеПодсистемыКлиентПриНачалеРаботыСистемы" name="_стандартныеподсистемыклиентприначалеработысистемы"></a><h1>ПриНачалеРаботыСистемы</h1>
+<pre> Выполнить стандартные действия при начале работы пользователя
+ с областью данных, либо в локальном режиме работы.
+ Предназначена для вызова из обработчика ПриНачалеРаботыСистемы модулей управляемого и обычного приложения.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ПриНачалеРаботыСистемы(Знач ОповещениеЗавершения = Неопределено, НепрерывноеВыполнение = Истина) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  ОповещениеЗавершения - ОписаниеОповещения - не задается при вызове из обработчика ПриНачалеРаботыСистемы 
+                         модулей управляемого и обычного приложения. В других случаях, после запуска будет вызвано
+                         оповещение с параметром типа Структура со свойствами:
+                         &gt; Отказ - Булево - Ложь, если запуск выполнен успешно, или Истина, если вход в программу не
+                         выполнен;
+                         &gt; Перезапустить - Булево - если требуется перезапуск программы;
+                         &gt; ДополнительныеПараметрыКоманднойСтроки - Строка - для перезапуска.
+  НепрерывноеВыполнение - Булево - только для внутреннего использования.
+                          Для перехода из обработчика ПередНачаломРаботыСистемы
+                          выполненного в режиме интерактивной обработки.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>СтандартныеПодсистемыКлиент.ПриНачалеРаботыСистемы(ОповещениеЗавершения, НепрерывноеВыполнение)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

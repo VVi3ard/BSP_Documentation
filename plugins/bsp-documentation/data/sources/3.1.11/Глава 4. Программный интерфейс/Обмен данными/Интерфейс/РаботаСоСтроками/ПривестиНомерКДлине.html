@@ -1,0 +1,25 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ПривестиНомерКДлине</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_УниверсальныйОбменДаннымиXMLПривестиНомерКДлине" name="_универсальныйобменданнымиxmlпривестиномеркдлине"></a><h1>ПривестиНомерКДлине</h1>
+<pre> Приводит номер (код) к требуемой длине. При этом выделяется префикс,
+ и числовая часть номера, остальное пространство между префиксом и
+ номером заполняется нулями.
+ Функция может быть использована в обработчиках событий, программный код 
+ которых хранится в правила обмена данными. Вызывается методом Выполнить().
+ Сообщение "Не обнаружено ссылок на функцию" при проверке конфигурации 
+ не является ошибкой проверки конфигурации.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция ПривестиНомерКДлине(Знач Стр, Длина, ДобавлятьНулиЕслиДлинаНеМеньшеТекущейДлиныНомера = Истина, Префикс = "") Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Стр          - Строка - преобразовываемая строка.
+  Длина        - Число - требуемая длина строки.
+  ДобавлятьНулиЕслиДлинаНеМеньшеТекущейДлиныНомера - Булево - признак необходимости дополнять нулями.
+  Префикс      - Строка - префикс который следует добавить к номеру.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>  Строка       - код или номер, приведенная к требуемой длине.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ОбработкаОбъект = Обработки.УниверсальныйОбменДаннымиXML.Создать();
+Результат = ОбработкаОбъект.ПривестиНомерКДлине();</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

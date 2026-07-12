@@ -1,0 +1,19 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>ВыбратьКаталог</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ФайловаяСистемаКлиентВыбратьКаталог" name="_файловаясистемаклиентвыбратькаталог"></a><h1>ВыбратьКаталог</h1>
+<pre> Показывает диалог выбора каталога.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура ВыбратьКаталог(ОбработчикЗавершения, Заголовок = "", Каталог = "") Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>   ОбработчикЗавершения - ОписаниеОповещения - содержит описание процедуры, которая будет вызвана после
+                        закрытия диалога выбора со следующими параметрами:
+      # ПутьККаталогу - Строка - полный путь к каталогу. Если не установлено расширение для работы с 1С:Предприятием
+                        или пользователь отказался от выбора, возвращает пустую строку.
+      # ДополнительныеПараметры - Произвольный - значение, которое было указано при создании объекта ОписаниеОповещения.
+   Заголовок - Строка - заголовок диалога выбора каталога.
+   Каталог   - Строка - начальное значение каталога, предлагаемое по умолчанию.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ФайловаяСистемаКлиент.ВыбратьКаталог(ОбработчикЗавершения, Заголовок, Каталог)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Тонкий клиент, Толстый клиент</pre>
+</main></body></html>

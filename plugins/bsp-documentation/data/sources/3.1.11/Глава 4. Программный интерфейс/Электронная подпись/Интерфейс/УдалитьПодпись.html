@@ -1,0 +1,25 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>УдалитьПодпись</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_ЭлектроннаяПодписьУдалитьПодпись" name="_электроннаяподписьудалитьподпись"></a><h1>УдалитьПодпись</h1>
+<pre> Удаляет подпись объекта и записывает его.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Процедура УдалитьПодпись(Объект, ПорядковыйНомер, ИдентификаторФормы = Неопределено,
+			ВерсияОбъекта = Неопределено, ЗаписанныйОбъект = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>  Объект - ОпределяемыйТип.ПодписанныйОбъект - по ссылке будет получен объект,
+               заблокирован, изменен, записан. Объект должен иметь реквизит ПодписанЭП.
+           Либо передать сразу объект указанного выше типа, тогда он
+           будет изменен без блокировки и без записи.
+  ПорядковыйНомер      - Число - порядковый номер подписи.
+                       - Массив - значения указанного выше типа.
+  ИдентификаторФормы - УникальныйИдентификатор - идентификатор формы, используемый для блокировки,
+                       если передана ссылка на объект.
+  ВерсияОбъекта      - Строка - версия данных объекта, если передана ссылка на объект, используемая
+                       для блокировки объекта перед записью, с учетом того, что подписание
+                       выполняется на клиенте и за время подписания объект мог быть изменен.
+  ЗаписанныйОбъект   - Произвольный - объект, который был получен и записан, если передавалась ссылка.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>ЭлектроннаяПодпись.УдалитьПодпись(Объект, ПорядковыйНомер, ИдентификаторФормы, ВерсияОбъекта, ЗаписанныйОбъект)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>

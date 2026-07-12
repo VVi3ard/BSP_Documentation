@@ -1,0 +1,10 @@
+* text=auto whitespace=-blank-at-eof
+
+*.py text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.sqlite binary
+
+data/sources/** -whitespace

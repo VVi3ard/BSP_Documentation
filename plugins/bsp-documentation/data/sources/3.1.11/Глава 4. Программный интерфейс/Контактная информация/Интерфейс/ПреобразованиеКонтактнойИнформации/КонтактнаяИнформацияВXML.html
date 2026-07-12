@@ -1,0 +1,26 @@
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>КонтактнаяИнформацияВXML</title><style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style></head><body><main><nav><a href="../../../../index.html">Оглавление</a></nav>
+
+<a data-original-name="_УправлениеКонтактнойИнформациейКонтактнаяИнформацияВXML" name="_управлениеконтактнойинформациейконтактнаяинформациявxml"></a><h1>КонтактнаяИнформацияВXML</h1>
+<pre> Преобразует все входящие форматы контактной информации в XML.</pre>
+<p class="Paragraph0c"><span class="Bold">Синтаксис</span></p>
+<pre> Функция КонтактнаяИнформацияВXML(Знач ЗначенияПолей, Знач Представление = "", Знач ОжидаемыйВид = Неопределено) Экспорт</pre>
+<p class="Paragraph0c"><span class="Bold">Параметры</span></p>
+<pre>    ЗначенияПолей - Строка
+                  - Структура
+                  - Соответствие
+                  - СписокЗначений - описание полей контактной информации.
+                    XML должен соответствовать XDTO-пакету КонтактнаяИнформация или Адрес.
+                    Структура, Соответствие, СписокЗначений должен содержать поля в соответствии со структурой
+                    XDTO пакетов КонтактнаяИнформация или Адрес(для конфигурации с поддержкой специфики РФ).
+    Представление - Строка - представление контактной информации. Используется, если невозможно определить
+                    представление из параметра ЗначенияПолей (например, отсутствует поле Представление).
+    ОжидаемыйВид  - СправочникСсылка.ВидыКонтактнойИнформации
+                  - ПеречислениеСсылка.ТипыКонтактнойИнформации -
+                    Используется для определения типа, если его невозможно вычислить по полю ЗначенияПолей.</pre>
+<p class="Paragraph0c"><span class="Bold">Возвращаемое значение</span></p>
+<pre>     Строка - контактная информация в виде XML, соответствующего структуре XDTO пакетов КонтактнаяИнформация и Адрес.</pre>
+<p class="Paragraph0c"><span class="Bold">Пример вызова</span></p>
+<pre>Результат = УправлениеКонтактнойИнформацией.КонтактнаяИнформацияВXML(ЗначенияПолей, Представление, ОжидаемыйВид)</pre>
+<p class="Paragraph0c"><span class="Bold">Доступность</span></p>
+<pre> Сервер, Толстый клиент, Внешнее соединение</pre>
+</main></body></html>
