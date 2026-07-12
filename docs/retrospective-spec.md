@@ -198,8 +198,8 @@ Runner `scripts/run_bsp_mcp.py` — единственная точка запу
 ### Установка для пользователя
 
 ```powershell
-git clone https://github.com/VVi3ard/BSP_Documentation.git
-codex plugin marketplace add "<путь-к-клону>"
+codex plugin marketplace add VVi3ard/BSP_Documentation --ref main
+codex plugin add bsp-documentation@bsp-documentation
 ```
 
 Затем включить **BSP Documentation** в Codex и начать новую задачу. Нужны Codex с поддержкой plugins, Python 3.11+ и сеть при первом запуске для установки Python-зависимостей в личный runtime.

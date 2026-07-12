@@ -24,14 +24,16 @@
 
 Связь версий записана в [manifest.json](plugins/bsp-documentation/data/manifest.json).
 
-## Локальная установка
+## Установка из GitHub
 
 Требования: Codex с поддержкой plugins, Python 3.11 или новее и доступ к сети при первом старте MCP. При первом старте создаётся личное виртуальное окружение и в него устанавливается bundled Python MCP.
 
 ```powershell
-git clone https://github.com/VVi3ard/BSP_Documentation.git
-codex plugin marketplace add "<путь-к-клону>"
+codex plugin marketplace add VVi3ard/BSP_Documentation --ref main
+codex plugin add bsp-documentation@bsp-documentation
 ```
+
+После установки откройте новую задачу Codex, чтобы загрузились skill и MCP плагина.
 
 Включите **BSP Documentation** в Codex и начните новую задачу. Имя bundled MCP-сервера — `bsp_documentation`.
 
