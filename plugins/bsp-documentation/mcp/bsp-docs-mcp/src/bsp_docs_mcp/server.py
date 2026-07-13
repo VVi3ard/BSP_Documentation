@@ -7,6 +7,7 @@ from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 
 from .config import Settings
+from .demo_package import ensure_demo_sources
 from .embeddings import OpenRouterEmbedder
 from .navigation import discover_api_sections, get_api_section_map, load_api_navigation
 from .search import SearchEngine
@@ -148,40 +149,24 @@ class Runtime:
         }
 
     def get_demo_location(self, version: str) -> dict[str, object]:
-        """Return the bundled EDT demo configuration compatible with a BSP release."""
-
+        """Install and return demo sources compatible with a BSP release."""
         parsed, _ = self._index_path(version)
-        release = ".".join(parsed.full.split(".")[:3])
-        root = self.settings.data_dir / "demo"
-        candidates = (
-            sorted(
-                (
-                    path
-                    for path in root.iterdir()
-                    if path.is_dir()
-                    and (
-                        path.name == parsed.full
-                        or path.name == release
-                        or path.name.startswith(f"{release}.")
-                    )
-                ),
-                key=lambda path: path.name,
-                reverse=True,
+        try:
+            demo_version, source_root = ensure_demo_sources(
+                self.settings.data_dir,
+                self.settings.bsp_cache_root,
+                parsed.full,
             )
-            if root.is_dir()
-            else []
-        )
-        if not candidates:
+        except FileNotFoundError as error:
             return {
                 "requested_version": parsed.full,
                 "available": False,
-                "reason": f"No bundled demo configuration for BSP {release}",
+                "reason": str(error),
             }
-        demo = candidates[0]
         return {
             "requested_version": parsed.full,
-            "demo_version": demo.name,
-            "demo_root": str(demo),
+            "demo_version": demo_version,
+            "demo_root": str(source_root),
             "source_format": "1c-edt",
             "available": True,
             "usage_hint": (

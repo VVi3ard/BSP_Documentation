@@ -22,7 +22,7 @@
 | Семейство векторного индекса | 3.1 |
 | Демо-конфигурация EDT | 3.1.11.115 |
 
-Связь версий записана в [manifest.json](plugins/bsp-documentation/data/manifest.json).
+Связь версий записана в [manifest.json](plugins/bsp-documentation/data/manifest.json). Исходники демо поставляются компактным ZIP без двоичных внешних компонент и при первом обращении распаковываются в `%CODEX_HOME%\bsp\<версия>\src`.
 
 ## Установка из GitHub
 
@@ -57,7 +57,7 @@ setx OPENROUTER_API_KEY "sk-or-v1-..."
 4. Вызовите `get_bsp_api_section_map` для выбранной подсистемы.
 5. Вызовите `search_bsp` с `mode="development"`, `subsystem` и `api_group`.
 6. Прочитайте выбранный метод через `get_bsp_section`.
-7. Вызовите `get_bsp_demo_location`, затем найдите полное имя метода в полученном каталоге.
+7. Вызовите `get_bsp_demo_location`. MCP при необходимости распакует демо и вернет стабильный каталог `%CODEX_HOME%\bsp\<версия>\src`; найдите в нем полное имя метода.
 8. Прочитайте содержащую вызов процедуру и её прямые UI/callback-зависимости.
 
 Подробности: [сценарий разработки](docs/development-workflow.md) и [архитектура](docs/architecture.md).

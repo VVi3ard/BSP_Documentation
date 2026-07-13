@@ -1,12 +1,14 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "bsp_releases": [
     {
       "documentation_version": "3.1.11",
       "index_family": "3.1",
       "navigation_version": "3.1.11",
       "demo_version": "3.1.11.115",
-      "demo_path": "demo/3.1.11.115",
+      "demo_archive": "packages/bsp-demo-3.1.11.115-src.zip",
+      "demo_sha256": "abae8fd61481edbb56661c0ca0f0e5c7aa66d6c59241d97db9ff2ff1eb0ad448",
+      "demo_content_root": "src",
       "demo_format": "1c-edt"
     }
   ]
