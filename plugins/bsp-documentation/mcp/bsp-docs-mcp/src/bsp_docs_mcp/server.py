@@ -10,6 +10,7 @@ from .config import Settings
 from .embeddings import OpenRouterEmbedder
 from .navigation import discover_api_sections, get_api_section_map, load_api_navigation
 from .search import SearchEngine
+from .retrieval_health import RetrievalHealthCheck
 from .source_reader import read_source_document
 from .storage import IndexDatabase
 from .versions import BspVersion, detect_bsp_version as detect_version_file
@@ -53,6 +54,7 @@ class Runtime:
         self.settings = settings or Settings.from_env()
         self._embedder: OpenRouterEmbedder | None = None
         self._engines: dict[str, SearchEngine] = {}
+        self._retrieval_health = RetrievalHealthCheck()
 
     def close(self) -> None:
         if self._embedder is not None:
@@ -92,12 +94,23 @@ class Runtime:
         if engine is None:
             engine = SearchEngine(path, self._get_embedder())
             self._engines[parsed.family] = engine
+        query_vector = self._retrieval_health.ensure_valid(
+            path,
+            engine,
+            self._get_embedder(),
+            query,
+        )
+        if query_vector is not None:
+            cache_key = f"{engine.embedder.model}\n{query.strip()}"
+            with IndexDatabase(path) as database:
+                database.cache_query(cache_key, query_vector)
         results = engine.search(
                 query,
                 limit=limit,
                 mode=mode,
                 subsystem=subsystem,
                 api_group=api_group,
+                query_vector=query_vector,
             )
         return {"results": [_compact_search_result(result) for result in results]}
 

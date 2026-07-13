@@ -33,18 +33,20 @@ class SearchEngine:
         mode: str = "all",
         subsystem: str | None = None,
         api_group: str | None = None,
+        query_vector: np.ndarray | None = None,
     ) -> list[dict[str, object]]:
         query = query.strip()
         if not query:
             raise ValueError("Search query must not be empty")
         if not 1 <= limit <= 20:
             raise ValueError("limit must be between 1 and 20")
-        cache_key = f"{self.embedder.model}\n{query}"
         with IndexDatabase(self.index_path) as database:
-            query_vector = database.get_cached_query(cache_key)
             if query_vector is None:
-                query_vector = self.embedder.embed_queries([query])[0]
-                database.cache_query(cache_key, query_vector)
+                cache_key = f"{self.embedder.model}\n{query}"
+                query_vector = database.get_cached_query(cache_key)
+                if query_vector is None:
+                    query_vector = self.embedder.embed_queries([query])[0]
+                    database.cache_query(cache_key, query_vector)
             pool = max(limit * 5, 50)
             lexical = [
                 item[0]

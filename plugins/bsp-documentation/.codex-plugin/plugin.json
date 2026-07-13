@@ -1,6 +1,6 @@
 {
   "name": "bsp-documentation",
-  "version": "0.1.0+codex.20260713000243",
+  "version": "0.1.0+codex.20260713003556",
   "description": "Version-aware BSP documentation, API navigation, and bundled 1C demo configuration for Codex.",
   "author": {"name": "VVi3ard"},
   "keywords": ["1c", "bsp", "bsl", "documentation", "mcp"],
