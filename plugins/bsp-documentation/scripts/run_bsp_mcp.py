@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -30,22 +31,37 @@ def _venv_python(runtime_root: Path) -> Path:
 def _ensure_runtime() -> Path:
     runtime_root = _runtime_root()
     python = _venv_python(runtime_root)
-    if python.is_file():
+    plugin_version = json.loads(
+        (PLUGIN_ROOT / ".codex-plugin" / "plugin.json").read_text(encoding="utf-8")
+    )["version"]
+    marker = runtime_root / "plugin-version"
+    installed_version = (
+        marker.read_text(encoding="utf-8").strip() if marker.is_file() else ""
+    )
+    if python.is_file() and installed_version == plugin_version:
         return python
     runtime_root.mkdir(parents=True, exist_ok=True)
-    subprocess.run([sys.executable, "-m", "venv", str(runtime_root / "venv")], check=True)
-    subprocess.run(
-        [
-            str(python),
-            "-m",
-            "pip",
-            "install",
-            "--disable-pip-version-check",
-            "--no-input",
-            str(MCP_ROOT),
-        ],
-        check=True,
-    )
+    existing_runtime = python.is_file()
+    if not existing_runtime:
+        subprocess.run(
+            [sys.executable, "-m", "venv", str(runtime_root / "venv")],
+            check=True,
+        )
+    install_command = [
+        str(python),
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "--no-input",
+        "--upgrade",
+        "--force-reinstall",
+    ]
+    if existing_runtime:
+        install_command.append("--no-deps")
+    install_command.append(str(MCP_ROOT))
+    subprocess.run(install_command, check=True)
+    marker.write_text(plugin_version + "\n", encoding="utf-8")
     return python
 
 
