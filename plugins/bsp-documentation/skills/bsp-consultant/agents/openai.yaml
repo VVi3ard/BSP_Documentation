@@ -1,0 +1,7 @@
+interface:
+  display_name: "Эксперт по БСП"
+  short_description: "Практические консультации по API БСП"
+  default_prompt: "Use $bsp-consultant to answer my BSP question with verified documentation and a demo example only when useful."
+
+policy:
+  allow_implicit_invocation: true

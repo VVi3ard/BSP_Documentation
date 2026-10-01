@@ -16,3 +16,11 @@ build/
 *.egg-info/
 .worktrees/
 data/navigation/.work/
+
+cookies.json
+
+*.cookie*
+
+.tmp/
+
+*.local.*

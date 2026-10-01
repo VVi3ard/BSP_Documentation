@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Конструктор формул</title>
+  <style>body{margin:0;color:#1f2937;background:#fff;font:16px/1.55 'Segoe UI',Arial,sans-serif}main{max-width:1100px;margin:0 auto;padding:24px 28px 48px}nav{margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid #d7dde5}a{color:#0b57d0}img{max-width:100%;height:auto}table{border-collapse:collapse;max-width:100%}td,th{border:1px solid #d7dde5;padding:.35rem .5rem;vertical-align:top}pre{overflow:auto;padding:12px;background:#f5f7fa}.row-number{text-align:right;white-space:nowrap}</style>
+</head>
+<body>
+  <main>
+    <nav><a href="index.html">Оглавление главы 3</a></nav>
+    <a data-original-name="IssOgl1_Конструктор_формул" name="issogl1_конструктор_формул"><h2 id="конструктор-формул">Конструктор формул</h2></a>
+
+
+<p>Подсистема <strong>Конструктор формул</strong> предоставляет удобную форму редактирования формул, в которой выводятся доступные операнды и операторы. При наличии подсистемы <strong>Мультиязычность</strong> операнды и операторы формулы отображаются на текущем языке интерфейса.</p>
+
+
+<p>Например, формула курса валюты <code>(USD + EUR) / 2</code>, хранящаяся в данных, в форме редактирования формулы может выглядеть как <code>([Доллар США] + [Евро]) / 2</code>.</p>
+
+
+<a data-original-name="IssOgl2_Настройка23" name="issogl2_настройка23"><h3 id="настройка-23">Настройка</h3></a>
+
+
+<a data-original-name="IssOgl3_Настройка_прав_доступа_пользователей22" name="issogl3_настройка_прав_доступа_пользователей22"><h4 id="настройка-прав-доступа-пользователей-23">Настройка прав доступа пользователей</h4></a>
+
+
+<p>Для настройки прав доступа дополнительных действий не требуется.</p>
+
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>№</strong></th>
+<th><strong>Роли и их назначение</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ol class="n"><li></li></ol></td>
+<td><code>БазовыеПраваБСП</code> (из подсистемы <strong>Базовая функциональность</strong>):<br/>Открытие формы редактирования формулы.</td>
+</tr>
+</tbody>
+</table>
+
+
+<a data-original-name="IssOgl2_Использование_при_разработке_конфигурации20" name="issogl2_использование_при_разработке_конфигурации20"><h3 id="использование-при-разработке-конфигурации-21">Использование при разработке конфигурации</h3></a>
+
+
+<p>Программный интерфейс подсистемы предусматривает два сценария:</p>
+
+
+<ol>
+<li>открытие формы редактора,</li>
+<li>встраивание списка доступных полей конструктора формул в другие формы.</li>
+</ol>
+
+
+<a data-original-name="IssOgl3_Открытие_поставляемой_формы_редактора" name="issogl3_открытие_поставляемой_формы_редактора"><h4 id="открытие-поставляемой-формы-редактора">Открытие поставляемой формы редактора</h4></a>
+
+
+<p>Для открытия формы редактирования формулы предусмотрен программный интерфейс в модулях <code>КонструкторФормулКлиент</code> и <code>КонструкторФормул</code>. Для открытия формы редактирования формулы, например, из поля ввода, следует вызвать процедуру <code>КонструкторФормулКлиент.НачатьРедактированиеФормулы</code>, и обработать результат выполнения после закрытия формы.</p>
+
+
+<p>Пример:</p>
+
+
+<pre class="src_dev"><span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> ФормулаРасчетаКурсаНачалоВыбора<span class="operator">(</span>Элемент<span class="operator">,</span> ДанныеВыбора<span class="operator">,</span> СтандартнаяОбработка<span class="operator">)</span>
+  СтандартнаяОбработка <span class="operator">=</span> <span class="keyword">Ложь</span><span class="operator">;</span>
+  ОписаниеОповещения <span class="operator">=</span> <span class="keyword">Новый</span> ОписаниеОповещения<span class="operator">(</span><span class="string">"ПриЗавершенииРедактированияФормулы"</span><span class="operator">,</span> ЭтотОбъект<span class="operator">)</span><span class="operator">;</span>
+  КонструкторФормулКлиент<span class="operator">.</span>НачатьРедактированиеФормулы<span class="operator">(</span>ПараметрыФормулы<span class="operator">(</span><span class="operator">)</span><span class="operator">,</span> ОписаниеОповещения<span class="operator">)</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> ПриЗавершенииРедактированияФормулы<span class="operator">(</span>ОписаниеФормулы<span class="operator">,</span> ДополнительныеПараметры<span class="operator">)</span> <span class="keyword">Экспорт</span>
+  <span class="keyword">Если</span> ОписаниеФормулы <span class="operator">=</span> <span class="keyword">Неопределено</span> <span class="keyword">Тогда</span>
+    <span class="keyword">Возврат</span><span class="operator">;</span>
+  <span class="keyword">КонецЕсли</span><span class="operator">;</span>
+  Объект<span class="operator">.</span>ФормулаРасчетаКурса <span class="operator">=</span> ОписаниеФормулы<span class="operator">.</span>Формула<span class="operator">;</span>
+  ПредставлениеФормулы <span class="operator">=</span> ОписаниеФормулы<span class="operator">.</span>ПредставлениеФормулы<span class="operator">;</span>
+  Модифицированность <span class="operator">=</span> <span class="keyword">Истина</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span></pre>
+
+
+<p>Операторы и операнды описываются единообразно в виде таблицы значений, дерева значений или схемы компоновки данных. При использовании таблицы значений и дерева значений возможно переопределение картинок реквизитов, а также порядка следования элементов.</p>
+
+
+<pre class="src_dev"><span class="preprocessor">&amp;НаСервереБезКонтекста</span>
+<span class="keyword">Функция</span> ТаблицаОперандов<span class="operator">(</span><span class="operator">)</span>
+  ТаблицаОперандов <span class="operator">=</span> КонструкторФормул<span class="operator">.</span>ТаблицаПолей<span class="operator">(</span><span class="operator">)</span><span class="operator">;</span>
+  <span class="keyword">Для</span> <span class="keyword">Каждого</span> ОписаниеВалюты <span class="keyword">Из</span> Справочники<span class="operator">.</span>Валюты<span class="operator">.</span>КодыВалют<span class="operator">(</span><span class="operator">)</span> <span class="keyword">Цикл</span>
+    Операнд <span class="operator">=</span> ТаблицаОперандов<span class="operator">.</span>Добавить<span class="operator">(</span><span class="operator">)</span><span class="operator">;</span>
+    Операнд<span class="operator">.</span>Идентификатор <span class="operator">=</span> ОписаниеВалюты<span class="operator">.</span>СимвольныйКод<span class="operator">;</span> <span class="comment">// "USD"</span>
+    Операнд<span class="operator">.</span>Представление <span class="operator">=</span> ОписаниеВалюты<span class="operator">.</span>Представление<span class="operator">;</span> <span class="comment">// "Доллар США"</span>
+    Операнд<span class="operator">.</span>ТипЗначения <span class="operator">=</span> <span class="keyword">Новый</span> ОписаниеТипов<span class="operator">(</span><span class="string">"Число"</span><span class="operator">)</span><span class="operator">;</span>
+  <span class="keyword">КонецЦикла</span><span class="operator">;</span>
+  <span class="keyword">Возврат</span> ТаблицаОперандов<span class="operator">;</span>
+<span class="keyword">КонецФункции</span></pre>
+
+
+<p>Для получения представления формулы, хранящейся в данных, например, для вывода на форме в виде гиперссылки, предусмотрена функция <code>КонструкторФормул.ПредставлениеФормулы</code>.</p>
+
+
+<a data-original-name="IssOgl3_Встраивание_списка_доступных_полей_конструктора_формул_в_другие_формы" name="issogl3_встраивание_списка_доступных_полей_конструктора_формул_в_другие_формы"><h4 id="встраивание-списка-доступных-полей-конструктора-формул-в-другие-формы">Встраивание списка доступных полей конструктора формул в другие формы</h4></a>
+
+
+<p>Форма редактора формулы представляет из себя поле для редактирования формулы и два списка - операторы и операнды. Списки обладают рядом полезных свойств: могут отображать неограниченную по уровням иерархию полей, автоматически подбирать картинки для полей, а также имеют поля поиска. Программный интерфейс подсистемы позволяет размещать такие списки в произвольной форме. Примером такого использования является форма выбора поля, открывающаяся из формы настроек отчета (см. форму <code>ВыборПоляОтчета</code> хранилища настроек <code>ХранилищеВариантовОтчетов</code>).</p>
+
+
+<p>Для размещения подключаемого списка полей на форме необходимо выполнить вставку кода в модуль формы:</p>
+
+
+<pre class="src_dev"><span class="preprocessor">#Область ПодключаемыйСписокПолей</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> Подключаемый_СписокПолейПередРазворачиванием<span class="operator">(</span>Элемент<span class="operator">,</span> Строка<span class="operator">,</span> Отказ<span class="operator">)</span>
+  КонструкторФормулКлиент<span class="operator">.</span>СписокПолейПередРазворачиванием<span class="operator">(</span>ЭтотОбъект<span class="operator">,</span> Элемент<span class="operator">,</span> Строка<span class="operator">,</span> Отказ<span class="operator">)</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> Подключаемый_РазвернутьТекущийЭлементСпискаПолей<span class="operator">(</span><span class="operator">)</span>
+  КонструкторФормулКлиент<span class="operator">.</span>РазвернутьТекущийЭлементСпискаПолей<span class="operator">(</span>ЭтотОбъект<span class="operator">)</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> Подключаемый_ЗаполнитьСписокДоступныхПолей<span class="operator">(</span>ПараметрыЗаполнения<span class="operator">)</span> <span class="keyword">Экспорт</span>
+  ЗаполнитьСписокДоступныхПолей<span class="operator">(</span>ПараметрыЗаполнения<span class="operator">)</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаСервере</span>
+<span class="keyword">Процедура</span> ЗаполнитьСписокДоступныхПолей<span class="operator">(</span>ПараметрыЗаполнения<span class="operator">)</span>
+  КонструкторФормулСлужебный<span class="operator">.</span>ЗаполнитьСписокДоступныхПолей<span class="operator">(</span>ЭтотОбъект<span class="operator">,</span> ПараметрыЗаполнения<span class="operator">)</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> Подключаемый_СписокПолейНачалоПеретаскивания<span class="operator">(</span>Элемент<span class="operator">,</span> ПараметрыПеретаскивания<span class="operator">,</span> Выполнение<span class="operator">)</span>
+  КонструкторФормулКлиент<span class="operator">.</span>СписокПолейНачалоПеретаскивания<span class="operator">(</span>ЭтотОбъект<span class="operator">,</span> Элемент<span class="operator">,</span> ПараметрыПеретаскивания<span class="operator">,</span> Выполнение<span class="operator">)</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> Подключаемый_СтрокаПоискаИзменениеТекстаРедактирования<span class="operator">(</span>Элемент<span class="operator">,</span> Текст<span class="operator">,</span> СтандартнаяОбработка<span class="operator">)</span>
+  КонструкторФормулКлиент<span class="operator">.</span>СтрокаПоискаИзменениеТекстаРедактирования<span class="operator">(</span>ЭтотОбъект<span class="operator">,</span> Элемент<span class="operator">,</span> Текст<span class="operator">,</span> СтандартнаяОбработка<span class="operator">)</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> Подключаемый_ВыполнитьПоискВСпискеПолей<span class="operator">(</span><span class="operator">)</span>
+    ВыполнитьПоискВСпискеПолей<span class="operator">(</span><span class="operator">)</span><span class="operator">;</span>   
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаСервере</span>
+<span class="keyword">Процедура</span> ВыполнитьПоискВСпискеПолей<span class="operator">(</span><span class="operator">)</span>  
+    КонструкторФормул<span class="operator">.</span>ВыполнитьПоискВСпискеПолей<span class="operator">(</span>ЭтотОбъект<span class="operator">)</span><span class="operator">;</span>   
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> Подключаемый_СтрокаПоискаОчистка<span class="operator">(</span>Элемент<span class="operator">,</span> СтандартнаяОбработка<span class="operator">)</span>   
+    КонструкторФормулКлиент<span class="operator">.</span>СтрокаПоискаОчистка<span class="operator">(</span>ЭтотОбъект<span class="operator">,</span> Элемент<span class="operator">,</span> СтандартнаяОбработка<span class="operator">)</span><span class="operator">;</span> 
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаСервере</span>
+<span class="keyword">Процедура</span> Подключаемый_ОбработчикКонструктораФормулСервер<span class="operator">(</span>Параметр<span class="operator">,</span> ДополнительныеПараметры<span class="operator">)</span>
+    КонструкторФормул<span class="operator">.</span>ОбработчикКонструктораФормул<span class="operator">(</span>ЭтотОбъект<span class="operator">,</span> Параметр<span class="operator">,</span> ДополнительныеПараметры<span class="operator">)</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> Подключаемый_ОбработчикКонструктораФормулКлиент<span class="operator">(</span>Параметр<span class="operator">,</span> ДополнительныеПараметры <span class="operator">=</span> <span class="keyword">Неопределено</span><span class="operator">)</span> <span class="keyword">Экспорт</span>
+    КонструкторФормулКлиент<span class="operator">.</span>ОбработчикКонструктораФормул<span class="operator">(</span>ЭтотОбъект<span class="operator">,</span> Параметр<span class="operator">,</span> ДополнительныеПараметры<span class="operator">)</span><span class="operator">;</span>
+    <span class="keyword">Если</span> ДополнительныеПараметры<span class="operator">.</span>ВыполнитьНаСервере <span class="keyword">Тогда</span>
+        Подключаемый_ОбработчикКонструктораФормулСервер<span class="operator">(</span>Параметр<span class="operator">,</span> ДополнительныеПараметры<span class="operator">)</span><span class="operator">;</span>
+    <span class="keyword">КонецЕсли</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">&amp;НаКлиенте</span>
+<span class="keyword">Процедура</span> Подключаемый_НачатьПоискВСпискеПолей<span class="operator">(</span><span class="operator">)</span>
+    КонструкторФормулКлиент<span class="operator">.</span>НачатьПоискВСпискеПолей<span class="operator">(</span>ЭтотОбъект<span class="operator">)</span><span class="operator">;</span>    
+<span class="keyword">КонецПроцедуры</span>
+<span class="preprocessor">#КонецОбласти</span></pre>
+
+
+<p>Затем добавить вызов <code>КонструкторФормул.ДобавитьСписокПолейНаФорму</code> в обработчик события формы <code>ПриСозданииНаСервере</code>. Пример:</p>
+
+
+<pre class="src_dev"><span class="preprocessor">&amp;НаСервере</span>
+<span class="keyword">Процедура</span> ПриСозданииНаСервере<span class="operator">(</span>Отказ<span class="operator">,</span> СтандартнаяОбработка<span class="operator">)</span>
+  ПараметрыДобавленияСпискаПолей <span class="operator">=</span> КонструкторФормул<span class="operator">.</span>ПараметрыДобавленияСпискаПолей<span class="operator">(</span><span class="operator">)</span><span class="operator">;</span>
+  ПараметрыДобавленияСпискаПолей<span class="operator">.</span>ИмяСписка <span class="operator">=</span> ИмяСпискаОперандов<span class="operator">(</span><span class="operator">)</span><span class="operator">;</span>
+  ПараметрыДобавленияСпискаПолей<span class="operator">.</span>КоллекцииПолей<span class="operator">.</span>Добавить<span class="operator">(</span>ПрочитатьСписокОперандов<span class="operator">(</span><span class="operator">)</span><span class="operator">)</span><span class="operator">;</span>
+  ПараметрыДобавленияСпискаПолей<span class="operator">.</span>МестоРазмещенияСписка <span class="operator">=</span> Элементы<span class="operator">.</span>ГруппаДоступныеПоля<span class="operator">;</span>
+  ПараметрыДобавленияСпискаПолей<span class="operator">.</span>ПодсказкаВводаСтрокиПоиска <span class="operator">=</span> НСтр<span class="operator">(</span><span class="string">"ru = 'Найти операнд...'"</span><span class="operator">)</span><span class="operator">;</span>
+  ПараметрыДобавленияСпискаПолей<span class="operator">.</span>ИспользоватьИдентификаторыДляФормул <span class="operator">=</span> <span class="keyword">Истина</span><span class="operator">;</span>
+  ПараметрыДобавленияСпискаПолей<span class="operator">.</span>ИспользоватьФоновыйПоиск <span class="operator">=</span> <span class="keyword">Истина</span><span class="operator">;</span>
+  ПараметрыДобавленияСпискаПолей<span class="operator">.</span>ОбработчикиСписка<span class="operator">.</span>Вставить<span class="operator">(</span><span class="string">"Выбор"</span><span class="operator">,</span> <span class="string">"Подключаемый_СписокПолейВыбор"</span><span class="operator">)</span><span class="operator">;</span>
+  КонструкторФормул<span class="operator">.</span>ДобавитьСписокПолейНаФорму<span class="operator">(</span>ЭтотОбъект<span class="operator">,</span> ПараметрыДобавленияСпискаПолей<span class="operator">)</span><span class="operator">;</span>
+<span class="keyword">КонецПроцедуры</span></pre>
+
+
+<p>Подключаемый список полей может быть кастомизирован. См. описание в функции <code>КонструкторФормул.ПараметрыДобавленияСпискаПолей</code>.</p>
+
+
+<a data-original-name="IssOgl3_Настройка_обмена_данными22" name="issogl3_настройка_обмена_данными22"><h4 id="настройка-обмена-данными-23">Настройка обмена данными</h4></a>
+
+
+<p>Для настройки обмена данными никаких действий не требуется, так как подсистема не предоставляет собственных данных.</p>
+
+
+  </main>
+</body>
+</html>

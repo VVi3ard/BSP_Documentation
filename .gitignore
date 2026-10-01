@@ -4,3 +4,11 @@ __pycache__/
 .pytest_cache/
 *.log
 .git-add.log
+
+cookies.json
+
+*.cookie*
+
+.tmp/
+
+*.local.*

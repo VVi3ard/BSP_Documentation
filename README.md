@@ -64,6 +64,8 @@ setx OPENROUTER_API_KEY "sk-or-v1-..."
 7. Вызовите `get_bsp_demo_location`. MCP при необходимости распакует демо и вернет стабильный каталог `%CODEX_HOME%\bsp\<версия>\src`; найдите в нем полное имя метода.
 8. Прочитайте содержащую вызов процедуру и её прямые UI/callback-зависимости.
 
+Для консультаций без изменения проекта используйте skill `bsp-consultant`: [Эксперт по БСП](docs/bsp-consultant.md).
+
 Подробности: [сценарий разработки](docs/development-workflow.md) и [архитектура](docs/architecture.md).
 
 ## Данные и права
