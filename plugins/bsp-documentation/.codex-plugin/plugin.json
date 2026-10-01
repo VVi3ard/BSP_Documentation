@@ -1,18 +1,32 @@
 {
   "name": "bsp-documentation",
   "version": "0.1.0+codex.20260713012356",
-  "description": "Version-aware BSP documentation, API navigation, and bundled 1C demo configuration for Codex.",
-  "author": {"name": "VVi3ard"},
-  "keywords": ["1c", "bsp", "bsl", "documentation", "mcp"],
+  "description": "Version-aware BSP documentation, developer consultations, API navigation, and bundled 1C demo configuration for Codex.",
+  "author": {
+    "name": "VVi3ard"
+  },
+  "keywords": [
+    "1c",
+    "bsp",
+    "bsl",
+    "documentation",
+    "mcp"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "BSP Documentation",
-    "shortDescription": "BSP documentation and demo code for 1C development.",
-    "longDescription": "Find version-specific BSP APIs, read official documentation, and inspect matching usage in the bundled BSP demo configuration.",
+    "shortDescription": "BSP expert, documentation, and demo code for 1C.",
+    "longDescription": "Ask practical BSP questions, find version-specific APIs, read official documentation, and inspect matching usage in the bundled BSP demo configuration.",
     "developerName": "VVi3ard",
     "category": "Productivity",
-    "capabilities": ["Read"],
-    "defaultPrompt": ["Help me implement a 1C feature using BSP.", "Find the right BSP API and a demo usage example."]
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Ask the BSP expert a practical development question.",
+      "Help me implement a 1C feature using BSP.",
+      "Find the right BSP API and a demo usage example."
+    ]
   }
 }
